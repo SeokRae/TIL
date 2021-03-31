@@ -1,4 +1,3 @@
 # Contents
 
-* [Spring Security](spring-security.md)
-
+* [Spring Security](spring-security/contents.md)
