@@ -1,3 +1,4 @@
 # Contents
 
-* [Spring Security](spring-security/README.md)
+* [Spring Security](spring-security.md)
+
