@@ -22,24 +22,18 @@
 
 ## 스터디 진행 방식
 1. 스프링 이론
-    1) [Spring.io](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html)
+    - [Spring.io](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html)
 
 2. 스프링 배치 실습 아이디어
     1) 도서관 데이터
         - '특정' 도서관 데이터 csv 기반 파일을 정규화된 테이블에 적재
-    2) 미정
 
-3. 스프링 배치 관리
-    1) Retry 전략
-    2) Jenkins 를 통한 schedule
-    3) Transaction 처리 방법
-
-4. 참고 사이트
-    1) [기억보다 기록을](https://jojoldu.tistory.com/category/Spring%20Batch)
-    2) [quartz](https://blog.kingbbode.com/posts/spring-batch-quartz)
-    3) [Jenkins로 배치](https://jojoldu.tistory.com/313)
-    4) [MyBatis 설정의 SpringBatch](http://mybatis.org/spring/ko/batch.html)
-    5) [One Reader Multi Writer](https://www.javaer101.com/ko/article/5094462.html)
+3. 참고 사이트
+    - [기억보다 기록을](https://jojoldu.tistory.com/category/Spring%20Batch)
+    - [quartz](https://blog.kingbbode.com/posts/spring-batch-quartz)
+    - [Jenkins로 배치](https://jojoldu.tistory.com/313)
+    - [MyBatis 설정의 SpringBatch](http://mybatis.org/spring/ko/batch.html)
+    - [One Reader Multi Writer](https://www.javaer101.com/ko/article/5094462.html)
 
 ## 스터디 회의록
 - [2020.08 ~ 11](docs/README.md)
