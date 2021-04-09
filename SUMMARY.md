@@ -15,3 +15,4 @@
   * [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](spring-security.md)
 * [Spring Batch](spring-batch.md)
+* [Tistory Blog](https://seokr.tistory.com/)
