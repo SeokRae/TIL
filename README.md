@@ -10,4 +10,3 @@
   * [3. Spring-Data-Jpa](spring-jpa/springboot-jpa-data.md)
   * [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](spring-security.md)
-
