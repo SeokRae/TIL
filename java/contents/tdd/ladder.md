@@ -43,3 +43,11 @@
 - [x] [과연 필요한 클래스인가?](https://github.com/next-step/java-ladder/pull/859#discussion_r609644819)
 
 ![ladder step3 feedback2](../img/ladder3_2.png)
+
+## 4단계 - 사다리(리펙토링)
+
+* [x] [4단계 사다리 타기(리펙토링)](https://github.com/next-step/java-ladder/pull/886)
+
+> 사다리 타기(리펙토링) 1차 피드백
+
+* [x] [객체의 책임, 더 적절한 곳은 어디 일까?](https://github.com/next-step/java-ladder/pull/886#discussion_r611181585)
