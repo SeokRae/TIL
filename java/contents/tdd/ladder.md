@@ -1,4 +1,4 @@
-# Ladder
+# 사다리 타기 - FP, OOP
 
 ## 1단계 - 자바8 스트림, 람다, Optional
 * [x] [1차 Java8, 스트림, 함수형 인터페이스에 대한 학습](https://github.com/next-step/java-ladder/pull/829)

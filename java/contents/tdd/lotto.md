@@ -1,4 +1,4 @@
-# Lotto
+# 로또 - TDD
 
 ## 1단계 문자열 덧셈 계산기
 * [x] [1차 문자열 덧셈 계산기](https://github.com/next-step/java-lotto/pull/1242)
