@@ -1,7 +1,8 @@
 # Contents
 
 * [Network](network.md)
-* [오브젝트](object/)
+* [Design Pattern](design/README.md)
+* [오브젝트](object/README.md)
   * [데이터 중심 설계](object/_1.md)
   * [책임 중심 설계](object/_2.md)
   * [책임 할당을 위한 GRASP 패턴](object/_3.md)
