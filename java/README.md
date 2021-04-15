@@ -59,7 +59,7 @@ description: 자바 기반 공부하기
         * 규칙 5: 줄여쓰지 않는다\(축약 금지\).
         * 규칙 8: 일급 콜렉션을 쓴다.
 
-* [사다리타기](contents/tdd/ladder.md) - FP, OOP
+* [사다리 타기](contents/tdd/ladder.md) - FP, OOP
 
     * 경험해야할 학습 목표
         * 자바8의 스트림, 람다를 사용해 함수형 프로그래밍하는 경험
@@ -72,7 +72,7 @@ description: 자바 기반 공부하기
         * 규칙 7: 3개 이상의 인스턴스 변수를 가진 클래스를 쓰지 않는다.
         * 규칙 9: 게터/세터/프로퍼티를 쓰지 않는다.
 
-* [볼링 점수판](contents/tdd/bowling.md) - OOP
+* [볼링 게임 점수판](contents/tdd/bowling.md) - OOP
 
     * 경험해야할 학습 목표
         * Q&A 서비스를 활용해 레거시 코드를 리팩토링하는 경험
