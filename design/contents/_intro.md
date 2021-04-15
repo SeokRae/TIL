@@ -14,7 +14,7 @@
 
 ### 디자인 패턴들 간의 관계
 
-![design-pattern-relationships](contents/img/pattern-relationships.png)
+![design-pattern-relationships](/design/contents/img/pattern-relationships.png)
 
 ### 디자인 패턴의 예시
 
