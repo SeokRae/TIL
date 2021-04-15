@@ -10,7 +10,7 @@
 * Structural
 * Behavioural
 
-## `Creational`
+## **`Creational`**
 
 Creational Design Patterns은 클래스에서 객체를 구성하는 방법과 관련되어있다.
 
@@ -30,24 +30,23 @@ Structural Patterns은 클래스의 구성\(composition\), 즉 클래스를 구�
 * Adapter Pattern
 * Bridge Pattern
 * Composite Pattern
-* `**Decorator Pattern**`
+* **`Decorator Pattern`**
 * Facade Pattern
 * Flyweight Pattern
-* `**Proxy Pattern**`
+* **`Proxy Pattern`**
 
 ## Behavioral
 
 Behavioral design patterns는 클래스와 객체 간의 상호 작용과 책임 위임을 지시한다.
 
-* `**Interpreter Pattern**`
+* **`Interpreter Pattern`**
 * Template Pattern
 * Chain of Responsibility Pattern
 * Command Pattern
 * Iterator Pattern
 * Mediator Pattern
 * Memento Pattern
-* `**Observer Pattern**`
+* **`Observer Pattern`**
 * State Pattern
 * Strategy Pattern
-* `**Visitor Pattern**`
-
+* **`Visitor Pattern`**
