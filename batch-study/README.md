@@ -58,7 +58,7 @@
 
 ## SpringBatch Schema ERD
 
-![erd](../../../.gitbook/assets/springbatch_schema_erd.png)
+![erd](../.gitbook/assets/springbatch_schema_erd.png)
 
 ### 해당 프로젝스 설정 시 db\_mysql, db\_oracle 내용
 
@@ -118,3 +118,4 @@
       driver-class-name: oracle.jdbc.OracleDriver
       sql-script-encoding: UTF-8
   ```
+

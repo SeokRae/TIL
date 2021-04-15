@@ -1,6 +1,7 @@
-# 로또 - TDD
+# 로또
 
 ## 1단계 문자열 덧셈 계산기
+
 * [x] [1차 문자열 덧셈 계산기](https://github.com/next-step/java-lotto/pull/1242)
 
 > 문자열 1차 피드백
@@ -10,7 +11,7 @@
 * [getter는 도메인 로직에서 최대한 줄이기](https://github.com/next-step/java-lotto/pull/1242#discussion_r594307685)
 * [요구사항 미흡 \(음수 값 예외처리\)](https://github.com/next-step/java-lotto/pull/1242#discussion_r594310922)
 
-## 2단계 로또(자동)
+## 2단계 로또\(자동\)
 
 > 로또 \(자동\) 1차 피드백
 
@@ -18,7 +19,7 @@
 * [return 로직 위치 변경](https://github.com/next-step/java-lotto/pull/1255#discussion_r595986529)
 * [굳이 없어도 되는 Getter 삭제](https://github.com/next-step/java-lotto/pull/1255#discussion_r595990045)
 
-## 3단계 로또(2등)
+## 3단계 로또\(2등\)
 
 > 로또 \(2등\) 1차 피드백
 
@@ -31,9 +32,9 @@
 * [메서드 내에 유효성검사 간결하게 표현하기](https://github.com/next-step/java-lotto/pull/1261#discussion_r596825348)
 * [객체의 상태값 관리 생각하기](https://github.com/next-step/java-lotto/pull/1261#discussion_r596829039)
 
-![step3](../img/lotto-step3.png)
+![step3](../../.gitbook/assets/lotto-step3.png)
 
-## 4단계 로또(수동)
+## 4단계 로또\(수동\)
 
 > 로또 \(수동\) 1차 피드백
 
@@ -48,4 +49,5 @@
 * [인터페이스를 통한 여러 구현체를 사용하는 장점에 대해서 생각해보기](https://github.com/next-step/java-lotto/pull/1273#discussion_r598079685)
 * [static 메서드로 구성된 클래스는 맞는건가?](https://github.com/next-step/java-lotto/pull/1273#discussion_r598080023)
 
-![step4](../img/lotto-step4.png)
+![step4](../../.gitbook/assets/lotto-step4.png)
+
