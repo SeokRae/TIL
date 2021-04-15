@@ -1,7 +1,13 @@
+---
+description: Today I Learned
+---
+
 # Contents
 
 * [Network](network.md)
 * [Design Pattern](design/README.md)
+  * [Intro](design/contents/_intro.md)
+  * [Types of Design Patterns](design/contents/_types_of_design_patterns.md)
 * [오브젝트](object/README.md)
   * [데이터 중심 설계](object/_1.md)
   * [책임 중심 설계](object/_2.md)
