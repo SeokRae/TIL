@@ -11,7 +11,7 @@
 * Structural
 * Behavioural
 
-### Creational Patterns
+### **Creational Patterns**
 
 * Builder Pattern
 * Prototype Pattern
@@ -23,22 +23,21 @@
 * Adapter Pattern
 * Bridge Pattern
 * Composite Pattern
-* `**Decorator Pattern**`
+* **`Decorator Pattern`**
 * Facade Pattern
 * Flyweight Pattern
-* `**Proxy Pattern**`
+* **`Proxy Pattern`**
 
 ### Behavioral Patterns
 
-* `**Interpreter Pattern**`
+* **`Interpreter Pattern`**
 * Template Pattern
 * Chain of Responsibility Pattern
 * Command Pattern
 * Iterator Pattern
 * Mediator Pattern
 * Memento Pattern
-* `**Observer Pattern**`
+* **`Observer Pattern`**
 * State Pattern
 * Strategy Pattern
-* `**Visitor Pattern**`
-
+* **`Visitor Pattern`**
