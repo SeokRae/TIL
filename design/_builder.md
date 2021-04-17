@@ -32,7 +32,7 @@ description: Creational Pattern
 * 점층적 생성자 패턴보다는 코드가 장활에서 매개 변수 4개 이상은 되어야 값어치를 한다.
 
 ### Builder 패턴의 예시
-
+![img.png](../.gitbook/assets/diagram_builder.png)
 ![&#xC608;&#xC2DC; &#xC5D4;&#xD2F0;&#xD2F0; &#xAD6C;&#xC131;.png](../.gitbook/assets/diagram_builder.png)
 
 가상 세계에서 모든 항공기는 적어도 아래 **세 단계**를 필요로 한다.
@@ -201,4 +201,3 @@ Director 클래스 없이 Builder만을 사용하는 패턴도 찾아볼 수 있
 
 * `빌더` 패턴이 `단계별로 객체를 생성`한다.
 * `추상 팩토리` 패턴은 `한 번에 객체를 반환`한다.
-

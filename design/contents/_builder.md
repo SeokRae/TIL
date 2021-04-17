@@ -35,7 +35,7 @@ description: Creational Pattern
 
 ### Builder 패턴의 예시
 
-![예시 엔티티 구성.png](img/diagram_builder.png)
+![예시 엔티티 구성.png](../../.gitbook/assets/diagram_builder.png)
 
 가상 세계에서 모든 항공기는 적어도 아래 세 단계를 필요로 한다.
 
