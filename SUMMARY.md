@@ -5,8 +5,8 @@
 * [Design Pattern](design/README.md)
   * [Intro](design/_intro.md)
   * [Types of Design Patterns](design/_types_of_design_patterns.md)
-  * [Builder Pattern](design/contents/_builder.md)
-  * [Singleton Pattern](design/contents/_singleton.md)
+  * [Builder Pattern](design/_builder.md)
+  * [Singleton Pattern](design/_singleton.md)
 * [오브젝트](object/README.md)
   * [데이터 중심 설계](object/_1.md)
   * [책임 중심 설계](object/_2.md)
@@ -28,3 +28,4 @@
 * [Spring Batch](batch-study/README.md)
   * [1. Introduction](batch-study/1.introduction.md)
 * [Tistory Blog](https://seokr.tistory.com/)
+
