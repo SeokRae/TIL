@@ -12,7 +12,7 @@ Singleton 패턴이 클래스의 단일 인스턴스 만 생성하여 애플리�
 
 `싱글턴 패턴`은 클래스의 `유일한 인스턴스`를 만드는 데에 사용된다.
 
-싱글턴의 전형적인 예시로 `무상태(stateless) 객체`나 설계상 `유일해야 하는 시스템 컴포넌트`를 들 수 있다.
+싱글턴의 전형적인 예시로 **`무상태(stateless) 객체`**나 설계상 **`유일해야 하는 시스템 컴포넌트`**를 들 수 있다.
 
 * 캐시, 스레드 풀, 레지스트리와 같은 구성은 단일 인스턴스로 존재해야 한다.
 
@@ -20,15 +20,15 @@ Singleton 패턴이 클래스의 단일 인스턴스 만 생성하여 애플리�
 
 ## Singleton 생성 방법
 
-* 싱글 톤으로 정의하려는 클래스의 `생성자를 비공개`로 만드는 것이다.
-* 유일한 인스턴스에 접근할 수 있는 수단으로 public static 멤버를 하나 마련해두는 것이다.
+* 싱글 톤으로 정의하려는 클래스의 **`생성자를 비공개`**로 만드는 것이다.
+* 유일한 인스턴스에 접근할 수 있는 수단으로 **`public static 멤버`**를 하나 마련해두는 것이다.
 
 ### 1. public static 멤버가 final 필드인 방식
 
 * private 생성자는 public static final 필드인 Elvis.INSTANCE 를 초기화할 때 딱 한번 호출된다.
 * public static 필드가 final이기 때문에 절대 다른 객체를 참조할 수 없다.
-  * public 으로 필드가 제공되고 있기 때문에 `간결함이라는 장점`이 있다.
-* public 또는 protected 생성자가 없으므로 클래스에 대해 `유일성이 보장`된다.
+  * public 으로 필드가 제공되고 있기 때문에 **`간결함이라는 장점`**이 있다.
+* public 또는 protected 생성자가 없으므로 클래스에 대해 **`유일성이 보장`**된다.
   * 는 AccessibleObject.setAccessible 을 사용해 private 생성자를 호출 할 수 있다.
   * 이러한 공격을 방어하기 위해서는 생성자를 수정하여 두 번째 객체가 생성되려 할 때 예외를 던지는 로직이 추가되어야 한다.
 
@@ -44,7 +44,7 @@ public class Elvis {
 
 * getInstance\(\)는 항상 같은 객체의 참조를 반환하므로 새로운 인스턴스가 생성될 수 없다.
   * 리플렉션을 통한 예외는 존재한다.
-* 정적 팩토리 방식의 장점
+* **정적 팩토리 방식**의 **장점**
   * 첫 번째 장점은 API를 바꾸지 않고도 싱글턴이 아니게 변경할 수 있다는 점이다.
   * 두 번째 장점은 정적 팩토리를 제네릭 싱글턴 팩토리로 만들 수 있다는 점이다.
   * 세 번째 장점은 정적 팩토리의 메서드 참조를 Supplier 로 사용할 수 있다는 점이다.
@@ -126,7 +126,8 @@ public class Client {
 }
 ```
 
-* 위 코드는 단일 스레드에서는 잘 작동되나 멀티 스레드 환경에서는 여러 객체가 생성될 가능성이 있다.
+위 코드는 **단일 스레드**에서는 잘 작동되나 **멀티 스레드** 환경에서는 여러 객체가 생성될 가능성이 있다.
+
 * Thread A calls the method getInstance and finds the onlyInstance to be null but before it can actually new-up the instance it gets context switched out.
 * Now thread B comes along and calls the getInstance method and goes on to new-up the instance and returns the AirforceOne object.
 * When thread A is scheduled again, is when the mischief begins. 
@@ -135,7 +136,7 @@ public class Client {
 
   Now there are two different AirforceOne objects out in the wild, one with thread A and one with thread B.
 
-> 경합 상태\(Race Condition\)를 수정하는 방법을 해결하기 위한 두 가지 해결방법이 있다.
+> **경합 상태\(Race Condition\)**를 수정하는 방법을 해결하기 위한 두 가지 해결방법이 있다.
 
 * 첫 번째는 getInstance\(\)에 synchronized를 통해 동기화 처리하는 것 \(Thread-Safe Initialization\)
 
@@ -204,15 +205,15 @@ public class AirforceOneWithDoubleCheckedLocking {
 
 ## 싱글톤 패턴의 장점
 
-* **다른 모든 클래스에서 접근 할 수 있다.**
-* **인스턴스가 하나만 생성됨이 보장된다.**
-* **Lazy initialization\(게으르게 생성\) 하여 구현 될 수 있다.**
-* **인스턴스의 개수를 변경하기가 자유롭다.**
+* 다른 모든 클래스에서 접근 할 수 있다.
+* 인스턴스가 하나만 생성됨이 보장된다.
+* Lazy initialization\(게으르게 생성\) 하여 구현 될 수 있다.
+* 인스턴스의 개수를 변경하기가 자유롭다.
 
 ## 싱글톤 패턴의 단점
 
-* **단일 책임의 원칙을 어긴다.**
-* **Singleton 클래스에 대한 의존도가 높아진다.**
-* **싱글톤 클래스에 대한 서브클래스를 만들기 어려워진다.**
-* **멀티 스레드 적용 시 동기화 문제가 생길 수 있다.**
+* 단일 책임의 원칙을 어긴다.
+* Singleton 클래스에 대한 의존도가 높아진다.
+* 싱글톤 클래스에 대한 서브클래스를 만들기 어려워진다.
+* 멀티 스레드 적용 시 동기화 문제가 생길 수 있다.
 
