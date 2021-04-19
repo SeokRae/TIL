@@ -13,9 +13,9 @@
 
 ### **Creational Patterns**
 
-* Builder Pattern
+* **Builder Pattern**
+* **Singleton Pattern**
 * Prototype Pattern
-* Singleton Pattern
 * Abstract Factory Pattern
 
 ### Structural Patterns
