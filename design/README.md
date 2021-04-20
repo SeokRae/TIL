@@ -13,8 +13,8 @@
 
 ### **Creational Patterns**
 
-* **Builder Pattern**
-* **Singleton Pattern**
+* [**Builder Pattern**](_builder.md)
+* [**Singleton Pattern**](_singleton.md)
 * Prototype Pattern
 * Abstract Factory Pattern
 
@@ -41,4 +41,3 @@
 * State Pattern
 * Strategy Pattern
 * **`Visitor Pattern`**
-
