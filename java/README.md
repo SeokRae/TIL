@@ -80,3 +80,6 @@ description: 자바 기반 공부하기
     * 규칙 8: 일급 콜렉션을 쓴다.
     * 규칙 9: 게터/세터/프로퍼티를 쓰지 않는다.
 
+## Effective Java
+
+* [이펙티브 자바](contents/effactive/README.md)

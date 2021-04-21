@@ -24,6 +24,7 @@ description: Today I Learned
     * [로또](java/tdd/lotto.md)
     * [사다리 타기](java/tdd/ladder.md)
     * [볼링 게임 점수판](java/tdd/bowling.md)
+    * [Effective Java](java/contents/effactive/README.md)
 * [Spring Jpa](spring-jpa/)
   * [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
   * [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
@@ -31,4 +32,3 @@ description: Today I Learned
   * [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](https://github.com/SeokRae/TIL/tree/de1295942811b3db0b575e366f53c4d5736bb991/spring-security.md)
 * [Spring Batch](batch-study/)
-

@@ -19,6 +19,7 @@
     * [로또](java/tdd/lotto.md)
     * [사다리 타기](java/tdd/ladder.md)
     * [볼링 게임 점수판](java/tdd/bowling.md)
+  * [Effective Java](java/contents/effactive/README.md)
 * [Spring JPA](spring-jpa/README.md)
   * [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
   * [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
@@ -28,4 +29,3 @@
 * [Spring Batch](batch-study/README.md)
   * [1. Introduction](batch-study/1.introduction.md)
 * [Tistory Blog](https://seokr.tistory.com/)
-
