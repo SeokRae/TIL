@@ -13,6 +13,7 @@ Singleton 패턴이 클래스의 단일 인스턴스 만 생성하여 애플리�
 `싱글턴 패턴`은 클래스의 `유일한 인스턴스`를 만드는 데에 사용된다.
 
 싱글턴의 전형적인 예시로 `무상태(stateless) 객체`나 설계상 `유일해야 하는 시스템 컴포넌트`를 들 수 있다.
+
 - 캐시, 스레드 풀, 레지스트리와 같은 구성은 단일 인스턴스로 존재해야 한다.
 
 ![Singleton](img/diagram_singleton.png)
@@ -26,16 +27,20 @@ Singleton 패턴이 클래스의 단일 인스턴스 만 생성하여 애플리�
 
 - private 생성자는 public static final 필드인 Elvis.INSTANCE 를 초기화할 때 딱 한번 호출된다.
 - public static 필드가 final이기 때문에 절대 다른 객체를 참조할 수 없다.
-    - public 으로 필드가 제공되고 있기 때문에 `간결함이라는 장점`이 있다.
+	- public 으로 필드가 제공되고 있기 때문에 `간결함이라는 장점`이 있다.
 - public 또는 protected 생성자가 없으므로 클래스에 대해 `유일성이 보장`된다.
 	- 는 AccessibleObject.setAccessible 을 사용해 private 생성자를 호출 할 수 있다.
 	- 이러한 공격을 방어하기 위해서는 생성자를 수정하여 두 번째 객체가 생성되려 할 때 예외를 던지는 로직이 추가되어야 한다.
-	
+
 ```java
 public class Elvis {
     public static final Elvis INSTANCE = new Elvis();
-    private Elvis () { }
-    public void leaveTheBuilding() { }
+
+    private Elvis() {
+    }
+
+    public void leaveTheBuilding() {
+    }
 }
 ```
 
@@ -43,18 +48,25 @@ public class Elvis {
 
 - getInstance()는 항상 같은 객체의 참조를 반환하므로 새로운 인스턴스가 생성될 수 없다.
 	- 리플렉션을 통한 예외는 존재한다.
-	
+
 - 정적 팩토리 방식의 장점
-    - 첫 번째 장점은 API를 바꾸지 않고도 싱글턴이 아니게 변경할 수 있다는 점이다.
+	- 첫 번째 장점은 API를 바꾸지 않고도 싱글턴이 아니게 변경할 수 있다는 점이다.
 	- 두 번째 장점은 정적 팩토리를 제네릭 싱글턴 팩토리로 만들 수 있다는 점이다.
 	- 세 번째 장점은 정적 팩토리의 메서드 참조를 Supplier 로 사용할 수 있다는 점이다.
 
 ```java
 public class Elvis {
-	private static final Elvis INSTANCE = new Eivis(); 
-	private Elvis() { }
-	public static Elvis getInstance() { return INSTANCE; }
-	public void leaveTheBuilding () { } 
+    private static final Elvis INSTANCE = new Eivis();
+
+    private Elvis() {
+    }
+
+    public static Elvis getInstance() {
+        return INSTANCE;
+    }
+
+    public void leaveTheBuilding() {
+    }
 }
 ```
 
@@ -62,15 +74,16 @@ public class Elvis {
 	- Serializable을 구현한다고 선언하는 것으로는 부족하다.
 	- 모든 인스턴스 필드를 일시적(transient)이라고 선언하고 readResolve 메서드를 제공해야 한다.
 	- 이렇게 하지 않으면 직렬화된 인스턴스를 역직렬화할 때 마다 새로운 인스턴스가 만들어진다.
-	
+
 ```java
 public class Elvis {
-	private static final Elvis INSTANCE = new Eivis();
-	// ...
-	// 싱글턴임을 보장하는 readResolve 메서드
-	private Object readResolve() {
-	    return INSTANCE;
-	}
+    private static final Elvis INSTANCE = new Eivis();
+
+    // ...
+    // 싱글턴임을 보장하는 readResolve 메서드
+    private Object readResolve() {
+        return INSTANCE;
+    }
 }
 ```
 
@@ -83,9 +96,11 @@ public class Elvis {
 - 단, 만들려는 싱글턴이 상속이 필요한 경우 사용할 수 없다.
 
 ```java
-public enum Elvis { 
+public enum Elvis {
     INSTANCE;
-	public void leaveTheBuilding() { } 
+
+    public void leaveTheBuilding() {
+    }
 }
 ```
 
@@ -129,12 +144,12 @@ public class Client {
 
 - 위 코드는 단일 스레드에서는 잘 작동되나 멀티 스레드 환경에서는 여러 객체가 생성될 가능성이 있다.
 
-- Thread A calls the method getInstance and finds the onlyInstance to be null but before it can actually new-up the instance it gets context switched out.
+- Thread A calls the method getInstance and finds the onlyInstance to be null but before it can actually new-up the instance it gets context switched
+  out.
 - Now thread B comes along and calls the getInstance method and goes on to new-up the instance and returns the AirforceOne object.
-- When thread A is scheduled again, is when the mischief begins. 
-  The thread was already past the if null condition check and will proceed to new-up another object of AirforceOne and assign it to onlyInstance. 
-  Now there are two different AirforceOne objects out in the wild, one with thread A and one with thread B.
-
+- When thread A is scheduled again, is when the mischief begins. The thread was already past the if null condition check and will proceed to new-up
+  another object of AirforceOne and assign it to onlyInstance. Now there are two different AirforceOne objects out in the wild, one with thread A and
+  one with thread B.
 
 > 경합 상태(Race Condition)를 수정하는 방법을 해결하기 위한 두 가지 해결방법이 있다.
 
@@ -142,7 +157,7 @@ public class Client {
 
 ```java
 public class AirforceOne {
-    synchronized public static AirforceOne getInstance();    
+    synchronized public static AirforceOne getInstance();
 }
 
 ```
@@ -160,7 +175,6 @@ public class AirforceOne {
 
 - 동기화가 비싸고 정적 초기화가 특정 애플리케이션 실행에서 사용되지 않더라도 객체를 생성한다는 것이다.
 - 객체 생성 비용이 비싸면 정적 초기화로 인해 성능이 저하될 수 있다.
-
 
 ### Double-checked Locking
 
@@ -205,7 +219,6 @@ public class AirforceOneWithDoubleCheckedLocking {
 
 - java.lang.Runtime
 - java.awtDesktop
-
 
 ## 싱글톤 패턴의 장점
 

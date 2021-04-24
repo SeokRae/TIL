@@ -3,6 +3,7 @@
 ## 일반적인 모델
 
 컴퓨터 네트워크가 구성되는 여러 모델이 있다.
+
 - OSI (Open Systems Interconnection) Model
 - TCP / IP (Transmission Control Protocol / Internet Protocol) Model
 

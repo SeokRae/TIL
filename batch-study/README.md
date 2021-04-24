@@ -5,7 +5,7 @@
 * [x] txt 파일 reader 기능 추가 \(csv, txt, excel\)
 * [x] excel Report 모듈 참고 구현
 * [x] 배치 프로세스상에서 Step 간의 `데이터 공유`하는 방법 개선\(외부 모듈 사용 X\)
-* [x] 속도를 줄이기 위해  Parallel Step or MultiThread로 구현해보기
+* [x] 속도를 줄이기 위해 Parallel Step or MultiThread로 구현해보기
 * [x] JPA Querydsl를 활용하여 조인쿼리로 수정하기
 * [x] JPA, Jdbc 속도 비교 \(속도를 어느정도 포기하고 코드양을 줄일 것인지..?\)
 * [ ] 엘라스틱 서치 스택을 추가하여 배치와 연동
@@ -26,15 +26,15 @@
 ## 스터디 진행 방식
 
 1. 스프링 이론
-   * [Spring.io](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html)
+	* [Spring.io](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html)
 2. 스프링 배치 실습 아이디어 1\) 도서관 데이터
-   * '특정' 도서관 데이터 csv 기반 파일을 정규화된 테이블에 적재
+	* '특정' 도서관 데이터 csv 기반 파일을 정규화된 테이블에 적재
 3. 참고 사이트
-   * [기억보다 기록을](https://jojoldu.tistory.com/category/Spring%20Batch)
-   * [quartz](https://blog.kingbbode.com/posts/spring-batch-quartz)
-   * [Jenkins로 배치](https://jojoldu.tistory.com/313)
-   * [MyBatis 설정의 SpringBatch](http://mybatis.org/spring/ko/batch.html)
-   * [One Reader Multi Writer](https://www.javaer101.com/ko/article/5094462.html)
+	* [기억보다 기록을](https://jojoldu.tistory.com/category/Spring%20Batch)
+	* [quartz](https://blog.kingbbode.com/posts/spring-batch-quartz)
+	* [Jenkins로 배치](https://jojoldu.tistory.com/313)
+	* [MyBatis 설정의 SpringBatch](http://mybatis.org/spring/ko/batch.html)
+	* [One Reader Multi Writer](https://www.javaer101.com/ko/article/5094462.html)
 
 ## 스터디 회의록
 
@@ -118,4 +118,3 @@
       driver-class-name: oracle.jdbc.OracleDriver
       sql-script-encoding: UTF-8
   ```
-

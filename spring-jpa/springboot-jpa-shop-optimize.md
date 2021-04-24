@@ -24,12 +24,12 @@
 
 1. Spring-Data-JPA
 2. QueryDSL
-   * [build.gradle](https://github.com/SeokRae/spring/tree/56149903317680783ac882190a44854c0832e336/spring-jpa/build.gradle)에 의존성 추가
-   * gradle &gt; springboot-jpa-shop-optimize &gt; other &gt; compileQuerydsl 더블클릭하여 
+	* [build.gradle](https://github.com/SeokRae/spring/tree/56149903317680783ac882190a44854c0832e336/spring-jpa/build.gradle)에 의존성 추가
+	* gradle &gt; springboot-jpa-shop-optimize &gt; other &gt; compileQuerydsl 더블클릭하여
 
-     springboot-jpa-shop-optimize/build/generated/querydsl 경로에 라이브러리를 받음
+	  springboot-jpa-shop-optimize/build/generated/querydsl 경로에 라이브러리를 받음
 
-   * 그 뒤 코드 작성
+	* 그 뒤 코드 작성
 
 > 참고
 
@@ -38,4 +38,3 @@
 * [fetch vs EAGER2](https://www.inflearn.com/questions/30446)
 * [JPA Proxy](https://www.inflearn.com/course/ORM-JPA-Basic/lecture/21708?tab=curriculum)
 * [default\_batch\_fetch\_size관련 질문](https://www.inflearn.com/questions/34469)
-

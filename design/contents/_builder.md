@@ -13,17 +13,23 @@ description: Creational Pattern
 `빌더 패턴`은 복잡한 객체를 `빌드하는 과정`을 `캡슐화`하거나, 숨기고 객체의 `표현`과 `구성`을 `분리`한다.
 
 분리를 통해 동일한 구성 프로세스를 사용하여 ***`다른 표현`***을 구성할 수 있다.
+
 - Java에서 서로 ***`다른 표현`***은 `동일한 구성 프로세스`를 공유할 수 있는 `서로 다른 클래스의 객체`를 만드는 것을 의미한다.
 
 ## Builder Pattern 의 생성 배경
 
 - 클래스를 생성하기 위해 선택적 매개변수가 많을 떄 적절하게 대응하기 어렵다.
-- 이러한 환경에서 [점층적 생성자 패턴(telescoping constructor pattern)](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/TelescopingNutritionFacts.java) 을 사용해왔다.
+- 이러한
+  환경에서 [점층적 생성자 패턴(telescoping constructor pattern)](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/TelescopingNutritionFacts.java)
+  을 사용해왔다.
 - 점층적 생성자 패턴도 쓸 수는 있지만, 매개변수가 많아지면 클라이언트 코드를 작성하거나 읽기 어렵다.
-- 그래서 Setter를 통해 값을 설정하는 [`JavaBeans`](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/JavaBeansNutritionFacts.java) 패턴을 통해 사용
+- 그래서 Setter를 통해 값을
+  설정하는 [`JavaBeans`](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/JavaBeansNutritionFacts.java)
+  패턴을 통해 사용
 	- 객체 하나를 만들기 위해서는 메서드를 여러 개 호출해야 하고, 객체가 완전히 생성되기 전까지 `일관성(consistency)`이 무너진 상태에 놓이게 된다.
 	- 클래스를 `불변(immutable)` 상태로 만들 수 없다.
-- [빌더 패턴](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/BuilderNutritionFacts.java) 은 `명명된 선택적 매개변(named optional parameters)`를 흉내낸 것이다.
+- [빌더 패턴](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/BuilderNutritionFacts.java)
+  은 `명명된 선택적 매개변(named optional parameters)`를 흉내낸 것이다.
 - 빌더 패턴은 계층적으로 설계된 클래스와 함께 쓰기에 좋다.
 - 매개 변수 중 다수가 필수가 아니거나 같은 타입이면 특히 더 그렇다.
 - 빌더는 점층적 생성자 보다 클라이언트 코드를 읽고 쓰기가 훨씬 간결하고 자바빈즈보다 훨씬 안전하다.
@@ -91,17 +97,21 @@ public class Boeing747Builder extends AircraftBuilder {
     Boeing747 boeing747;
 
     @Override
-    public void buildCockpit() { }
+    public void buildCockpit() {
+    }
 
     @Override
-    public void buildEngine() { }
-	
+    public void buildEngine() {
+    }
+
     @Override
-    public void buildBathrooms() { }
-	
+    public void buildBathrooms() {
+    }
+
     @Override
-    public void buildWings() { }
-	
+    public void buildWings() {
+    }
+
     public IAircraft getResult() {
         return boeing747;
     }
