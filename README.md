@@ -12,6 +12,8 @@ description: Today I Learned
 	* [Types of Design Patterns](design/_types_of_design_patterns.md)
 	* [Builder Pattern](design/_builder.md)
 	* [Singleton Pattern](design/_singleton.md)
+	* [Prototype Pattern](design/_prototype.md)
+	* [Factory Pattern](design/_factory.md)
 * [오브젝트](object/)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)
