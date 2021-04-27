@@ -21,6 +21,7 @@ Creational Pattern 은 프로그램에서 객체 생성 프로세스를 캡슐�
 * Builder Pattern
 * Prototype Pattern
 * Singleton Pattern
+* Factory Pattern
 * Abstract Factory Pattern
 
 ## Structural
