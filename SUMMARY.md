@@ -9,6 +9,9 @@
   * [Singleton Pattern](design/_singleton.md)
   * [Prototype Pattern](design/_prototype.md)
   * [Factory Pattern](design/_factory.md)
+  * [Abstract Factory Pattern](design/_abstract_factory.md)
+  * [Adapter Pattern](design/_adapter.md)
+  * [Bridge Pattern](design/_bridge.md)
 * [오브젝트](object/README.md)
   * [데이터 중심 설계](object/_1.md)
   * [책임 중심 설계](object/_2.md)
@@ -31,4 +34,3 @@
 * [Spring Batch](batch-study/README.md)
   * [1. Introduction](batch-study/1.introduction.md)
 * [Tistory Blog](https://seokr.tistory.com/)
-

@@ -14,6 +14,9 @@ description: Today I Learned
   * [Singleton Pattern](design/_singleton.md)
   * [Prototype Pattern](design/_prototype.md)
   * [Factory Pattern](design/_factory.md)
+  * [Abstract Factory Pattern](design/_abstract_factory.md)
+  * [Adapter Pattern](design/_adapter.md)
+  * [Bridge Pattern](design/_bridge.md)
 * [오브젝트](object/)
   * [데이터 중심 설계](object/_1.md)
   * [책임 중심 설계](object/_2.md)
@@ -34,4 +37,3 @@ description: Today I Learned
   * [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](https://github.com/SeokRae/TIL/tree/de1295942811b3db0b575e366f53c4d5736bb991/spring-security.md)
 * [Spring Batch](batch-study/)
-

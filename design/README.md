@@ -15,13 +15,13 @@
 
 * [**Builder Pattern**](_builder.md)
 * [**Singleton Pattern**](_singleton.md)
-* Prototype Pattern
-* Abstract Factory Pattern
+* [**Prototype Pattern**](_prototype.md)
+* [Abstract Factory Pattern](_abstract_factory.md)
 
 ### Structural Patterns
 
-* Adapter Pattern
-* Bridge Pattern
+* [Adapter Pattern](_adapter.md)
+* [Bridge Pattern](_bridge.md)
 * Composite Pattern
 * **`Decorator Pattern`**
 * Facade Pattern
@@ -41,4 +41,3 @@
 * State Pattern
 * Strategy Pattern
 * **`Visitor Pattern`**
-
