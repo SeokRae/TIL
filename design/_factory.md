@@ -47,12 +47,7 @@
 	- 팩토리를 사용하기 위해서는 클래스를 많이 만들어야 한다.
 	- 팩토리 메서드 패턴의 경우 구현 상속을 강제하기 때문에 유지 보수에 문제가 있을 수 있다.
 
-## 예시
+## 예시 코드
 
-- Product
-	- Coffee
-		- Americano
-		- Hazelnut
-- Factory
-
-![Coffee Factory Pattern](contents/img/coffee_factory.png)
+- Simple Factory
+- Abstract Factory
