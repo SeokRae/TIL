@@ -12,10 +12,10 @@ description: Structural Pattern
 
 - Object Adapter
 	- 자바의 합성(Composite)를 통한 방법
-	
+
 - Class Adapter
-    - 자바의 상속(Inheritance)를 통한 방법
-      
+	- 자바의 상속(Inheritance)를 통한 방법
+
 	- Class Adapter는 Java 에서 지원되지 않는 다중 상속을 통해 작동한다.
 	- 아이디어는 Adapter가 Adapter 클래스뿐만 아니라 클라이언트에서 사용중인 인터페이스를 모두 확장한다는 것이다.
 	- 적용 방법은 구성 대신 상속을 통해 작동한다.

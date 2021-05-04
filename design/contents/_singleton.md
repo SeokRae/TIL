@@ -167,7 +167,7 @@ public class AirforceOne {
 ```java
 public class AirforceOne {
     // The sole instance of the class
-    private static AirforceOne onlyInstance = new AirforceOne();
+    private static final AirforceOne onlyInstance = new AirforceOne();
 }
 ```
 
