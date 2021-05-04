@@ -233,4 +233,3 @@ public class AirforceOneWithDoubleCheckedLocking {
 * Singleton 클래스에 대한 **의존도**가 높아진다.
 * 싱글톤 클래스에 대한 서브클래스를 만들기 어려워진다.
 * **멀티 스레드** 적용 시 **동기화** 문제가 생길 수 있다.
-
