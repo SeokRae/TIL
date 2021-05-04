@@ -58,4 +58,4 @@ description: Structural Pattern
 - SRP 원칙: 추상화 고수준 논리와 구현의 플랫폼 세부 사항에 집중할 수 있다.
 - High Cohesion: 클래스에 패턴을 적용하여 코드를 더욱 복잡하게 할 수 있다.
 
-![img.png](/design/contents/img/tv_bridge.png)
+![Bridge Pattern](/design/contents/img/tv_bridge.png)
