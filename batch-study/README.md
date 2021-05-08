@@ -1,5 +1,7 @@
 # Spring Batch
 
+* [Github](https://github.com/spring-org/springbatch-in-action)
+
 ## 추가적 진행
 
 * [x] txt 파일 reader 기능 추가 \(csv, txt, excel\)
@@ -118,4 +120,3 @@
       driver-class-name: oracle.jdbc.OracleDriver
       sql-script-encoding: UTF-8
   ```
-
