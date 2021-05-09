@@ -9,7 +9,7 @@ description: 다 쓴 객체 참조를 해제하라
 ## Intro
 
 - 프로그래밍을 하는 동안 메모리를 할당하고 사용하게 되는데 이와 관련된 키워드를 학습하기
-  
+
 - 학습 키워드
 	- 메모리 누수로 인한 장애의 징조
 	- 메모리의 구조
@@ -48,7 +48,7 @@ description: 다 쓴 객체 참조를 해제하라
 	- Young Generation
 	- Old Generation
 	- MetaSpace
-	
+
 3. Stack Area
 
 4. PC Register
@@ -62,21 +62,21 @@ description: 다 쓴 객체 참조를 해제하라
 ![Memory 할당](item7/memory_init.png)
 
 - Eden 영역에 메모리 할당
-  
+
 ![Eden 영역 메모리 초과](item7/eden_max.png)
 
 - Minor GC 동작 트리거
-  
+
 ![Mark & Sweep](item7/marking.png)
 
 - Marking 작업
 	- Reachable or Unreachable 한 상태의 객체를 확인
 	- Reachable 한 객체를 Survivor0 영역으로 이동
-	
+
 ![Sweeping 작업](item7/sweep.png)
 
 - Unreachable 객체를 GC를 통해 메모리를 수거
-	
+
 - Survivor0에 저장된 메모리 age 증가
 
 ![Minor GC 반복 정리](item7/minor_gc_repeat.png)
@@ -138,13 +138,13 @@ description: 다 쓴 객체 참조를 해제하라
 
 ### 중간 정리
 
-1. Java는 메모리를 사용하기 위해 Runtime Data Area에 영역별로 저장한다.
+1. **Java는 메모리를 사용하기 위해 Runtime Data Area에 영역별로 저장한다.**
 
-2. 사용 중인 자원을 일반적으로는 GC가 백그라운드에서 관리를 한다.
+2. **사용 중인 자원을 일반적으로는 GC가 백그라운드에서 관리를 한다.**
 
-3. GC는 Minor GC와 Major GC의 동작을 한다.
+3. **GC는 Minor GC와 Major GC의 동작을 한다.**
 
-4. GC가 자원을 회수하기 위한 조건은 Stack, Method Area에서 사용하지 않는 자원들이다.
+4. **GC가 자원을 회수하기 위한 조건은 Stack, Method Area에서 사용하지 않는 자원들이다.**
 
 ### 메모리 누수의 원인
 
@@ -166,6 +166,18 @@ description: 다 쓴 객체 참조를 해제하라
 6. Internal Data Structure
 
 - 동적 할당이 일어나는 콜 스택
+
+### 마무리 정리
+
+1. Java는 메모리를 사용하기 위해 Runtime Data Area에 영역별로 저장한다.
+
+2. 사용 중인 자원을 일반적으로는 GC가 백그라운드에서 관리를 한다.
+
+3. GC는 Minor GC와 Major GC의 동작을 한다.
+
+4. GC가 자원을 회수하기 위한 조건은 Stack, Method Area에서 사용하지 않는 자원들이다.
+
+5. **메모리의 누수는 특정 시점에 발생하는 것이 아니라 평소에 관리할 수 있는 방법은 코딩 방법과 모니터링이다.**
 
 ### 메모리 모니터링
 
