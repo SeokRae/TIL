@@ -43,6 +43,7 @@ description: 다 쓴 객체 참조를 해제하라
 ![Runtime Data Area](item7/runtime_data_area.png)
 
 1. Method(Static or Class) Area
+	- Runtime Constant Pool
 
 2. Heap Area
 	- Young Generation
@@ -53,7 +54,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 4. PC Register
 
-5. Native Method Stack
+5. Native Method Stack Area
 
 ### Garbage Collection
 
@@ -182,5 +183,43 @@ description: 다 쓴 객체 참조를 해제하라
 ### 메모리 모니터링
 
 - jstat
-- Java VisualVM
-- HPJMeter
+
+	- jstat 실행 방법
+
+  ```shell
+  # 실행 프로세스 PID 확인
+  ps - ef | grep java
+  
+  # Jstat 명령 수행
+  jstat -gcutil {PID} 3s
+  ```
+
+	- [Oracle jstat Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html)
+
+  |gcutil 옵션|설명|
+  	|:---:|:---|
+  |S0|Survivor space 0 utilization as a percentage of the space's current capacity.|
+  |S1|Survivor space 1 utilization as a percentage of the space's current capacity.|
+  |E|Eden space utilization as a percentage of the space's current capacity.|
+  |O|Old space utilization as a percentage of the space's current capacity.|
+  |M|Metaspace utilization as a percentage of the space's current capacity.|
+  |CCS|Compressed class space utilization as a percentage.|
+  |YGC|Number of young generation GC events.|
+  |YGCT|Young generation garbage collection time.|
+  |FGC|Number of full GC events.|
+  |FGCT|Full garbage collection time.|
+  |CGC|The number of concurrent GCs.|
+  |CGCT|Time spent on concurrent GCs.|
+  |GCT|Total garbage collection time.|
+
+	- jstat plot 확인 사이트 [Link](http://nix-on.blogspot.com/2015/01/java-jstat-how-to-visualize-garbage.html)
+
+## 참고
+
+- [Stack Memory and Heap Space in Java](https://www.baeldung.com/java-stack-heap#:~:text=Stack%20Memory%20in%20Java%20is,%2DOut%20(LIFO)%20order.)
+- [Understanding the Java Memory Model and Garbage Collection](https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag#:~:text=There%20is%20a%20JVM%20level,%E2%80%9Cstop%20the%20world%E2%80%9D%20process.)
+- [마로의 Java(자바) 정리 - 8. 자바 메모리 구조](https://hoonmaro.tistory.com/19)
+- [JVM(Java Virtual Machine)이란](https://honbabzone.com/java/java-jvm/)
+- [Memory Leaks and Java Code](https://dzone.com/articles/memory-leak-andjava-code)
+- [Demystifying memory management in modern programming languages](https://deepu.tech/memory-management-in-programming/)
+- [Visualizing memory management in JVM(Java, Kotlin, Scala, Groovy, Clojure)](https://deepu.tech/memory-management-in-jvm/)
