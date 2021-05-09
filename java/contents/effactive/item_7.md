@@ -24,13 +24,148 @@ description: 다 쓴 객체 참조를 해제하라
 
 ### 메모리 구조
 
+![Jvm Structure](item7/jvm_structure.png)
+
+1. Java Source
+
+2. Java Compiler
+
+3. Java Byte Code
+
+4. Class Loader
+
+5. Runtime Data Area
+
+6. Garbage Collection
+
+7. Execution Engine
+
+![Runtime Data Area](item7/runtime_data_area.png)
+
+1. Method(Static or Class) Area
+
+2. Heap Area
+	- Young Generation
+	- Old Generation
+	- MetaSpace
+	
+3. Stack Area
+
+4. PC Register
+
+5. Native Method Stack
+
 ### Garbage Collection
 
-- Minor GC
+> 1. Minor GC
 
-- Major GC
+![Memory 할당](item7/memory_init.png)
+
+- Eden 영역에 메모리 할당
+  
+![Eden 영역 메모리 초과](item7/eden_max.png)
+
+- Minor GC 동작 트리거
+  
+![Mark & Sweep](item7/marking.png)
+
+- Marking 작업
+	- Reachable or Unreachable 한 상태의 객체를 확인
+	- Reachable 한 객체를 Survivor0 영역으로 이동
+	
+![Sweeping 작업](item7/sweep.png)
+
+- Unreachable 객체를 GC를 통해 메모리를 수거
+	
+- Survivor0에 저장된 메모리 age 증가
+
+![Minor GC 반복 정리](item7/minor_gc_repeat.png)
+
+* 정리
+
+1. eden 영역 공간 부족
+
+2. mark 작업을 통해 Reachable 한 객체를 선별
+
+3. unreachable 한 객체의 메모리를 수거
+
+4. 선별된 객체를 survivor to 영역으로 이동
+
+5. 이동한 객체 메모리의 aging 처리
+
+![MaxTenuringThreshold](item7/max_teunring_threshold.png)
+
+- Max age threshold에 도달한 메모리는 `Old Generation`으로 이동
+
+> 2. Major GC
+
+![Major GC](item7/major_gc.png)
+
+1. Old Generation 영역의 메모리가 부족한 경우 Major GC 발생
+
+2. Marking 작업을 통한 구분
+	- Reachable or Unreachable
+
+3. Sweep 작업을 통한 Unreachable 한 객체들의 메모리 수거
+
+4. Compact 작업을 통한 메모리 조각 모음
+
+> Garbage Collection Trigger
+
+1. System.gc() or Runtime.getRunTime().gc() 실행 시
+
+2. JVM이 tenured space에 여유 공간이 없다고 판단하는 경우
+
+3. Minor GC 중 JVM이 eden 또는 survivor 공간에 충분한 공간을 회수할 수 없는 경우
+
+4. JVM에 MaxMetaspaceSize 옵션을 설정하고 새 클래스를 로드할 공간이 부족한 경우
+
+> Garbage Collection 수거 대상
+
+- GC의 메모리 수거 대상
+
+1. 모든 객체 참조가 null 인 경우
+
+2. 객체가 블럭 안에서 생성되고 블록이 종료되는 경우(Scope)
+
+3. 부모 객체가 null 이 된 경우, 자식 객체는 자동적으로 GC 대상이 된다.
+
+4. 객체가 Weak 참조만 갖는 경우
+
+5. 객체가 Soft 참조 이지만 메모리가 부족한 경우
+
+* Stack or Method(Static) 에서 참조하지 않는 객체
+
+### 중간 정리
+
+1. Java는 메모리를 사용하기 위해 Runtime Data Area에 영역별로 저장한다.
+
+2. 사용 중인 자원을 일반적으로는 GC가 백그라운드에서 관리를 한다.
+
+3. GC는 Minor GC와 Major GC의 동작을 한다.
+
+4. GC가 자원을 회수하기 위한 조건은 Stack, Method Area에서 사용하지 않는 자원들이다.
 
 ### 메모리 누수의 원인
+
+> GC는 Unreachable 한 객체는 찾을 수 있지만 Unused 한 객체는 찾을 수 없다.
+> Unused 한 객체는 응용 프로그램의 논리에 따라 달라지므로 프로그래머는 비즈니스 코드에 주의해야 한다.
+
+* 메모리 누수를 발생할 가능성이 있는 경우
+
+1. AutoBoxing
+
+2. Cache
+
+3. Connection
+
+4. CustomKey (객체를 구분)
+
+5. Immutable Key
+
+6. Internal Data Structure
+
+- 동적 할당이 일어나는 콜 스택
 
 ### 메모리 모니터링
 
