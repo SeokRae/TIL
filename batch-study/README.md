@@ -27,16 +27,15 @@
 
 ## 스터디 진행 방식
 
-1. 스프링 이론
-   * [Spring.io](https://docs.spring.io/spring-batch/docs/current/reference/html/index.html)
-2. 스프링 배치 실습 아이디어 1\) 도서관 데이터
-   * '특정' 도서관 데이터 csv 기반 파일을 정규화된 테이블에 적재
-3. 참고 사이트
-   * [기억보다 기록을](https://jojoldu.tistory.com/category/Spring%20Batch)
-   * [quartz](https://blog.kingbbode.com/posts/spring-batch-quartz)
-   * [Jenkins로 배치](https://jojoldu.tistory.com/313)
-   * [MyBatis 설정의 SpringBatch](http://mybatis.org/spring/ko/batch.html)
-   * [One Reader Multi Writer](https://www.javaer101.com/ko/article/5094462.html)
+1. 스프링 배치 `기본 개념` 학습
+2. 전체적 배치 프로세스를 이해하기 위한 `도메인 결정` 및 세 가지 이상 기능이 추가된 `프로세스 설계`
+3. 프로세스 기능에 필요한 `Reader`, `Processor`, `Writer` 또는 `Tasklet`으로 구현
+    - FlatFileReader, JdbcCursorItemReader, JpaPagingItemReader
+    - ItemProcessor
+    - JpaItemWriter, CompositeItemWriter, ExcelItemWriter
+    - MySQL, H2, Oracle
+4. 프로세스 구현 시 중복되는 기능 및 프로세스 개선(필요시 Redis 등등 추가)
+5. 스케줄러에 대한 종류 찾아보기(Jenkins, Airflow, custom 등등)
 
 ## 스터디 회의록
 
