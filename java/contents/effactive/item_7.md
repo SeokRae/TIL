@@ -34,11 +34,13 @@ description: 다 쓴 객체 참조를 해제하라
 
 4. Class Loader
 
-5. Runtime Data Area
+5. **Runtime Data Area**
 
 6. Garbage Collection
 
 7. Execution Engine
+
+### Runtime Data Area
 
 ![Runtime Data Area](item7/runtime_data_area.png)
 
@@ -71,12 +73,12 @@ description: 다 쓴 객체 참조를 해제하라
 ![Mark & Sweep](item7/marking.png)
 
 - **Mark** 작업
-	- Reachable or Unreachable 한 상태의 객체를 확인
-	- Reachable 한 객체를 Survivor0 영역으로 이동
+	- **Reachable or Unreachable** 한 상태의 객체를 확인
+	- **Reachable** 한 객체를 **Survivor0 영역**으로 이동
 
 ![Sweeping 작업](item7/sweep.png)
 
-- Unreachable 객체를 GC를 통해 메모리를 수거
+- **Unreachable** 객체를 GC를 통해 메모리를 수거
 
 - **Survivor0**에 저장된 메모리 age 증가
 
@@ -86,30 +88,30 @@ description: 다 쓴 객체 참조를 해제하라
 
 1. eden 영역 공간 부족
 
-2. mark 작업을 통해 Reachable 한 객체를 선별
+2. **mark** 작업을 통해 **Reachable** 한 객체를 선별
 
-3. unreachable 한 객체의 메모리를 수거
+3. **Unreachable** 한 객체의 메모리를 수거
 
-4. 선별된 객체를 survivor to 영역으로 이동
+4. 선별된 객체를 **survivor1** 영역으로 이동
 
 5. 이동한 객체 메모리의 aging 처리
 
 ![MaxTenuringThreshold](item7/max_teunring_threshold.png)
 
-- Max age threshold에 도달한 메모리는 `Old Generation`으로 이동
+- Max age threshold에 도달한 메모리는 **`Old Generation`**으로 이동
 
 > **2. Major GC**
 
 ![Major GC](item7/major_gc.png)
 
-1. Old Generation 영역의 메모리가 부족한 경우 Major GC 발생
+1. **Old Generation** 영역의 메모리가 부족한 경우 **Major GC** 발생
 
-2. Marking 작업을 통한 구분
-	- Reachable or Unreachable
+2. **Mark**ng 작업을 통한 구분
+	- **Reachable or Unreachable**
 
-3. Sweep 작업을 통한 Unreachable 한 객체들의 메모리 수거
+3. **Sweep** 작업을 통한 Unreachable 한 객체들의 메모리 수거
 
-4. Compact 작업을 통한 메모리 조각 모음
+4. **Compact** 작업을 통한 메모리 조각 모음
 
 > **Garbage Collection Trigger**
 
@@ -135,7 +137,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 5. 객체가 Soft 참조 이지만 메모리가 부족한 경우
 
-* Stack or Method(Static) 에서 참조하지 않는 객체
+* **Stack or Method(Static)** 에서 참조하지 않는 객체
 
 ### 중간 정리
 
