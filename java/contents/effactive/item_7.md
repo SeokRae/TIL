@@ -42,23 +42,23 @@ description: 다 쓴 객체 참조를 해제하라
 
 ![Runtime Data Area](item7/runtime_data_area.png)
 
-1. Method(Static or Class) Area
+1. **Method(Static or Class) Area**
 	- Runtime Constant Pool
 
-2. Heap Area
+2. **Heap Area**
 	- Young Generation
 	- Old Generation
 	- MetaSpace
 
-3. Stack Area
+3. **Stack Area**
 
-4. PC Register
+4. **PC Register**
 
-5. Native Method Stack Area
+5. **Native Method Stack Area**
 
 ### Garbage Collection
 
-> 1. Minor GC
+> **1. Minor GC**
 
 ![Memory 할당](item7/memory_init.png)
 
@@ -70,7 +70,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 ![Mark & Sweep](item7/marking.png)
 
-- Marking 작업
+- **Mark** 작업
 	- Reachable or Unreachable 한 상태의 객체를 확인
 	- Reachable 한 객체를 Survivor0 영역으로 이동
 
@@ -78,11 +78,11 @@ description: 다 쓴 객체 참조를 해제하라
 
 - Unreachable 객체를 GC를 통해 메모리를 수거
 
-- Survivor0에 저장된 메모리 age 증가
+- **Survivor0**에 저장된 메모리 age 증가
 
 ![Minor GC 반복 정리](item7/minor_gc_repeat.png)
 
-* 정리
+* **정리**
 
 1. eden 영역 공간 부족
 
@@ -98,7 +98,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 - Max age threshold에 도달한 메모리는 `Old Generation`으로 이동
 
-> 2. Major GC
+> **2. Major GC**
 
 ![Major GC](item7/major_gc.png)
 
@@ -111,7 +111,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 4. Compact 작업을 통한 메모리 조각 모음
 
-> Garbage Collection Trigger
+> **Garbage Collection Trigger**
 
 1. System.gc() or Runtime.getRunTime().gc() 실행 시
 
@@ -121,7 +121,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 4. JVM에 MaxMetaspaceSize 옵션을 설정하고 새 클래스를 로드할 공간이 부족한 경우
 
-> Garbage Collection 수거 대상
+> **Garbage Collection 수거 대상**
 
 - GC의 메모리 수거 대상
 
@@ -216,10 +216,11 @@ description: 다 쓴 객체 참조를 해제하라
 
 ## 참고
 
-- [Stack Memory and Heap Space in Java](https://www.baeldung.com/java-stack-heap#:~:text=Stack%20Memory%20in%20Java%20is,%2DOut%20(LIFO)%20order.)
+- [Baeldung - Stack Memory and Heap Space in Java](https://www.baeldung.com/java-stack-heap#:~:text=Stack%20Memory%20in%20Java%20is,%2DOut%20(LIFO)%20order.)
 - [Understanding the Java Memory Model and Garbage Collection](https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag#:~:text=There%20is%20a%20JVM%20level,%E2%80%9Cstop%20the%20world%E2%80%9D%20process.)
 - [마로의 Java(자바) 정리 - 8. 자바 메모리 구조](https://hoonmaro.tistory.com/19)
 - [JVM(Java Virtual Machine)이란](https://honbabzone.com/java/java-jvm/)
 - [Memory Leaks and Java Code](https://dzone.com/articles/memory-leak-andjava-code)
 - [Demystifying memory management in modern programming languages](https://deepu.tech/memory-management-in-programming/)
 - [Visualizing memory management in JVM(Java, Kotlin, Scala, Groovy, Clojure)](https://deepu.tech/memory-management-in-jvm/)
+- [우아한 형제들 - 도움이 될 수도 있는 JVM memory leak 이야기](https://woowabros.github.io/tools/2019/05/24/jvm_memory_leak.html)
