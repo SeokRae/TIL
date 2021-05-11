@@ -218,6 +218,8 @@ description: 다 쓴 객체 참조를 해제하라
 
 ## 참고
 
+- [정리](/java/contents/effactive/item7/item7.pdf)
+- [Baeldung - Java Memory Leaks in Java](https://www.baeldung.com/java-memory-leaks)
 - [Baeldung - Stack Memory and Heap Space in Java](https://www.baeldung.com/java-stack-heap#:~:text=Stack%20Memory%20in%20Java%20is,%2DOut%20(LIFO)%20order.)
 - [Understanding the Java Memory Model and Garbage Collection](https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag#:~:text=There%20is%20a%20JVM%20level,%E2%80%9Cstop%20the%20world%E2%80%9D%20process.)
 - [마로의 Java(자바) 정리 - 8. 자바 메모리 구조](https://hoonmaro.tistory.com/19)
