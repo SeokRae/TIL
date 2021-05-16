@@ -26,6 +26,7 @@
 		* [볼링 게임 점수판](java/tdd/bowling.md)
 	* [Effective Java](java/effactive.md)
 		* [Item 7](java/contents/effactive/item_7.md)
+		* [Item 13](java/contents/effactive/item_13.md)
 * [Spring JPA](spring-jpa/README.md)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
 	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
