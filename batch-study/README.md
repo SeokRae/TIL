@@ -2,6 +2,22 @@
 
 * [Github](https://github.com/spring-org/springbatch-in-action)
 
+## 스터디 진행 방식
+
+1. 스프링 배치 `기본 개념` 학습
+2. 전체적 배치 프로세스를 이해하기 위한 `도메인` 선택 및 세 가지 이상 기능이 추가된 `프로세스 설계`
+3. 프로세스 기능에 필요한 `Reader`, `Processor`, `Writer` 또는 `Tasklet`으로 구현
+	- FlatFileReader, JdbcCursorItemReader, JpaPagingItemReader
+	- ItemProcessor
+	- JpaItemWriter, CompositeItemWriter, ExcelItemWriter
+	- MySQL, H2, Oracle
+4. 프로세스 구현 시 중복되는 기능 및 프로세스 개선(필요시 Redis 등등 추가)
+5. 스케줄러에 대한 종류 찾아보기(Jenkins, Airflow, custom 등등)
+
+## SpringBatch Schema ERD
+
+![erd](../.gitbook/assets/springbatch_schema_erd.png)
+
 ## 추가적 진행
 
 * [x] txt 파일 reader 기능 추가 \(csv, txt, excel\)
@@ -11,55 +27,6 @@
 * [x] JPA Querydsl를 활용하여 조인쿼리로 수정하기
 * [x] JPA, Jdbc 속도 비교 \(속도를 어느정도 포기하고 코드양을 줄일 것인지..?\)
 * [ ] 엘라스틱 서치 스택을 추가하여 배치와 연동
-
-## 스터디
-
-* 일자: 2020.08 ~ 11
-* 장소: 홍대 입구역 스터디 룸
-* 인원: N 명
-
-## 배치 관련 업무 공유
-
-1. 통계 테이블 구성 \(파티셔닝\)
-2. 검색 데이터 통합 테이블
-3. 정산
-4. 데이터 집계
-
-## 스터디 진행 방식
-
-1. 스프링 배치 `기본 개념` 학습
-2. 전체적 배치 프로세스를 이해하기 위한 `도메인 결정` 및 세 가지 이상 기능이 추가된 `프로세스 설계`
-3. 프로세스 기능에 필요한 `Reader`, `Processor`, `Writer` 또는 `Tasklet`으로 구현
-	- FlatFileReader, JdbcCursorItemReader, JpaPagingItemReader
-	- ItemProcessor
-	- JpaItemWriter, CompositeItemWriter, ExcelItemWriter
-	- MySQL, H2, Oracle
-4. 프로세스 구현 시 중복되는 기능 및 프로세스 개선(필요시 Redis 등등 추가)
-5. 스케줄러에 대한 종류 찾아보기(Jenkins, Airflow, custom 등등)
-
-## 스터디 회의록
-
-* [2020.08 ~ 11](https://github.com/SeokRae/spring/tree/a9d5d236123f758c11fa25425e2ec1c9b9747f4c/spring-batch/docs/README.md)
-
-## 스프링 배치 관리
-
-* [Airflow](https://airbnb.io/projects/airflow/)
-* [Apache Airflow](https://bcho.tistory.com/1184)
-* [Spring Batch 관리 도구로서의 Jenkins](https://jojoldu.tistory.com/489)
-* [Airflow VS Jenkins](https://dodonam.tistory.com/157)
-* [Airflow를 이용한 데이터 Workflow 관리](https://www.slideshare.net/YoungHeonKim1/airflow-workflow)
-* [Airflow 워크플로우 모니터링 플랫폼](https://118k.tistory.com/860)
-
-## [프로젝트 Spec](https://github.com/SeokRae/spring/tree/a9d5d236123f758c11fa25425e2ec1c9b9747f4c/spring-batch/build.gradle)
-
-* SpringFramework
-* Excel
-* DBMS
-* ORM Framework
-
-## SpringBatch Schema ERD
-
-![erd](../.gitbook/assets/springbatch_schema_erd.png)
 
 ### 해당 프로젝스 설정 시 db\_mysql, db\_oracle 내용
 

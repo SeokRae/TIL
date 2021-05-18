@@ -55,7 +55,7 @@ description: clone 재정의는 주의하여 진행하라
 	- 관례상, 반환된 객체와 원본 객체는 **독립적**이다.
 	- 이를 만족하려면 super.clone() 으로 얻은 객체의 필드 중 하나 이상을 반환 전에 **수정**해야 할 수 있다.
 
-### 주의사항 1
+### clone() 재정의시 주의사항 1
 
 - clone 메서드가 super.clone()이 아닌, 생성자를 호출해 얻은 인스턴스를 반환해도 컴파일러는 동일한 인스턴스로 본다.
 - 이 클래스의 하위 클래스에서 super.clone()을 호출한다면 잘못된 클래스의 객체가 만들어져, 결국 하위 클래스의 clone() 메서드가 제대로 동작하지 않게 된다.
@@ -99,7 +99,7 @@ public class ChildCoffee extends Coffee implements Cloneable {
 }
 ```
 
-### 가변 객체를 참조하는 경우 예시
+### clone() 재정의시 주의사항 2 - 가변 객체를 참조하는 경우
 
 - clone 메서드가 단순히 super.clone() 의 결과를 그대로 받아오는 경우?
 	- 반환된 Stack 인스턴스의 size 필드는 올바른 값을 갖겠지만, elements 필드는 원본 Stack 인스턴스와 똑같은 배열을 참조할 것이다.
@@ -193,7 +193,7 @@ public class Stack implements Cloneable {
 }
 ```
 
-### 근본적인 문제점
+### clone() 재정의시 주의사항 3 - 근본적인 문제점
 
 - Cloneable 아키텍처는 **'가변 객체를 참조하는 필드는 final로 선언하라'** 는 일반 용법과 충돌한다.
 - 복제할 수 있는 클래스를 만들기 위해 일부 필드에서 final 한정자를 제거해야 할 수도 있다는 말이다.
@@ -217,7 +217,7 @@ public class Stack implements Cloneable {
 
 - 생성자에서는 재정의될 수 있는 메서드를 호출하지 않아야 하는 것처럼 clone() 메서드도 마찬가지이다.
 
-### clone() 메서드 재정의 시 주의사항
+### clone() 재정의 시 주의사항 4 - 예외처리
 
 - clone() 메서드는 CloneNotSupportedException을 던진다고 선언되어 있지만 재정의한 메서드는 수정해야 한다.
 - public clone 메서드에서는 throws 절을 없애야 한다.
