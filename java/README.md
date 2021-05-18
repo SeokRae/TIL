@@ -89,3 +89,4 @@ description: 자바 기반 공부하기
 	* [Item 1](/java/contents/effactive/item_1.md)
 	* [Item 7](/java/contents/effactive/item_7.md)
 	* [Item 13](/java/contents/effactive/item_13.md)
+	* [Item 13 발표](/java/contents/effactive/item_13_mystyle.md)
