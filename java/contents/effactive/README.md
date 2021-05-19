@@ -14,3 +14,4 @@ description: 이펙티브 자바 아이템 줍줍
 - [Item 7](item_7.md)
 - [Item 13](item_13.md)
 - [Item 13 발표 정리](item_13_mystyle.md)
+- [Item 16](item_16.md)
