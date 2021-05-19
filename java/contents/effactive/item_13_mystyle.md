@@ -78,19 +78,19 @@ description: clone 재정의는 주의하여 진행하라
 	
 ![Deep Copy](item13/item13.006.png)
   
-- External Library
+> External Library
 
-	- Apache Commons Lang
+- Apache Commons Lang
 	
-	![Apache Commons 라이브러리를 통한 객체 복사](item13/item13.007.png)
+![Apache Commons 라이브러리를 통한 객체 복사](item13/item13.007.png)
 
-	- Gson
+- Gson
 
-	![Gson 라이브러리를 통한 객체 복사](item13/item13.008.png)
+![Gson 라이브러리를 통한 객체 복사](item13/item13.008.png)
 
-	- Jackson
+- Jackson
 	
-	![Jackson 라이브러리를 통한 객체 복사](item13/item13.009.png)
+![Jackson 라이브러리를 통한 객체 복사](item13/item13.009.png)
 
 
 ## 객체 복사 대체 방법
