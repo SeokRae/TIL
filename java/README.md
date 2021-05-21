@@ -86,8 +86,9 @@ description: 자바 기반 공부하기
 ## Effective Java
 
 * [이펙티브 자바](effactive.md)
-	* [Item 1](/java/contents/effactive/item_1.md)
-	* [Item 7](/java/contents/effactive/item_7.md)
-	* [Item 13](/java/contents/effactive/item_13.md)
-	* [Item 13 발표](/java/contents/effactive/item_13_mystyle.md)
-	* [Item 16](/java/contents/effactive/item_16.md)
+    * 객체 생성과 파괴
+	* [Item 1 - 생성자 대신 정적 팩터리 메서드를 고려하라](/java/contents/effactive/item_1.md)
+	* [Item 7 - 다 쓴 객체 참조를 해제하라](/java/contents/effactive/item_7.md)
+	* [Item 13 - clone 재정의는 주의해서 진행하라](/java/contents/effactive/item_13.md)
+	* [Item 13 발표 내용](/java/contents/effactive/item_13_mystyle.md)
+	* [Item 16 - public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라](/java/contents/effactive/item_16.md)
