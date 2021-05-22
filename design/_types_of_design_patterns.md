@@ -18,21 +18,21 @@ Creational Design Patterns은 클래스에서 객체를 구성하는 방법과 �
 
 Creational Pattern 은 프로그램에서 객체 생성 프로세스를 캡슐화할 수 있는 방법을 제공한다.
 
-* Builder Pattern
-* Prototype Pattern
-* Singleton Pattern
-* Factory Pattern
-* Abstract Factory Pattern
+* [Builder Pattern](/design/_builder.md)
+* [Prototype Pattern](/design/_prototype.md)
+* [Singleton Pattern](/design/_singleton.md)
+* [Factory Pattern](/design/_factory.md)
+* [Abstract Factory Pattern](/design/_abstract_factory.md)
 
 ## Structural
 
 Structural Patterns은 클래스의 구성\(composition\), 즉 클래스를 구성하거나 구성하는 방법과 관련이 있다.
 
-* Adapter Pattern
-* Bridge Pattern
-* Composite Pattern
-* **`Decorator Pattern`**
-* Facade Pattern
+* [Adapter Pattern](/design/_adapter.md)
+* [Bridge Pattern](/design/_bridge.md)
+* [Composite Pattern](/design/_composite.md)
+* [**`Decorator Pattern`**](/design/_decorator.md)
+* [Facade Pattern](/design/_facade.md)
 * Flyweight Pattern
 * **`Proxy Pattern`**
 
@@ -51,4 +51,3 @@ Behavioral design patterns는 클래스와 객체 간의 상호 작용과 책임
 * State Pattern
 * Strategy Pattern
 * **`Visitor Pattern`**
-
