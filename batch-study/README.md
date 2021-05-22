@@ -7,12 +7,12 @@
 1. 스프링 배치 `기본 개념` 학습
 2. 전체적 배치 프로세스를 이해하기 위한 `도메인` 선택 및 세 가지 이상 기능이 추가된 `프로세스 설계`
 3. 프로세스 기능에 필요한 `Reader`, `Processor`, `Writer` 또는 `Tasklet`으로 구현
-	- FlatFileReader, JdbcCursorItemReader, JpaPagingItemReader
-	- ItemProcessor
-	- JpaItemWriter, CompositeItemWriter, ExcelItemWriter
-	- MySQL, H2, Oracle
-4. 프로세스 구현 시 중복되는 기능 및 프로세스 개선(필요시 Redis 등등 추가)
-5. 스케줄러에 대한 종류 찾아보기(Jenkins, Airflow, custom 등등)
+   * FlatFileReader, JdbcCursorItemReader, JpaPagingItemReader
+   * ItemProcessor
+   * JpaItemWriter, CompositeItemWriter, ExcelItemWriter
+   * MySQL, H2, Oracle
+4. 프로세스 구현 시 중복되는 기능 및 프로세스 개선\(필요시 Redis 등등 추가\)
+5. 스케줄러에 대한 종류 찾아보기\(Jenkins, Airflow, custom 등등\)
 
 ## SpringBatch Schema ERD
 
@@ -86,3 +86,4 @@
       driver-class-name: oracle.jdbc.OracleDriver
       sql-script-encoding: UTF-8
   ```
+
