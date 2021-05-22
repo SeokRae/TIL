@@ -2,6 +2,11 @@
 
 * [Contents](README.md)
 * [Network](network.md)
+
+## Java <a id="java-1"></a>
+
+---
+
 * [Design Pattern](design/README.md)
   * [Intro](design/_intro.md)
   * [Types of Design Patterns](design/_types_of_design_patterns.md)
