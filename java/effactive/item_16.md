@@ -145,3 +145,5 @@ class OuterClassTest {
 * public 클래스는 절대 가변 필드를 직접 노출해서는 안된다.
 	* 불변 필드라면 노출해도 덜 위험하지만 완전히 안심할 수는 없다.
 	* package-private 클래스나 private 중첩 클래스에서는 종종 필드를 노출하는 편이 나을 때도 있다.
+
+* [발표자료](item16/item16.pdf)
