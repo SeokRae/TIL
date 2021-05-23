@@ -21,7 +21,7 @@ description: Creational Pattern
 * **Abstract Factory 인터페이스** 를 기반으로 **구체화한 팩토리 클래스** 를 생성
 * 팩토리는 특정 종류의 객체를 반환하는 클래스이다.
 * 주의사항
-  * 클라이언트 코드는 각각의 추상 인터페이스를 통해 Factory와 구체화 클래스에서 모두 작동해야 한다.
+	* 클라이언트 코드는 각각의 추상 인터페이스를 통해 Factory와 구체화 클래스에서 모두 작동해야 한다.
 
 ### 적용 가능한 상황
 
@@ -45,4 +45,3 @@ description: Creational Pattern
 ## 예시
 
 ![Coffee Abstract Factory Pattern](../.gitbook/assets/coffee_abstract.png)
-

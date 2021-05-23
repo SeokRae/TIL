@@ -22,7 +22,7 @@ description: Structural Pattern
 	- Facade의 목적은 더 간단한 인터페이스를 생성하는 것이고, Adapter의 목적은 기존 인터페이스를 설계하는 것이다.
 	- Facade는 일상적으로 여러 개체를 래핑하고, Adapter는 단일 개체를 래핑한다.
 	- Facade는 하나의 복잡한 개체의 Front-end 역할을 할 수 있고, Adapter는 여러 레거시 개체를 래핑할 수 있다.
-	
+
 - Flyweight는 많은 작은 개체를 만드는 방법을 보여주지만 Facade는 단일 개체가 전체 하위 시스템을 나타내는 방법을 보여준다.
 
 - Adapter와 Facade의 차이는 레거시 클래스 구조를 래핑하느냐의 차이가 아니라 의도로 구분할 수 있다.
@@ -42,7 +42,7 @@ description: Structural Pattern
 - 파사드 패턴은 클라이언트가 모든 복잡한 하위 시스템 클래스를 처리할 필요가 없도록 보호하므로 하위 시스템과 클라이언트 간에 느슨한 결합이 생성된다.
 - 요청이 많은 경우 파사드는 요청을 적절한 하위 시스템으로 전달하고 그 사이에 필요한 번역을 수행할 수 있다.
 
-## Java API 
+## Java API
 
 - javax.faces.context.ExternalContext 클래스는 내부적으로 HttpSession, HttpServletRequest 및 기타 클래스를 사용한다.
 

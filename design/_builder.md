@@ -29,8 +29,8 @@ description: Creational Pattern
 
   통해 사용
 
-  * 객체 하나를 만들기 위해서는 메서드를 여러 개 호출해야 하고, 객체가 완전히 생성되기 전까지 **`일관성(consistency)`**이 무너진 상태에 놓이게 된다.
-  * 클래스를 **`불변(immutable)`** 상태로 만들 수 없다.
+	* 객체 하나를 만들기 위해서는 메서드를 여러 개 호출해야 하고, 객체가 완전히 생성되기 전까지 **`일관성(consistency)`**이 무너진 상태에 놓이게 된다.
+	* 클래스를 **`불변(immutable)`** 상태로 만들 수 없다.
 
 * [빌더 패턴](https://github.com/SeokRae/java-in-action/blob/master/java-in-design/src/main/java/com/example/builder/BuilderNutritionFacts.java)은 **`명명된 선택적 매개변수(named optional parameters)`**
 
@@ -75,4 +75,3 @@ Director 클래스 없이 Builder만을 사용하는 패턴도 찾아볼 수 있
 
 * `빌더` 패턴이 `단계별로 객체를 생성`한다.
 * `추상 팩토리` 패턴은 `한 번에 객체를 반환`한다.
-

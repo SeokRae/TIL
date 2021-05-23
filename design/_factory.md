@@ -4,17 +4,17 @@
 
 * loose coupling, encapsulation
 * Factory
-  * Factory Method
-  * Simple Factory Method
-  * Abstract Factory Method
+	* Factory Method
+	* Simple Factory Method
+	* Abstract Factory Method
 * 객체의 생성에 대한 책임을 갖는다.
 
 ## 객체지향 설계 원칙에 관련된 Factory
 
 * 객체지향 원칙
-  * 단일 책임 원칙\(Single Responsibility Principle, SRP\)
-  * 개방-폐쇄 원칙\(Open-Close Principle\)
-  * 의존관계 역전 원칙\(Dependency Inversion Principle\)
+	* 단일 책임 원칙\(Single Responsibility Principle, SRP\)
+	* 개방-폐쇄 원칙\(Open-Close Principle\)
+	* 의존관계 역전 원칙\(Dependency Inversion Principle\)
 
 ### OCP
 
@@ -39,12 +39,11 @@
 ## Factory Pattern 맞아?
 
 * DIP 원칙을 엄격하게 따르면 코드 내의 팩토리 클래스를 제외하고 new 키워드를 사용하면 안된다.
-  * 점차 확장할 가능성이 있는 단계인 경우 팩토리로 인하여 설계의 확장이 어려워진다.
-  * 팩토리를 사용하기 위해서는 클래스를 많이 만들어야 한다.
-  * 팩토리 메서드 패턴의 경우 구현 상속을 강제하기 때문에 유지 보수에 문제가 있을 수 있다.
+	* 점차 확장할 가능성이 있는 단계인 경우 팩토리로 인하여 설계의 확장이 어려워진다.
+	* 팩토리를 사용하기 위해서는 클래스를 많이 만들어야 한다.
+	* 팩토리 메서드 패턴의 경우 구현 상속을 강제하기 때문에 유지 보수에 문제가 있을 수 있다.
 
 ## 예시 코드
 
 * Simple Factory
 * Abstract Factory
-

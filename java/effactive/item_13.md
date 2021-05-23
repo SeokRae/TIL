@@ -28,40 +28,40 @@ description: clone 재정의는 주의하여 진행하라
 
 * `복사`의 정확한 뜻은 그 객체를 구현한 클래스에 따라 다를 수 있다.
 * 일반적인 의도
-  * 아래 내용에 대한 요구가 반드시 참은 아니다.
+	* 아래 내용에 대한 요구가 반드시 참은 아니다.
 
-    ```java
-    // 복사본가 원본이 일치하지 않는다.
-    x.clone() != x
+	  ```java
+	  // 복사본가 원본이 일치하지 않는다.
+	  x.clone() != x
+  
+	  // 클래스 인스턴스 타입은 같다.
+	  x.clone().getClass() == x.getClass()
+	  ```
 
-    // 클래스 인스턴스 타입은 같다.
-    x.clone().getClass() == x.getClass()
-    ```
+	* 아래 일반 식도 일반적으로는 참이지만, 필수는 아니다.
 
-  * 아래 일반 식도 일반적으로는 참이지만, 필수는 아니다.
+	  ```java
+	  // 동치성
+	  x.clone().equals(x)
+	  ```
 
-    ```java
-    // 동치성
-    x.clone().equals(x)
-    ```
+	* 관례상, clone\(\)는 super.clone\(\)을 호출해서 반환된 객체를 반환한다.
 
-  * 관례상, clone\(\)는 super.clone\(\)을 호출해서 반환된 객체를 반환한다.
+	  ```java
+	  x.clone().getClass() == x.getClass()
+	  ```
 
-    ```java
-    x.clone().getClass() == x.getClass()
-    ```
-
-  * 관례상, 반환된 객체와 원본 객체는 **독립적**이다.
-  * 이를 만족하려면 super.clone\(\) 으로 얻은 객체의 필드 중 하나 이상을 반환 전에 **수정**해야 할 수 있다.
+	* 관례상, 반환된 객체와 원본 객체는 **독립적**이다.
+	* 이를 만족하려면 super.clone\(\) 으로 얻은 객체의 필드 중 하나 이상을 반환 전에 **수정**해야 할 수 있다.
 
 ### clone\(\) 재정의시 주의사항 1
 
 * clone 메서드가 super.clone\(\)이 아닌, 생성자를 호출해 얻은 인스턴스를 반환해도 컴파일러는 동일한 인스턴스로 본다.
 * 이 클래스의 하위 클래스에서 super.clone\(\)을 호출한다면 잘못된 클래스의 객체가 만들어져, 결국 하위 클래스의 clone\(\) 메서드가 제대로 동작하지 않게 된다.
-  * 상위 클래스의 clone\(\) 값을 반환하면 안되고, 하위 클래스 타입으로 변환한 뒤 반환 해야 한다.
-  * clone\(\) 을 재정의한 클래스가 final 클래스인 경우에는 걱정할 필요가 없다.
+	* 상위 클래스의 clone\(\) 값을 반환하면 안되고, 하위 클래스 타입으로 변환한 뒤 반환 해야 한다.
+	* clone\(\) 을 재정의한 클래스가 final 클래스인 경우에는 걱정할 필요가 없다.
 * 모든 필드가 기본 타입이거나 불변 객체를 참조하는 경우 이 객체는 완벽한 상태이므로 clone\(\)를 제공하지 않는 것이 좋다.
-  * 쓸데 없는 복사를 지양한다는 관점에서 불변 클래스는 굳이 clone 메서드를 제공하지 않는 것이 좋다.
+	* 쓸데 없는 복사를 지양한다는 관점에서 불변 클래스는 굳이 clone 메서드를 제공하지 않는 것이 좋다.
 
 ```java
 public class Coffee implements Cloneable {
@@ -80,7 +80,7 @@ public class Coffee implements Cloneable {
 
 * 재정의한 메서드의 반환 타입은 상위 클래스의 메서드가 반환하는 타입의 하위 타입일 수 있다.
 * 클라이언트가 형변환 하지 않도록 인터페이스를 제공한다.
-* try-catch 블록으로 Object의 clone 메서드가 **검사 예외\(checked exception\)** 로 제공되는 것을 **비검사 예외\(unchecked exception\)** 로 처리하도록 한다. [아이템 71](item_13.md) 
+* try-catch 블록으로 Object의 clone 메서드가 **검사 예외\(checked exception\)** 로 제공되는 것을 **비검사 예외\(unchecked exception\)** 로 처리하도록 한다. [아이템 71](item_13.md)
 
 ```text
 public class ChildCoffee extends Coffee implements Cloneable {
@@ -100,11 +100,11 @@ public class ChildCoffee extends Coffee implements Cloneable {
 ### clone\(\) 재정의시 주의사항 2 - 가변 객체를 참조하는 경우
 
 * clone 메서드가 단순히 super.clone\(\) 의 결과를 그대로 받아오는 경우?
-  * 반환된 Stack 인스턴스의 size 필드는 올바른 값을 갖겠지만, elements 필드는 원본 Stack 인스턴스와 똑같은 배열을 참조할 것이다.
-  * 원본이나 복제본 중 하나를 수정하면 다른 하나도 수정되어 불변식을 해친다는 말이다.
-  * 따라서 프로그램이 이상하게 동작하거나 NullPointerException 이 발생하게 된다.
+	* 반환된 Stack 인스턴스의 size 필드는 올바른 값을 갖겠지만, elements 필드는 원본 Stack 인스턴스와 똑같은 배열을 참조할 것이다.
+	* 원본이나 복제본 중 하나를 수정하면 다른 하나도 수정되어 불변식을 해친다는 말이다.
+	* 따라서 프로그램이 이상하게 동작하거나 NullPointerException 이 발생하게 된다.
 * clone 메서드는 사실상 생성자와 같은 효과를 낸다.
-  * 즉, clone은 원본 객체에 아무런 해를 끼치지 않는 동시에 복제된 객체의 불변식을 보장해야 한다.
+	* 즉, clone은 원본 객체에 아무런 해를 끼치지 않는 동시에 복제된 객체의 불변식을 보장해야 한다.
 
 ```java
 public class Stack implements Cloneable {
@@ -143,7 +143,7 @@ public class Stack implements Cloneable {
 ```
 
 * 가변 객체를 갖는 클래스를 복제 하기 위해서는 내부 정보를 복사해야 한다.
-  * 가장 쉬운 방법은 elements 배열의 clone을 재귀적으로 호출하는 것이다.
+	* 가장 쉬운 방법은 elements 배열의 clone을 재귀적으로 호출하는 것이다.
 
 ```java
 public class Stack implements Cloneable {
@@ -183,7 +183,7 @@ public class Stack implements Cloneable {
             // 배열은 clone 기능을 제대로 사용하는 유일한 예이다.
             clone.elements = elements.clone();
             return clone;
-        } catch(CloneNotSupportedException e) {
+        } catch (CloneNotSupportedException e) {
             throw new AssertionError();
         }
     }
@@ -206,7 +206,7 @@ public class Stack implements Cloneable {
 ## 복잡한 가변 객체를 복제하는 방법
 
 * super.clone\(\) 을 호출하여 얻은 **객체의 모든 필드를 초기 상태로 설정**
-* 원본 **객체의 상태를 다시 생성하는 고수준 메서드들을 호출** 
+* 원본 **객체의 상태를 다시 생성하는 고수준 메서드들을 호출**
 * 하지만 이 방법은 저수준에서 바로 처리할 때보다는 느리다.
 * Cloneable 아키텍처의 기초가 되는 필드 단위 객체 복사를 우회하기 때문에 전체 Cloneable 아키텍처와는 어울리지 않는 방식이다.
 
@@ -229,7 +229,7 @@ public class Stack implements Cloneable {
 
 * 상속용 클래스는 Cloneable을 구현하지 않는다.
 * Object의 방식을 모방하여 clone\(\)메서드를 구현해 `protected`로 두고 `CloneNotSupportedException`을 던지도록 선언할 수 있다.
-  * 이 방식은 Cloneable 구현 여부를 하위 클래스에서 선택하도록 여지를 주는 것이다.
+	* 이 방식은 Cloneable 구현 여부를 하위 클래스에서 선택하도록 여지를 주는 것이다.
 * clone을 동작하지 않게 구현해놓고 하위 클래스에서 재정의하지 못하도록 할 수 있다.
 
 ```java
@@ -247,10 +247,9 @@ public class Stack implements Cloneable {
 * 접근 제한자는 public으로 수정한다.
 * 반환타입은 클래스 자신으로 수정한다.
 * clone\(\) 메서드는 가장 먼저 super.clone\(\)을 호출한 후 필요한 필드를 적절하게 수정한다.
-  * 객체의 내부에 숨어있는 모든 가변 객체를 복사하고, 복제본이 가진 객체 참조 모두가 복사된 객체들을 가리키도록 한다.
-  * 내부 복사는 주로 clone을 재귀적으로 호출해 구현하지만, 이 방식이 항상 최선은 아니다.
+	* 객체의 내부에 숨어있는 모든 가변 객체를 복사하고, 복제본이 가진 객체 참조 모두가 복사된 객체들을 가리키도록 한다.
+	* 내부 복사는 주로 clone을 재귀적으로 호출해 구현하지만, 이 방식이 항상 최선은 아니다.
 * 기본 타입 필드와 불변 객체 참조만 갖는 클래스인 경우 어떤 필드도 수정할 필요가 없다.
-  * 단, 일련번호나 고유 ID는 비록 기본 타입이나 불변일 지라도 수정해줘야 한다. 
+	* 단, 일련번호나 고유 ID는 비록 기본 타입이나 불변일 지라도 수정해줘야 한다.
 
 > Cloneable 을 이미 구현한 클래스를 확장한다면 어쩔수 없이 clone을 잘 작동하도록 구현해야 한다.
-

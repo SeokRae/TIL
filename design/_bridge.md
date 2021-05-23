@@ -29,7 +29,7 @@ description: Structural Pattern
 * 모놀리틱 클래스가 커질수록 작동 방식을 파악하기 어려워지고 변경하는데 더 오래 걸리게 된다.
 * 기능 변형 중에 하나를 변경하기 위해서 전체 클래스를 변경해야 하는 경우
 * 런타임에 구현 클래스로 전환되어 실행할 수 있어야 하는 경우 Bridge 패턴을 사용한다.
-  * 선택사항이지만 Bridge 패턴을 사용하면 추상화 내부의 구현 개체를 바꿀 수 있다.
+	* 선택사항이지만 Bridge 패턴을 사용하면 추상화 내부의 구현 개체를 바꿀 수 있다.
 
 ### 구현 방법
 
@@ -49,4 +49,3 @@ description: Structural Pattern
 * High Cohesion: 클래스에 패턴을 적용하여 코드를 더욱 복잡하게 할 수 있다.
 
 ![Bridge Pattern](../.gitbook/assets/tv_bridge.png)
-

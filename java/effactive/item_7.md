@@ -10,11 +10,11 @@ description: 다 쓴 객체 참조를 해제하라
 
 * 프로그래밍을 하는 동안 메모리를 할당하고 사용하게 되는데 이와 관련된 키워드를 학습하기
 * 학습 키워드
-  * 메모리 누수로 인한 장애의 징조
-  * 메모리의 구조
-  * Garbage Collection
-  * 메모리 누수의 원인
-  * 메모리 모니터링
+	* 메모리 누수로 인한 장애의 징조
+	* 메모리의 구조
+	* Garbage Collection
+	* 메모리 누수의 원인
+	* 메모리 모니터링
 
 ### 메모리 누수로 인한 장애의 징조
 
@@ -38,11 +38,11 @@ description: 다 쓴 객체 참조를 해제하라
 ![Runtime Data Area](../../.gitbook/assets/runtime_data_area.png)
 
 1. **Method\(Static or Class\) Area**
-   * Runtime Constant Pool
+	* Runtime Constant Pool
 2. **Heap Area**
-   * Young Generation
-   * Old Generation
-   * MetaSpace
+	* Young Generation
+	* Old Generation
+	* MetaSpace
 3. **Stack Area**
 4. **PC Register**
 5. **Native Method Stack Area**
@@ -62,8 +62,8 @@ description: 다 쓴 객체 참조를 해제하라
 ![Mark &amp; Sweep](../../.gitbook/assets/marking.png)
 
 * **Mark** 작업
-  * **Reachable or Unreachable** 한 상태의 객체를 확인
-  * **Reachable** 한 객체를 **Survivor0 영역**으로 이동
+	* **Reachable or Unreachable** 한 상태의 객체를 확인
+	* **Reachable** 한 객체를 **Survivor0 영역**으로 이동
 
 ![Sweeping &#xC791;&#xC5C5;](../../.gitbook/assets/sweep.png)
 
@@ -89,7 +89,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 1. **Old Generation** 영역의 메모리가 부족한 경우 **Major GC** 발생
 2. **Mark**ng 작업을 통한 구분
-   * **Reachable or Unreachable**
+	* **Reachable or Unreachable**
 3. **Sweep** 작업을 통한 Unreachable 한 객체들의 메모리 수거
 4. **Compact** 작업을 통한 메모리 조각 모음
 
@@ -142,7 +142,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 * jstat
 
-  * jstat 실행 방법
+	* jstat 실행 방법
 
   ```text
   # 실행 프로세스 PID 확인
@@ -152,10 +152,10 @@ description: 다 쓴 객체 참조를 해제하라
   jstat -gcutil {PID} 3s
   ```
 
-  * [Oracle jstat Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html)
+	* [Oracle jstat Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html)
 
   | gcutil 옵션 | 설명 |
-  | :---: | :--- |
+    | :---: | :--- |
   | S0 | Survivor space 0 utilization as a percentage of the space's current capacity. |
   | S1 | Survivor space 1 utilization as a percentage of the space's current capacity. |
   | E | Eden space utilization as a percentage of the space's current capacity. |
@@ -170,13 +170,14 @@ description: 다 쓴 객체 참조를 해제하라
   | CGCT | Time spent on concurrent GCs. |
   | GCT | Total garbage collection time. |
 
-  * jstat plot 확인 사이트 [Link](http://nix-on.blogspot.com/2015/01/java-jstat-how-to-visualize-garbage.html)
+	* jstat plot 확인 사이트 [Link](http://nix-on.blogspot.com/2015/01/java-jstat-how-to-visualize-garbage.html)
 
 ## 참고
 
 * [정리](https://github.com/SeokRae/TIL/tree/768bdbfead3ed7c6d77a8e8a0f5229093ab187b5/java/contents/effactive/item7/item7.pdf)
 * [Baeldung - Java Memory Leaks in Java](https://www.baeldung.com/java-memory-leaks)
-* \[Baeldung - Stack Memory and Heap Space in Java\]\([https://www.baeldung.com/java-stack-heap\#:~:text=Stack Memory in Java is,%2DOut \(LIFO\) order](https://www.baeldung.com/java-stack-heap#:~:text=Stack%20Memory%20in%20Java%20is,%2DOut%20%28LIFO%29%20order).\)
+* \[Baeldung - Stack Memory and Heap Space in
+  Java\]\([https://www.baeldung.com/java-stack-heap\#:~:text=Stack Memory in Java is,%2DOut \(LIFO\) order](https://www.baeldung.com/java-stack-heap#:~:text=Stack%20Memory%20in%20Java%20is,%2DOut%20%28LIFO%29%20order).\)
 * [Understanding the Java Memory Model and Garbage Collection](https://dzone.com/articles/understanding-the-java-memory-model-and-the-garbag#:~:text=There%20is%20a%20JVM%20level,%E2%80%9Cstop%20the%20world%E2%80%9D%20process.)
 * [마로의 Java\(자바\) 정리 - 8. 자바 메모리 구조](https://hoonmaro.tistory.com/19)
 * [JVM\(Java Virtual Machine\)이란](https://honbabzone.com/java/java-jvm/)
@@ -184,4 +185,3 @@ description: 다 쓴 객체 참조를 해제하라
 * [Demystifying memory management in modern programming languages](https://deepu.tech/memory-management-in-programming/)
 * [Visualizing memory management in JVM\(Java, Kotlin, Scala, Groovy, Clojure\)](https://deepu.tech/memory-management-in-jvm/)
 * [우아한 형제들 - 도움이 될 수도 있는 JVM memory leak 이야기](https://woowabros.github.io/tools/2019/05/24/jvm_memory_leak.html)
-
