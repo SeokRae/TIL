@@ -76,9 +76,64 @@ public final class Time {
 }
 ```
 
+## 데이터 필드를 노출해도 되는 package-private 클래스 혹은 private 중첩 클래스
+
+- 클래스가 표현하려는 추상 개념만 올바르게 표현해주면 된다.
+  - 클래스 선언 면에서나 이를 사용하는 클라이언트 코드 면에서나 접근자 방식보다 깔끔하다.
+  - 클라이언트 코드가 해당 클래스 내부 표현에 종속되나 클라이언트도 어차피 이 클래스를 포함하는 패키지 안에서만 동작하는 코드일 뿐이다.
+  - 따라서 패키지 바깥 코드는 전혀 손대지 않고 데이터 표현 방식을 바꿀 수 있다.
+  - private 중첩 클래스의 경우 수정 범위가 더 좁아져서 이 클래스를 포함하는 외부 클래스까지로 제한된다.
+
+
+```java
+public class OuterClass {
+
+    private InnerClass innerClass;
+
+    public OuterClass() {
+        this.innerClass = new InnerClass();
+    }
+
+    // 내부 클래스의 수정 기능을 제공하기 위한 퍼블릭 인터페이스
+    public void changeValue(int value) {
+        innerClass.value = value;
+    }
+
+    // 접근자(getter)
+    public int value() {
+        return innerClass.value;
+    }
+
+    // 내부 클래스
+    class InnerClass {
+        public int value;
+    }
+}
+```
+
+![Outer - Inner Class](item16/inner_class.png)
+
+```java
+class OuterClassTest {
+
+    @DisplayName("외부 클래스를 통해 내부 데이터 변경 테스트")
+    @Test
+    void testCase1() {
+        // given
+        OuterClass outerClass = new OuterClass();
+
+        // when
+        outerClass.changeValue(1);
+
+        // then
+        assertThat(outerClass.value()).isEqualTo(1);
+    }
+}
+```
+
+
 ## 정리
 
 * public 클래스는 절대 가변 필드를 직접 노출해서는 안된다.
   * 불변 필드라면 노출해도 덜 위험하지만 완전히 안심할 수는 없다.
   * package-private 클래스나 private 중첩 클래스에서는 종종 필드를 노출하는 편이 나을 때도 있다.
-
