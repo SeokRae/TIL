@@ -41,6 +41,8 @@ description: Today I Learned
   * [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](https://github.com/SeokRae/TIL/tree/de1295942811b3db0b575e366f53c4d5736bb991/spring-security.md)
 * [Spring Batch](batch-study/)
+  
+
 * 월요일
 
 | 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
@@ -58,4 +60,3 @@ description: Today I Learned
 | 스프링 배치 | 완료 | SR 외 4인 | [Link](https://github.com/spring-org/springbatch_summary) | 2020/08/20 ~ 2020/12/12 | - Spring Batch 기본 개념 학습   - 기본 프로세스 학습할 수 있는 구조 설계\(File, DB\)   - 메타 스키마 분석, 스케쥴링 방식   - 기본 프로세스에서 최적화 방식 학습 |
 | 엘라스틱 서치 | 완료 | SR 외 4인 | - | 2020/12/10 ~ 2021/02/02 | - ElasticSearch 기본 개념과 사용하는 방식을 공부하기 위한 스터디   - Single Cluster 구축, 인덱스 구축 방식, client 기반 crud 코드 작성   - 6.x, 7.x 버전 RestHighLevelClient 기반 API 코드 테스트 |
 | 기술 스택 정리 | 진행중 | SR 외 1인 | - | 2021/02/25 ~ 2021/03/31 | - ORM\(JPA\)   - RDB\(MySQL\)   - 오브젝트   - Spring MVC |
-
