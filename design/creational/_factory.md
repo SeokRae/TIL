@@ -47,3 +47,4 @@
 
 * Simple Factory
 * Abstract Factory
+* [Github](https://github.com/SeokRae/java-in-action/tree/master/java-in-design/src/main/java/com/example/factory)

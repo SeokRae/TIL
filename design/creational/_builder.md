@@ -47,7 +47,7 @@ description: Creational Pattern
 
 ### Builder 패턴의 구성요소
 
-![&#xC608;&#xC2DC; &#xC5D4;&#xD2F0;&#xD2F0; &#xAD6C;&#xC131;.png](../.gitbook/assets/diagram_builder.png)
+![&#xC608;&#xC2DC; &#xC5D4;&#xD2F0;&#xD2F0; &#xAD6C;&#xC131;.png](../../.gitbook/assets/diagram_builder.png)
 
 > 결론
 

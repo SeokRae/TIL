@@ -25,7 +25,7 @@ description: Structural Pattern
 	- 이 패턴을 사용하면 개체 인터페이스에 대한 메서드가 아닌 개체에 책임을 추가할 수 있다.
 	- 클라이언트에 제공되는 인터페이스는 연속된 레이어에 지정될 때 일정하게 유지되어야 한다.
 
-![Coffee Decorator 패턴](contents/img/coffee_decorator.png)
+![Coffee Decorator 패턴](../contents/img/coffee_decorator.png)
 
 ## 데코레이터 패턴의 구성 규칙
 

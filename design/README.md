@@ -13,19 +13,19 @@
 
 ### **Creational Patterns**
 
-* [**Builder Pattern**](_builder.md)
-* [**Singleton Pattern**](_singleton.md)
-* [**Prototype Pattern**](_prototype.md)
-* [Abstract Factory Pattern](_abstract_factory.md)
+* [**Builder Pattern**](/design/creational/_builder.md)
+* [**Singleton Pattern**](/design/creational/_singleton.md)
+* [**Prototype Pattern**](/design/creational/_prototype.md)
+* [Abstract Factory Pattern](/design/creational/_abstract_factory.md)
 
 ### Structural Patterns
 
-* [Adapter Pattern](_adapter.md)
-* [Bridge Pattern](_bridge.md)
-* Composite Pattern
-* **`Decorator Pattern`**
-* Facade Pattern
-* Flyweight Pattern
+* [Adapter Pattern](/design/structural/_adapter.md)
+* [Bridge Pattern](/design/structural/_bridge.md)
+* [Composite Pattern](/design/structural/_composite.md)
+* [**`Decorator Pattern`**](/design/structural/_decorator.md)
+* [Facade Pattern](/design/structural/_facade.md)
+* [Flyweight Pattern](/design/structural/_flyweight.md)
 * **`Proxy Pattern`**
 
 ### Behavioral Patterns
@@ -41,4 +41,3 @@
 * State Pattern
 * Strategy Pattern
 * **`Visitor Pattern`**
-

@@ -44,4 +44,4 @@ description: Creational Pattern
 
 ## 예시
 
-![Coffee Abstract Factory Pattern](../.gitbook/assets/coffee_abstract.png)
+![Coffee Abstract Factory Pattern](../../.gitbook/assets/coffee_abstract.png)

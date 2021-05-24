@@ -18,7 +18,7 @@ description: Structural Pattern
 	* 아이디어는 Adapter가 Adapter 클래스뿐만 아니라 클라이언트에서 사용중인 인터페이스를 모두 확장한다는 것이다.
 	* 적용 방법은 구성 대신 상속을 통해 작동한다.
 
-![Adapter Pattern](../.gitbook/assets/coffee_adapter.png)
+![Adapter Pattern](../../.gitbook/assets/coffee_adapter.png)
 
 ## Java API
 

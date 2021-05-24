@@ -21,7 +21,7 @@ description: Structural Pattern
 * 세련된 추상화는 제어 로직의 변형을 제공한다. 부모와 마찬가지로 일반 구현 인터페이스를 통해 다른 구현으로 작업한다.
 * 일반적으로 클라이언트는 **추상화** 객체가 제공하는 인터페이스에만 관심을 갖는다. 결국 추상화 개체를 구현 개체 중 하나와 연결하는 것은 클라이언트의 작업이다.
 
-![Color &amp; Shape](../.gitbook/assets/shape.png)
+![Color &amp; Shape](../../.gitbook/assets/shape.png)
 
 ### 적용가능한 상황
 
@@ -48,4 +48,4 @@ description: Structural Pattern
 * SRP 원칙: 추상화 고수준 논리와 구현의 플랫폼 세부 사항에 집중할 수 있다.
 * High Cohesion: 클래스에 패턴을 적용하여 코드를 더욱 복잡하게 할 수 있다.
 
-![Bridge Pattern](../.gitbook/assets/tv_bridge.png)
+![Bridge Pattern](../../.gitbook/assets/tv_bridge.png)

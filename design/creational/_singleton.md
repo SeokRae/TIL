@@ -16,7 +16,7 @@ Singleton 패턴이 클래스의 단일 인스턴스 만 생성하여 애플리�
 
 * 캐시, 스레드 풀, 레지스트리와 같은 구성은 단일 인스턴스로 존재해야 한다.
 
-![Singleton](../.gitbook/assets/diagram_singleton%20%283%29.png)
+![Singleton](../../.gitbook/assets/diagram_singleton%20(3).png)
 
 ## Singleton 생성 방법
 

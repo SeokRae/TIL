@@ -24,7 +24,7 @@ description: Structural Pattern
 - `Client`
 	- 클라이언트는 구성 요소 인터페이스를 통해 컴포지션의 개체를 조작한다.
 
-![Composite Pattern](contents/img/composite_coffee.png)
+![Composite Pattern](../contents/img/composite_coffee.png)
 
 ## 적용 가능한 상황
 
