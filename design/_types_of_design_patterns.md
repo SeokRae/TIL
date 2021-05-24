@@ -28,12 +28,12 @@ Creational Pattern 은 프로그램에서 객체 생성 프로세스를 캡슐�
 
 Structural Patterns은 클래스의 구성\(composition\), 즉 클래스를 구성하거나 구성하는 방법과 관련이 있다.
 
-* [Adapter Pattern](_adapter.md)
-* [Bridge Pattern](_bridge.md)
-* [Composite Pattern](https://github.com/SeokRae/TIL/tree/a4b39a9f4d4d80d2e9422187995f991dd679db49/design/_composite.md)
-* [**`Decorator Pattern`**](https://github.com/SeokRae/TIL/tree/a4b39a9f4d4d80d2e9422187995f991dd679db49/design/_decorator.md)
-* [Facade Pattern](https://github.com/SeokRae/TIL/tree/a4b39a9f4d4d80d2e9422187995f991dd679db49/design/_facade.md)
-* Flyweight Pattern
+* [Adapter Pattern](/design/structural/_adapter.md)
+* [Bridge Pattern](/design/structural/_bridge.md)
+* [Composite Pattern](/design/structural/_composite.md)
+* [**`Decorator Pattern`**](/design/structural/_decorator.md)
+* [Facade Pattern](/design/structural/_facade.md)
+* [Flyweight Pattern](/design/structural/_flyweight.md)
 * **`Proxy Pattern`**
 
 ## Behavioral
@@ -51,4 +51,3 @@ Behavioral design patterns는 클래스와 객체 간의 상호 작용과 책임
 * State Pattern
 * Strategy Pattern
 * **`Visitor Pattern`**
-
