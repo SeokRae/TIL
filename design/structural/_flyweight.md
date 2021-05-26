@@ -33,3 +33,4 @@ description: Structural Pattern
 ## code
 
 * [Flyweight](https://github.com/SeokRae/java-in-action/tree/master/java-in-design/src/main/java/com/example/flyweight)
+* [Flyweight vs Object Pool](https://stackoverflow.com/questions/30422525/what-are-the-differences-between-flyweight-and-object-pool-patterns)

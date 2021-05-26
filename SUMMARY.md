@@ -36,8 +36,9 @@
 	* [Effective Java](java/effactive/README.md)
 		* [Item 7](java/effactive/item_7.md)
 		* [Item 13](java/effactive/item_13.md)
-		* [Item 13 발표 내용](java/effactive/item_13_mystyle.md)
+		* [Item 13 발표 내용](java/effactive/item13/item_13_mystyle.md)
 		* [Item 16](java/effactive/item_16.md)
+		* [Item 16 발표 내용](java/effactive/item16/item_16_ppt.md)
 
 ## Spring
 

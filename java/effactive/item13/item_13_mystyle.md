@@ -6,11 +6,11 @@ description: clone 재정의는 주의하여 진행하라
 
 ## 객체 복사
 
-![Intro](../../.gitbook/assets/item13.001.png)
+![Intro](../../../.gitbook/assets/item13.001.png)
 
 ## clone 재정의는 주의하여 진행하라
 
-![Table of Contents](../../.gitbook/assets/item13.002.png)
+![Table of Contents](../../../.gitbook/assets/item13.002.png)
 
 * 참고 자료
 	* [Shallow vs Deep Copy \(예제 포함\)](https://programming.guide/shallow-vs-deep-copy.html)
@@ -26,7 +26,7 @@ description: clone 재정의는 주의하여 진행하라
 
 * 객체 복사 라는 키워드에 대해서 정확하게 알지 못함
 
-![Situation ](../../.gitbook/assets/item13.003.png)
+![Situation ](../../../.gitbook/assets/item13.003.png)
 
 ## 객체 복사에 대한 키워드 찾아보기
 
@@ -44,7 +44,7 @@ description: clone 재정의는 주의하여 진행하라
 	* Conversion Constructor
 	* Conversion Factory Method
 
-![Brain Storming](../../.gitbook/assets/item13.004.png)
+![Brain Storming](../../../.gitbook/assets/item13.004.png)
 
 ### Shallow Copy
 
@@ -61,7 +61,7 @@ description: clone 재정의는 주의하여 진행하라
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/immutable)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/immutable/CoffeeTest.java)
 
-![Shallow Copy](../../.gitbook/assets/item13.005.png)
+![Shallow Copy](../../../.gitbook/assets/item13.005.png)
 
 ### Deep Copy
 
@@ -77,7 +77,7 @@ description: clone 재정의는 주의하여 진행하라
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/deep)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/DeepCopyCoffeeTest.java)
 
-![Deep Copy](../../.gitbook/assets/item13.006.png)
+![Deep Copy](../../../.gitbook/assets/item13.006.png)
 
 > External Library
 
@@ -86,14 +86,14 @@ description: clone 재정의는 주의하여 진행하라
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/external/apache)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/external/apache/ApacheCopyCoffeeTest.java)
 
-![Apache Commons &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../.gitbook/assets/item13.007.png)
+![Apache Commons &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../../.gitbook/assets/item13.007.png)
 
 * Gson
 	* 도메인 클래스에 Serializable 인터페이스를 구현할 필요가 없음
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/external/gson)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/external/gson/GsonCoffeeTest.java)
 
-![Gson &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../.gitbook/assets/item13.008.png)
+![Gson &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../../.gitbook/assets/item13.008.png)
 
 * Jackson
 	* 복제하기 위한 도메인 클래스는 기본 생성자가 필수로 필요
@@ -101,7 +101,7 @@ description: clone 재정의는 주의하여 진행하라
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/external/jackson)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/external/jackson/JacksonCoffeeTest.java)
 
-![Jackson &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../.gitbook/assets/item13.009.png)
+![Jackson &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../../.gitbook/assets/item13.009.png)
 
 ## 객체 복사 대체 방법
 
@@ -109,18 +109,18 @@ description: clone 재정의는 주의하여 진행하라
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/constructor)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/ConstructorCopyCoffeeTest.java)
 
-![&#xBCF5;&#xC0AC; &#xC0DD;&#xC131;&#xC790;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../.gitbook/assets/item13.010.png)
+![&#xBCF5;&#xC0AC; &#xC0DD;&#xC131;&#xC790;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../../.gitbook/assets/item13.010.png)
 
 * Conversion Factory Method
 	* [예시 코드](https://github.com/SeokRae/java-in-action/tree/master/java-in-theory/src/main/java/kr/seok/item13/factory)
 	* [테스트 코드](https://github.com/SeokRae/java-in-action/blob/master/java-in-theory/src/test/java/kr/seok/item13/factory/FactoryMethodCopyCoffeeTest.java)
 
-![&#xBCF5;&#xC0AC; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../.gitbook/assets/item13.011.png)
+![&#xBCF5;&#xC0AC; &#xBA54;&#xC11C;&#xB4DC;&#xB97C; &#xD1B5;&#xD55C; &#xAC1D;&#xCCB4; &#xBCF5;&#xC0AC;](../../../.gitbook/assets/item13.011.png)
 
 ## 객체 복사를 사용하는 Java API
 
-![Collection&#xC758; Set &#xD074;&#xB798;&#xC2A4;](../../.gitbook/assets/item13.012.png)
+![Collection&#xC758; Set &#xD074;&#xB798;&#xC2A4;](../../../.gitbook/assets/item13.012.png)
 
 ## 정리
 
-![Collection&#xC758; Set &#xD074;&#xB798;&#xC2A4;](../../.gitbook/assets/item13.013.png)
+![Collection&#xC758; Set &#xD074;&#xB798;&#xC2A4;](../../../.gitbook/assets/item13.013.png)

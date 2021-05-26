@@ -90,5 +90,6 @@ description: 자바 기반 공부하기
 	* [Item 1 - 생성자 대신 정적 팩터리 메서드를 고려하라](https://github.com/SeokRae/TIL/tree/a4b39a9f4d4d80d2e9422187995f991dd679db49/java/contents/effactive/item_1.md)
 	* [Item 7 - 다 쓴 객체 참조를 해제하라](effactive/item_7.md)
 	* [Item 13 - clone 재정의는 주의해서 진행하라](effactive/item_13.md)
-	* [Item 13 발표 내용](effactive/item_13_mystyle.md)
+	* [Item 13 발표 내용](effactive/item13/item_13_mystyle.md)
 	* [Item 16 - public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라](effactive/item_16.md)
+	* [Item 16 발표 내용](effactive/item16/item_16_ppt.md)
