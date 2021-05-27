@@ -97,7 +97,7 @@ public final class Time {
 ```java
 public class OuterClass {
 
-    private InnerClass innerClass;
+    private final InnerClass innerClass;
 
     public OuterClass() {
         this.innerClass = new InnerClass();

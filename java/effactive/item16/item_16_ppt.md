@@ -13,7 +13,7 @@ description: public 클래스에서는 public 필드가 아닌 접근자 메서�
 - 참고 자료
 	- [Access Modifiers in Java](https://www.baeldung.com/java-access-modifiers)
 	- [Controlling Access to Members of a Class](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
-	
+
 ![reference](/java/effactive/item16/images/item16.002.png)
 
 ## 캡슣화에 대한 브레인 스토밍
@@ -28,9 +28,8 @@ description: public 클래스에서는 public 필드가 아닌 접근자 메서�
 	- LSP: Liskov Substitution Principle
 	- ISP: Interface Segregation Principle
 	- DIP: Dependency Inversion Principle
-	
-![캡슐화와 연관된 OOP 원칙](/java/effactive/item16/images/item16.004.png)
 
+![캡슐화와 연관된 OOP 원칙](/java/effactive/item16/images/item16.004.png)
 
 ## 자바에서 제공하는 캡슐화 기능
 
@@ -40,9 +39,8 @@ description: public 클래스에서는 public 필드가 아닌 접근자 메서�
 		- protected
 		- default (package-private)
 		- public
-	
-![Access Modifier](/java/effactive/item16/images/item16.005.png)
 
+![Access Modifier](/java/effactive/item16/images/item16.005.png)
 
 ## public 클래스에서 상호작용하는 방식
 
