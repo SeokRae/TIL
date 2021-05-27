@@ -155,7 +155,7 @@ description: 다 쓴 객체 참조를 해제하라
 	* [Oracle jstat Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jstat.html)
 
   | gcutil 옵션 | 설명 |
-      | :---: | :--- |
+        | :---: | :--- |
   | S0 | Survivor space 0 utilization as a percentage of the space's current capacity. |
   | S1 | Survivor space 1 utilization as a percentage of the space's current capacity. |
   | E | Eden space utilization as a percentage of the space's current capacity. |
