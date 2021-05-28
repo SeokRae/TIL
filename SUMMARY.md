@@ -39,7 +39,8 @@
 		* [Item 13 발표 내용](java/effactive/item13/item_13_mystyle.md)
 		* [Item 16](java/effactive/item_16.md)
 		* [Item 16 발표 내용](java/effactive/item16/item_16_ppt.md)
-		* [Item 28](java/effactive/item_26.md)
+		* [Item 26](java/effactive/item_26.md)
+		* [Item 28](java/effactive/item_28.md)
 	
 ## Spring
 

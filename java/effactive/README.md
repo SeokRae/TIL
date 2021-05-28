@@ -11,3 +11,4 @@ description: 이펙티브 자바 아이템 줍줍
 * [Item 16](item_16.md)
 * [Item 16](item16/item_16_ppt.md)
 * [Item 26](item_26.md)
+* [Item 28](item_28.md)

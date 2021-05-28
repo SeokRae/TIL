@@ -94,3 +94,4 @@ description: 자바 기반 공부하기
 	* [Item 16 - public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라](effactive/item_16.md)
 	* [Item 16 발표 내용](effactive/item16/item_16_ppt.md)
 	* [Item 26 - 로 타입은 사용하지 말라](effactive/item_26.md)
+	* [Item 28 - 배열보다는 리스트를 사용하라](effactive/item_28.md)
