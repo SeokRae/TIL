@@ -58,14 +58,18 @@ List<Object> ol=new ArrayList<Long>(); // 호환되지 않는 타입이다.
 	- 이를 허용하게 되는 경우 컴파일러가 자동 생성한 형변환 코드에서 런타임에 ClassCastException이 발생할 수 있다.
 	- 런타임에 ClassCastException이 발생하는 일을 막아주겠다는 제네릭 타입 시스템의 취지에 어긋난다.
 
-### 구체적인 상황
+### 제네릭 배열이 가능한 경우를 가정한 예제
 
 ```java
-List<String>[]stringLists=new List<String>[1];
-        List<Integer> intList=List.of(42);
-        Object[]objects=stringLists;
-        objects[0]=intList;
-        String s=stringLists[0].get(0);
+class Example {
+    public static void main(String[] args) {
+        List<String>[] stringLists = new List<String>[1];
+        List<Integer> intList = List.of(42);
+        Object[] objects = stringLists;
+        objects[0] = intList;
+        String s = stringLists[0].get(0);
+    }
+}
 ```
 
 > 제네릭 배열을 생성이 허용된다고 가정하는 경우
