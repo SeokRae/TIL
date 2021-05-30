@@ -1,4 +1,4 @@
-# Type Erasure
+# Erasure of Generic Types
 
 ## Intro
 
