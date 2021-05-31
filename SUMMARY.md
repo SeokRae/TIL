@@ -22,6 +22,7 @@
 	* [Facade Pattern](design/structural/_facade.md)
 	* [Flyweight Pattern](design/structural/_flyweight.md)
 	* [Proxy Pattern](design/structural/_proxy.md)
+	* [Chain of Responsibility Pattern](design/behavioral/_chain_of_responsibility.md)
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)

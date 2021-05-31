@@ -40,14 +40,14 @@ Structural Patterns은 클래스의 구성\(composition\), 즉 클래스를 구�
 
 Behavioral design patterns는 클래스와 객체 간의 상호 작용과 책임 위임을 지시한다.
 
-* **`Interpreter Pattern`**
-* Template Pattern
-* Chain of Responsibility Pattern
+* [Chain of Responsibility Pattern](/design/behavioral/_chain_of_responsibility.md)
 * Command Pattern
+* **`Interpreter Pattern`**
 * Iterator Pattern
 * Mediator Pattern
 * Memento Pattern
 * **`Observer Pattern`**
 * State Pattern
 * Strategy Pattern
+* Template Method Pattern
 * **`Visitor Pattern`**

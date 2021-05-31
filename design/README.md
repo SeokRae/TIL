@@ -30,9 +30,9 @@
 
 ### Behavioral Patterns
 
+* [Chain of Responsibility Pattern](/design/behavioral/_chain_of_responsibility.md)
 * **`Interpreter Pattern`**
 * Template Pattern
-* Chain of Responsibility Pattern
 * Command Pattern
 * Iterator Pattern
 * Mediator Pattern
