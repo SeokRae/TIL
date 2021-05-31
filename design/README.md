@@ -31,9 +31,9 @@
 ### Behavioral Patterns
 
 * [Chain of Responsibility Pattern](/design/behavioral/_chain_of_responsibility.md)
-* **`Interpreter Pattern`**
+* [**`Interpreter Pattern`**](/design/behavioral/_interpreter.md)
 * Template Pattern
-* Command Pattern
+* [Command Pattern](/design/behavioral/_command.md)
 * Iterator Pattern
 * Mediator Pattern
 * Memento Pattern
