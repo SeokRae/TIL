@@ -38,3 +38,7 @@ description: Structural Pattern
 	- 원격 메서드 호출
 	- 하나의 JVM에 있는 객체가 다른 JVM(Java Virtual Machine)의 객체에 대한 메서드를 호출할 수 있도록 하는 매커니즘
 	- RMI는 마샬링을 사용하여 와이어를 통해 메서드 매개 변수를 전송하고 주체는 이를 다시 객체로 마샬링한다.
+
+## 참고
+
+- [Proxy Design Pattern Example](https://www.javacodegeeks.com/2015/09/proxy-design-pattern.html)

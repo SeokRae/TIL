@@ -19,7 +19,7 @@ description: Behavioral Pattern
 1. Handler 는 모든 일반적인 인터페이스와 구현 핸들러 인터페이스를 선언한다.
 	- 일반적으로 요청을 처리하는 단일 메서드만 포함되어 있지만 때로는 체인에서 다음 처리기를 설정하는 다른 메서드가 있을 수 있다.
 
-2. Base Hander 는 모든 핸들러 클래스에 공통의 상용구 코드를 삽입 할 수 있는 옵션 클래스이다.	
+2. Base Hander 는 모든 핸들러 클래스에 공통의 상용구 코드를 삽입 할 수 있는 옵션 클래스이다.
 	- 일반적으로 이 클래스는 다음 핸들러에 대한 참조를 저장하기 위한 필드를 정의한다.
 	- 클라이언트는 이전 핸들러의 생성자 또는 setter에 핸들러를 전달하여 체인을 구축할 수 있다.
 	- 클래스는 또한 기본 처리 동작을 구현할 수 있다.
@@ -28,7 +28,7 @@ description: Behavioral Pattern
 3. Concrete Handler 에는 요청 처리를 위한 실제 코드가 포함되어 있다.
 	- 요청을 받으면 각 핸들러는 요청을 처리할 지 여부와 추가로 체인을 따라 전달할 지 여부를 결정해야 한다.
 	- 핸들러는 일반적으로 자체 포함되고 변경 불가능하며 생성자를 통해 필요한 데이터를 한 번만 받는다.
-	
+
 4. Client 는 한 번만 체인을 작성하거나 응용 프로그램의 로직에 따라 동적으로 구성할 수 있다.
 	- 요청을 체인의 모든 핸들러로 전송될 수 있다.
 
@@ -48,3 +48,7 @@ description: Behavioral Pattern
 	- javax.servlet.Filter.doFilter() 는 Chain of Responsibility Pattern을 따른다.
 	- doFilter 필터의 메서드는 체인 끝에서 리소스에 대한 클라이언트 요청으로 인하여 요청 및 응답이 체인을 통해 전달될 때 마다 컨테이너에 의해 호출된다.
 	- 이 메서드에 전달된 FilterChain을 사용하면 필터가 요청을 전달하고 체인의 다음 엔티티에 응답할 수 있다.
+
+## 참고
+
+- [Chain Of Responsibility Design Pattern In Java](https://www.javacodegeeks.com/2019/09/chain-of-responsibility-design-pattern-in-java.html)
