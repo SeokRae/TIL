@@ -57,7 +57,7 @@
 	* [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](spring-security.md)
 * [Spring Batch](batch-study/README.md)
-	* [1. Introduction](batch-study/1.introduction.md)
+	- [배치용 디비 설치](/batch-study/contents/_1.md)
 
 ## Tistory
 

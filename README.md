@@ -51,7 +51,8 @@ description: Today I Learned
 	* [3. Spring-Data-Jpa](spring-jpa/springboot-jpa-data.md)
 	* [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
 * [Spring Security](https://github.com/SeokRae/TIL/tree/de1295942811b3db0b575e366f53c4d5736bb991/spring-security.md)
-* [Spring Batch](batch-study/)
+* [Spring Batch](batch-study/README.md)
+	- [배치용 디비 설치](/batch-study/contents/_1.md)
 
 
 * 월요일

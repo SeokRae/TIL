@@ -1,0 +1,21 @@
+version: "3.7"
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    container_name: batch_schema_db # 컨테이너 이름 설정
+    ports:
+      - "3308:3306" # MySQL 포트
+
+    environment: # -e 옵션
+      - MYSQL_ROOT_PASSWORD=1234
+      - TZ=Asia/Seoul
+
+    command: # 명령어 실행
+      - --lower_case_table_names=1
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --explicit_defaults_for_timestamp=1
+
+    volumes:
+      - /Users/seok/docker/mysql/batch:/var/lib/mysql # -v 옵션 (디렉토리 마운트 설정)
