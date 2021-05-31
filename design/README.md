@@ -26,7 +26,7 @@
 * [**`Decorator Pattern`**](/design/structural/_decorator.md)
 * [Facade Pattern](/design/structural/_facade.md)
 * [Flyweight Pattern](/design/structural/_flyweight.md)
-* **`Proxy Pattern`**
+* [**`Proxy Pattern`**](/design/structural/_proxy.md)
 
 ### Behavioral Patterns
 

@@ -34,7 +34,7 @@ Structural Patterns은 클래스의 구성\(composition\), 즉 클래스를 구�
 * [**`Decorator Pattern`**](/design/structural/_decorator.md)
 * [Facade Pattern](/design/structural/_facade.md)
 * [Flyweight Pattern](/design/structural/_flyweight.md)
-* **`Proxy Pattern`**
+* [**`Proxy Pattern`**]()
 
 ## Behavioral
 

@@ -21,6 +21,7 @@ description: Today I Learned
 	* [**`Decorator Pattern`**](design/structural/_decorator.md)
 	* [Facade Pattern](design/structural/_facade.md)
 	* [Flyweight Pattern](design/structural/_flyweight.md)
+	* [Proxy Pattern](design/structural/_proxy.md)
 * [오브젝트](object/)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)

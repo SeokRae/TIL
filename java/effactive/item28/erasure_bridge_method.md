@@ -88,7 +88,7 @@ public class MyNode extends Node {
 - 결과적으로 MyNode.setData(Integer) 메서드는 Node.setData(Object) 메서드를 재정의하지 않는다.
 
 - 이 문제를 해결하고 타입 삭제 후 일반 타입의 다형성을 보존하기 위해서 자바 컴파일러는 하위 타입이 예상대로 작동하는지 확인하는 브릿지 메서드를 생성한다.
-  
+
 > MyNode 클래스는 컴파일러가 setData 메서드를 브릿지 메서드로 생성한다.
 
 ```java
@@ -109,4 +109,4 @@ class MyNode extends Node {
 ```
 
 - 브릿지 메서드 MyNode.setData(Object)는 원래 메서드 MyNode.setData(Integer)에 위임된다.
-- 결과적으로 n.setData("Hello")는  MyNode.setData(Object)메서드를 호출하고 "Hello"를 Integer로 캐스팅할 수 없기 때문에 ClassCastException 예외를 발생시킨다.
+- 결과적으로 n.setData("Hello")는 MyNode.setData(Object)메서드를 호출하고 "Hello"를 Integer로 캐스팅할 수 없기 때문에 ClassCastException 예외를 발생시킨다.

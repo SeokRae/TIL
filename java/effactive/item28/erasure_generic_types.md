@@ -4,7 +4,7 @@
 
 - `Type Erasure`란 원소 타입을 컴파일 타입에만 검사하고 런타임에는 해당 타입 정보를 알 수 없다.
 - 컴파일 타입에만 타입 제약 조건을 정의하고, 런타임에는 타입을 제거한다.
-  
+
 - [Erasure of Generic Types](https://docs.oracle.com/javase/tutorial/java/generics/genTypes.html)
 
 ## Java Compiler 의 Type Erasure
@@ -24,8 +24,7 @@
 
 ## Erasure of Generic Types
 
-- Type Erasure Process 동안 Java Compiler는 모든 타입 매개변수를 지우고 타입 매개변수가 바인딩 된 경우, 
-  첫 번째 바인드로 대체되고 타입 매개변수가 바인드 되지 않은 경우 Object로 대체 된다.
+- Type Erasure Process 동안 Java Compiler는 모든 타입 매개변수를 지우고 타입 매개변수가 바인딩 된 경우, 첫 번째 바인드로 대체되고 타입 매개변수가 바인드 되지 않은 경우 Object로 대체 된다.
 
 > 단일 LinkedList 에서 Node를 나타낸 다음 일반 클래스를 고려하라
 

@@ -21,6 +21,7 @@
 	* [**`Decorator Pattern`**](design/structural/_decorator.md)
 	* [Facade Pattern](design/structural/_facade.md)
 	* [Flyweight Pattern](design/structural/_flyweight.md)
+	* [Proxy Pattern](design/structural/_proxy.md)
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)
@@ -41,7 +42,7 @@
 	* [Item 16 발표 내용](java/effactive/item16/item_16_ppt.md)
 	* [Item 26](java/effactive/item_26.md)
 	* [Item 28](java/effactive/item_28.md)
-	
+
 ## Spring
 
 ---
@@ -54,7 +55,6 @@
 * [Spring Security](spring-security.md)
 * [Spring Batch](batch-study/README.md)
 	* [1. Introduction](batch-study/1.introduction.md)
-
 
 ## Tistory
 
