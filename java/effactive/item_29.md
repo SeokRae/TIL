@@ -75,13 +75,13 @@ public class Stack<E> {
     public E pop() {
         if (size = 0)
             throw new EmptyStackException();
-        
+
         // Object -> E
         E result = elements[-size];
         elements[size] = null; //다쓴참조해제 
-	    return result;
+        return result;
     }
-	// isEmpty와ensureCapacity메서드는그대로다. 
+    // isEmpty와ensureCapacity메서드는그대로다. 
 }
 ```
 
@@ -111,7 +111,7 @@ public class Stack<E> {
     // ...
 }
 ```
- 
+
 > 두 번째는 elements 필드의 타입을 E[]에서 Object[]로 바꾸는 방법
 
 - 첫 번째와는 다른 오류가 발생한다.
@@ -122,21 +122,21 @@ public class Stack<E> {
 ```java
 // 배열을 사용한 코드를 제네릭으로 만드는 방법 2
 public class Stack<E> {
-	// 비검사 경고를 적절히 숨긴다.
-	public E pop() {
-		if(size == 0)
-			throw new EmptyStackException();
+    // 비검사 경고를 적절히 숨긴다.
+    public E pop() {
+        if (size == 0)
+            throw new EmptyStackException();
 
-		// push에서 E 타입만 허용하므로 이 형변환은 안전하다.
-		@SuppressWarnings("unchecked")
-		E result = (E) elements[--size];
+        // push에서 E 타입만 허용하므로 이 형변환은 안전하다.
+        @SuppressWarnings("unchecked")
+        E result = (E) elements[--size];
 
-		elements[size] = null;
-		return result;
-	}
+        elements[size] = null;
+        return result;
+    }
 }
 ```
- 
+
 > 제네릭 배열 생성을 제거하는 두 방법 모두 나름의 지지를 얻고 있다.
 
 - 첫 번째 방법은 가독성이 더 좋다.
@@ -153,15 +153,15 @@ public class Stack<E> {
 	- Stack 에서 꺼낸 원소에서 String의 toUpperCase 메서드를 호출할 때 명시적 형변환을 수행하지 않는다.
 	  (컴파일러에 의해 자동 생성)
 	- 형변환이 항상 성공함을 보장한다.
-	
+
 ```java
 public class Stack<T> {
     public static void main(String[] args) {
-	    Stack<String> stack = new Stack<>();
-	    for (String arg : args) {
-	        stack.push(arg);
+        Stack<String> stack = new Stack<>();
+        for (String arg : args) {
+            stack.push(arg);
         }
-	    while (!stack.isEmpty()) {
+        while (!stack.isEmpty()) {
             System.out.println(stack.pop().toUpperCase());
         }
     }
@@ -192,10 +192,9 @@ public class Stack<T> {
 import java.util.concurrent.BlockingQueue;
 
 public class DelayQueue<E extends Delayed> implements BlockingQueue<E> {
-    
+
 }
 ```
-
 
 ## 핵심 정리
 
