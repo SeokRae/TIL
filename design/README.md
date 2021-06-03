@@ -34,7 +34,7 @@
 * [**`Interpreter Pattern`**](/design/behavioral/_interpreter.md)
 * Template Pattern
 * [Command Pattern](/design/behavioral/_command.md)
-* Iterator Pattern
+* [Iterator Pattern](/design/behavioral/_iterator.md)
 * Mediator Pattern
 * Memento Pattern
 * **`Observer Pattern`**

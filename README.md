@@ -25,6 +25,8 @@ description: Today I Learned
 	* [Chain of Responsibility Pattern](design/behavioral/_chain_of_responsibility.md)
 	* [Command Pattern](design/behavioral/_command.md)
 	* [Interpreter Pattern](design/behavioral/_interpreter.md)
+	* [Iterator Pattern](design/behavioral/_iterator.md)
+	
 * [오브젝트](object/)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)
