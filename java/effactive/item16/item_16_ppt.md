@@ -16,7 +16,7 @@ description: public 클래스에서는 public 필드가 아닌 접근자 메서�
 
 ![reference](/java/effactive/item16/images/item16.002.png)
 
-## 캡슣화에 대한 브레인 스토밍
+## 캡슐화에 대한 브레인 스토밍
 
 ![Object Oriented Principle](/java/effactive/item16/images/item16.003.png)
 
