@@ -20,7 +20,7 @@ description: public 클래스에서는 public 필드가 아닌 접근자 메서�
 
 ![Object Oriented Principle](/java/effactive/item16/images/item16.003.png)
 
-## 캡슐화를 위한하여 생기는 OOP 원칙
+## 캡슐화를 위반하여 생기는 OOP 원칙
 
 - 객체 지향 설계 5원칙 (SOLID)
 	- SRP: Single Responsibility Principle

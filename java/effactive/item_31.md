@@ -105,13 +105,13 @@ public class Example {
 - 클라이언트 코드에서 Stack<Number>의 원소를 Object용 컬렉션으로 옮기는 시도를 하는 경우 문제가 발생한다.
 	- "Collection<Object>는 Collection<Number>의 하위 타입이 아니다." 라는 오류를 발생시킨다.
 	- 이와 같은 경우도 와일드 카드를 통해 해결할 수 있다.
-	
+
 ```java
 public class Client {
     public static void main(String[] args) {
         Stack<Number> numberStack = new Stack<>();
-		Collection<Object> objects; //= ...;
-		numberStack.popAll(objects);
+        Collection<Object> objects; //= ...;
+        numberStack.popAll(objects);
     }
 }
 ```
@@ -120,7 +120,7 @@ public class Client {
 
 - popAll의 입력 매개변수의 타입이 'E의 Collection'이 아니라 'E의 상위 타입의 Collection'이어야 한다.
   (모든 타입은 자기 자신의 상위 타입이다.)
-  
+
 - 와일드 카드 타입을 사용한 Collection<? super E>가 정확히 이런 의미이다.
 
 ```java
@@ -144,16 +144,16 @@ public class Example {
 - 와일드카드 타입을 써야하는지에 대한 상황을 분별할 수 있는 기준
 - 매개변수화 타입 T가 생상자인경우 <? extends T>를 사용하고, 소비자인 경우 <? super T>를 사용해야 한다.
 - Stack 예
-    - pushAll의 src 매개변수는 Stack이 사용할 E 인스턴스를 생산하므로 src의 적절한 타입은 Iterable<? extends E>이다.
+	- pushAll의 src 매개변수는 Stack이 사용할 E 인스턴스를 생산하므로 src의 적절한 타입은 Iterable<? extends E>이다.
 	- popAll의 dst 매개변수는 Stack으로부터 E 인스턴스를 소비하므로 dst의 적절한 타입은 Collection<? super E> 이다.
-	
+
 - PECS 공식은 와일드카드 타입을 사용하는 기본원칙
 
 ## Chooser 클래스에 와일드 카드 적용 예시
 
 - 코드 상황
 	- 생성자로 넘겨지는 choices 컬렉션은 T 타입의 값을 생산하기만 하나, T를 확장하는 와일드카드 타입을 사용해 선언해야 한다.
-	
+
 ```java
 public class Chooser<T> {
     private final List<T> choiceList;
@@ -172,7 +172,6 @@ public class Chooser<T> {
 - 변경 후 차이점
 	- Chooser<Number>의 생성자에 List<Integer>를 넘기는 상황에서 수정 전에는 컴파일 조차 되지 않는다.
 	- 한정적 와일드카드 타입으로 선언하여 수정한 뒤의 생성자에서는 문제가 사라진다.
-	
 
 > item 30 의 union 코드 수정
 
@@ -180,7 +179,7 @@ public class Chooser<T> {
 - 반환 타입은 여전히 Set<E> 이다.
 	- 반환 타입에는 한정적 와일드카드 타입을 사용하면 안된다.
 	- 유연성을 높여주기는 커녕 클라이언트 코드에서도 와일드카드 타입을 써야 한다.
-	
+
 ```java
 class Example {
     public static <E> Set<E> union(Set<? extends E> si, Set<? extends E> s2) {
@@ -221,7 +220,6 @@ class Example {
 - 매개 변수는 메서드 선언에 정의한 변수
 - 인수는 메서드 호출 시 넘기는 '실제값'
 
-
 ## item 30의 max 메서드 수정
 
 - PECS 공식에 따른 수정
@@ -230,12 +228,12 @@ class Example {
 	- 그래서 매개변수화 타입 Comparable<E> 한정적 와일드카드 타입인 Comparable<? super E>로 대체한다.
 	- Comparable은 언제나 소비자이므로, 일반적으로 Comparable<E> 보다는 Comparable<? super E>를 사용하는 편이 좋다.
 	- Comparator 도 마찬가지로 Comparator<E> 보다는 Comparator<? super E>를 사용하는 편이 좋다.
-	
+
 ```java
 class Example {
     // 수정 전 메서드
     public static <E extends Comparable<E>> E max(List<E> c);
-    
+
     // 수정 후
     public static <E extends Comparable<? super E>> E max(List<? extends E> list);
 }
@@ -246,7 +244,7 @@ class Example {
 	- ScheduledFuture는 Delayed의 하위 인터페이스이고, Delayed는 Comparable<Delayed>를 확장했다.
 	- 결국, ScheduledFuture의 인스턴스는 다른 ScheduledFuture 인스턴스 뿐 아니라 Delayed 인스턴스와도 비교할 수 있어서 수정 전 max가 이 리스트를 거부하는 것이다.
 	- 일반화하여 정리해보면, Comparable 혹은 Comparator 를 직접 구현하지 않고, 직접 구현한 다른 타입을 확장한 타입을 지원하기 위해 와일드카드가 필요하다.
-	
+
 ```java
 class Client {
     public static void main(String[] args) {
@@ -263,6 +261,7 @@ class Client {
 ```java
 class Example {
     public static <E> void swap(List<E> list, int i, int j); // 비한정적 타입 매개변수 사용
+
     public static void swap(List<?> list, int i, int j); // 비한정적 와일드 카드 사용
 }
 ```
@@ -270,7 +269,7 @@ class Example {
 - public API를 정의하는 경우 두 번째 방법을 사용하는 것이 좋다.
 	- 어떤 리스트든 이 메서드에 넘기면 명시한 인덱스의 원소들을 교환해 줄 것이다.
 	- 신경 써야 할 타입 매개변수도 없다.
-	
+
 
 - 기본 규칙
 	- 메서드 선언에 타입 매개변수가 한 번만 나오면 와일드 카드로 대체하라
@@ -279,7 +278,7 @@ class Example {
 - 두 번째 방법을 사용하는 경우 주의사항
 	- 방금 꺼낸 원소를 리스트에 다시 넣을 수 없는 오류를 발생시키면서 컴파일 되지 않는다.
 	- 원인은 리스트의 타입이 List<?>인데, List<?>에는 null 외에 어떤 값도 넣을 수 없다는데에 있다.
-	
+
 ```java
 class Example {
     public static void swap(List<?> list, int i, int j) {
@@ -291,23 +290,23 @@ class Example {
 - 위 문제는 형변환이나 리스트의 로 타입을 사용하지 않고도 해결할 수 있는 방법이 있다.
 	- 와일드 카드 타입의 실제 타입을 알려주는 메서드를 private 도우미 메서드로 따로 작성하여 활용하는 방법이다.
 	- 실제 타입을 알아내려면 이 도우미 메서드는 제네릭 메서드여야 한다.
-	
+
 ```java
 class Example {
     public static void swap(List<?> list, int i, int j) {
         swapHelper(list, i, j);
     }
+
     // 와일드카드 타입을 실제 타입으로 바꿔주는 private 도우미 메서드
-	public static <E> void swapHelper(List<E> list, int i, int j) {
+    public static <E> void swapHelper(List<E> list, int i, int j) {
         list.set(i, list.set(j, list.get(i)));
-	}
+    }
 }
 ```
 
 - swapHelper 메서드는 리스트가 List<E>임을 알고 있다.
 	- 즉, 이 리스트에서 꺼낸 값의 타입은 항상 E이고, E 타입의 값이라면 이 리스트에 넣어도 안전함을 알고있다.
 	- swap 메서드를 호출하는 클라이언트는 복잡한 swapHelper의 존재를 모른 채 그 혜택을 누리는 것이다.
-	
 
 ## 핵심 정리
 
