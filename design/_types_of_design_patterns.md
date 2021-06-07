@@ -34,7 +34,7 @@ Structural Patterns은 클래스의 구성\(composition\), 즉 클래스를 구�
 * [**`Decorator Pattern`**](/design/structural/_decorator.md)
 * [Facade Pattern](/design/structural/_facade.md)
 * [Flyweight Pattern](/design/structural/_flyweight.md)
-* [**`Proxy Pattern`**]()
+* [**`Proxy Pattern`**](/design/structural/_proxy.md)
 
 ## Behavioral
 
@@ -43,9 +43,9 @@ Behavioral design patterns는 클래스와 객체 간의 상호 작용과 책임
 * [Chain of Responsibility Pattern](/design/behavioral/_chain_of_responsibility.md)
 * [Command Pattern](/design/behavioral/_command.md)
 * [**`Interpreter Pattern`**](/design/behavioral/_interpreter.md)
-* Iterator Pattern
-* Mediator Pattern
-* Memento Pattern
+* [Iterator Pattern](/design/behavioral/_iterator.md)
+* [Mediator Pattern](/design/behavioral/_mediator.md)
+* [Memento Pattern](/design/behavioral/_memento.md)
 * **`Observer Pattern`**
 * State Pattern
 * Strategy Pattern

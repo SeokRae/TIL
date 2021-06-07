@@ -26,6 +26,9 @@
 	* [Command Pattern](design/behavioral/_command.md)
 	* [Interpreter Pattern](design/behavioral/_interpreter.md)
 	* [Iterator Pattern](design/behavioral/_iterator.md)
+	* [Mediator Pattern](design/behavioral/_mediator.md)
+	* [Memento Pattern](design/behavioral/_memento.md)
+
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)
