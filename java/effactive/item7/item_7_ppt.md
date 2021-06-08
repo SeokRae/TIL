@@ -4,7 +4,7 @@ description: 다 쓴 객체 참조를 해제하라
 
 # Item 7 발표 내용
 
-![메모리 관리](/Users/seok/IdeaProjects/spring/java/effactive/item7/images/item7.001.png)
+![메모리 관리](images/item7.001.png)
 
 ## Intro
 
