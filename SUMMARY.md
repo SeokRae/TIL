@@ -43,6 +43,7 @@
 		* [볼링 게임 점수판](java/tdd/bowling.md)
 * [Effective Java](java/effactive/README.md)
 	* [Item 7](java/effactive/item_7.md)
+	* [Item 7 발표 내용](java/effactive/item7/item_7_ppt.md)
 	* [Item 13](java/effactive/item_13.md)
 	* [Item 13 발표 내용](java/effactive/item13/item_13_mystyle.md)
 	* [Item 16](java/effactive/item_16.md)
