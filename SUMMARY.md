@@ -52,6 +52,7 @@
 	* [Item 29](java/effactive/item_29.md)
 	* [Item 30](java/effactive/item_30.md)
 	* [Item 31](java/effactive/item_31.md)
+	* [Item 35](java/effactive/item_35.md)
 
 ## Spring
 

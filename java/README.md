@@ -98,3 +98,4 @@ description: 자바 기반 공부하기
 	* [Item 29](effactive/item_29.md)
 	* [Item 30](effactive/item_30.md)
 	* [Item 31](effactive/item_31.md)
+	* [Item 35](effactive/item_35.md)

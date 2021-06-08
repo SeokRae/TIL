@@ -52,6 +52,7 @@ description: Today I Learned
 	* [Item 29](java/effactive/item_29.md)
 	* [Item 30](java/effactive/item_30.md)
 	* [Item 31](java/effactive/item_31.md)
+	* [Item 35](java/effactive/item_35.md)
 * [Spring Jpa](spring-jpa/)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
 	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
