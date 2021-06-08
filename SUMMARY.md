@@ -49,6 +49,7 @@
 	* [Item 16 발표 내용](java/effactive/item16/item_16_ppt.md)
 	* [Item 26](java/effactive/item_26.md)
 	* [Item 28](java/effactive/item_28.md)
+	* [Item 28 발표 내용](java/effactive/item28/item_28_ppt.md)
 	* [Item 29](java/effactive/item_29.md)
 	* [Item 30](java/effactive/item_30.md)
 	* [Item 31](java/effactive/item_31.md)

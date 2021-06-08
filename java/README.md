@@ -95,6 +95,7 @@ description: 자바 기반 공부하기
 	* [Item 16 발표 내용](effactive/item16/item_16_ppt.md)
 	* [Item 26 - 로 타입은 사용하지 말라](effactive/item_26.md)
 	* [Item 28 - 배열보다는 리스트를 사용하라](effactive/item_28.md)
+	* [Item 28 발표 내용](effactive/item28/item_28_ppt.md)
 	* [Item 29](effactive/item_29.md)
 	* [Item 30](effactive/item_30.md)
 	* [Item 31](effactive/item_31.md)
