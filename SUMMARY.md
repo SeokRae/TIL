@@ -65,7 +65,10 @@
 	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
 	* [3. Spring-Data-Jpa](spring-jpa/springboot-jpa-data.md)
 	* [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
-* [Spring Security](spring-security.md)
+
+* [Spring Security](spring-security/README.md)
+	* [Intro](spring-security/contents/_1.md)
+	
 * [Spring Batch](batch-study/README.md)
 	- [배치용 디비 설치](/batch-study/contents/_1.md)
 
