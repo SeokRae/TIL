@@ -57,6 +57,9 @@ description: Today I Learned
 	* [Item 30 - 이왕이면 제네릭 메서드로 만들라](java/effactive/item_30.md)
 	* [Item 31 - 한정적 와일드 카드를 사용해 API 유연성을 높이라](java/effactive/item_31.md)
 	* [Item 35 - ordinal 메서드 대신 인스턴스 필드를 사용하라](java/effactive/item_35.md)
+	* [Item 37 - ordinal 인덱싱 대신 EnumMap을 사용하라](java/effactive/item_37.md)
+	
+
 * [Spring Jpa](spring-jpa/)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
 	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
