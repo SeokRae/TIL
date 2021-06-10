@@ -33,4 +33,5 @@ description: Behavioral Pattern
 ## 다른 디자인 패턴과의 관계
 
 ![요청에 따른 발신자와 수신자 관계를 기준](observer/observer.008.png)
+
 ![Mediator와 Observer](observer/observer.009.png)
