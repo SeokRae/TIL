@@ -28,6 +28,8 @@
 	* [Iterator Pattern](design/behavioral/_iterator.md)
 	* [Mediator Pattern](design/behavioral/_mediator.md)
 	* [Memento Pattern](design/behavioral/_memento.md)
+	* [Observer Pattern](design/behavioral/_observer.md)
+	* [State Pattern](design/behavioral/_state.md)
 
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)

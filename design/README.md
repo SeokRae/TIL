@@ -36,8 +36,8 @@
 * [Iterator Pattern](/design/behavioral/_iterator.md)
 * [Mediator Pattern](/design/behavioral/_mediator.md)
 * [Memento Pattern](/design/behavioral/_memento.md)
-* **`Observer Pattern`**
-* State Pattern
+* [**`Observer Pattern`**](/design/behavioral/_observer.md)
+* [State Pattern](/design/behavioral/_state.md)
 * Strategy Pattern
 * Template Method Pattern
 * **`Visitor Pattern`**
