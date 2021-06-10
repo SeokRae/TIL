@@ -1,5 +1,5 @@
 ---
-description: 이왕이면 제네릭 타입으로 만들라
+description: 이왕이면 제네릭 메서드로 만들라
 ---
 
 # Item 30

@@ -39,4 +39,5 @@
 * **`Observer Pattern`**
 * State Pattern
 * Strategy Pattern
+* Template Method Pattern
 * **`Visitor Pattern`**
