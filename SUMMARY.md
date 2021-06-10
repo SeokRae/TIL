@@ -51,10 +51,10 @@
 	* [Item 26 - 로 타입은 사용하지 말라](java/effactive/item_26.md)
 	* [Item 28 - 배열보다는 리스트를 사용하라](java/effactive/item_28.md)
 	* [Item 28 발표 내용](java/effactive/item28/item_28_ppt.md)
-	* [Item 29](java/effactive/item_29.md)
-	* [Item 30](java/effactive/item_30.md)
-	* [Item 31](java/effactive/item_31.md)
-	* [Item 35](java/effactive/item_35.md)
+	* [Item 29 - 이왕이면 제네릭 타입으로 만들라](java/effactive/item_29.md)
+	* [Item 30 - 이왕이면 제네릭 메서드로 만들라](java/effactive/item_30.md)
+	* [Item 31 - 한정적 와일드 카드를 사용해 API 유연성을 높이라](java/effactive/item_31.md)
+	* [Item 35 - ordinal 메서드 대신 인스턴스 필드를 사용하라](java/effactive/item_35.md)
 
 ## Spring
 
