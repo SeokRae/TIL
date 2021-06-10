@@ -4,6 +4,8 @@ description: ordinal 인덱싱 대신 EnumMap을 사용하라
 
 # Item 37
 
+- [Presentation](item37/item_37_ppt.md)
+
 ## Intro
 
 - 배열이나 리스트에서 원소를 꺼낼 때 ordinal 메서드 [아이템 35]()로 인덱스를 얻는 코드가 있다.
