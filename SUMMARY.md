@@ -58,7 +58,9 @@
 	* [Item 31 - 한정적 와일드 카드를 사용해 API 유연성을 높이라](java/effactive/item_31.md)
 	* [Item 35 - ordinal 메서드 대신 인스턴스 필드를 사용하라](java/effactive/item_35.md)
 	* [Item 37 - ordinal 인덱싱 대신 EnumMap을 사용하라](java/effactive/item_37.md)
+	* [Item 37 발표 내용](java/effactive/item37/item_37_ppt.md)
 	
+
 ## Spring
 
 ---
