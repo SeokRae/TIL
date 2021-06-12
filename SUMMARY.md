@@ -30,7 +30,8 @@
 	* [Memento Pattern](design/behavioral/_memento.md)
 	* [Observer Pattern](design/behavioral/_observer.md)
 	* [State Pattern](design/behavioral/_state.md)
-
+	* [Strategy Pattern](/design/behavioral/_strategy.md)
+	
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)

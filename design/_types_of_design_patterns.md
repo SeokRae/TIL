@@ -46,8 +46,8 @@ Behavioral design patterns는 클래스와 객체 간의 상호 작용과 책임
 * [Iterator Pattern](/design/behavioral/_iterator.md)
 * [Mediator Pattern](/design/behavioral/_mediator.md)
 * [Memento Pattern](/design/behavioral/_memento.md)
-* **`Observer Pattern`**
-* State Pattern
-* Strategy Pattern
+* [**`Observer Pattern`**](/design/behavioral/_observer.md)
+* [State Pattern](/design/behavioral/_state.md)
+* [Strategy Pattern](/design/behavioral/_strategy.md)
 * Template Method Pattern
 * **`Visitor Pattern`**
