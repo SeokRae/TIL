@@ -18,7 +18,7 @@ description: Behavioral Pattern
 
 ![Architecture](/design/behavioral/template/template_method.004.png)
 
-## Strategy 패턴의 예시
+## Template Method 패턴의 예시
 
 ![Example](/design/behavioral/template/template_method.005.png)
 
