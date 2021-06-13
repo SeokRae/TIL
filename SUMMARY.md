@@ -31,6 +31,7 @@
 	* [Observer Pattern](design/behavioral/_observer.md)
 	* [State Pattern](design/behavioral/_state.md)
 	* [Strategy Pattern](/design/behavioral/_strategy.md)
+	* [Template Method Pattern](/design/behavioral/_template_method.md)
 	
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)

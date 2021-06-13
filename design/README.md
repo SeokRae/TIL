@@ -39,5 +39,5 @@
 * [**`Observer Pattern`**](/design/behavioral/_observer.md)
 * [State Pattern](/design/behavioral/_state.md)
 * [Strategy Pattern](/design/behavioral/_strategy.md)
-* Template Method Pattern
+* [Template Method Pattern](/design/behavioral/_template_method.md)
 * **`Visitor Pattern`**
