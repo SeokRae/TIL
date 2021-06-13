@@ -14,8 +14,11 @@ description: ordinal 메서드 대신 인스턴스 필드를 사용하라
 ```java
 public enum Ensemble {
     SOLO, DUET, TRIO, QUARTET, QUINTET,
-	SEXTET, SEPTET, OCTET, NONET, DECTET;
-    public int numberOfMusicians() { return ordinal() + 1; }
+    SEXTET, SEPTET, OCTET, NONET, DECTET;
+
+    public int numberOfMusicians() {
+        return ordinal() + 1;
+    }
 }
 ```
 
@@ -32,12 +35,18 @@ public enum Ensemble {
 ```java
 public enum Ensemble {
     SOLO(1), DUET(2), TRIO(3), QUARTET(4), QUINTET(5),
-    SEXTET(6), SEPTET(7), OCTET(8), NONET(9), DECTET(10), 
-	TRIPLE_QUARTET(12);
-    
+    SEXTET(6), SEPTET(7), OCTET(8), NONET(9), DECTET(10),
+    TRIPLE_QUARTET(12);
+
     private final int numberOfMusicians;
-    Ensemble(int size) { this.numberOfMusicians = size; }
-    public int numberOfMusicians() { return numberOfMusicians; }
+
+    Ensemble(int size) {
+        this.numberOfMusicians = size;
+    }
+
+    public int numberOfMusicians() {
+        return numberOfMusicians;
+    }
 }
 ```
 

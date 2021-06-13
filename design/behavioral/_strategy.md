@@ -10,7 +10,6 @@ description: Behavioral Pattern
 
 ![Reference](strategy/strategy.002.png)
 
-
 ## Strategy 패턴이란?
 
 - 전략 패턴은 컨텍스트 관련 알고리즘 세트를 정의하고, 이를 분리된 클래스로 캡슐화하여 클라이언트가 런타임에 알고리즘을 선택할 수 있도록 하는 패턴이다.

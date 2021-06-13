@@ -40,4 +40,4 @@
 * [State Pattern](/design/behavioral/_state.md)
 * [Strategy Pattern](/design/behavioral/_strategy.md)
 * [Template Method Pattern](/design/behavioral/_template_method.md)
-* **`Visitor Pattern`**
+* [**`Visitor Pattern`**](/design/behavioral/_visitor.md)

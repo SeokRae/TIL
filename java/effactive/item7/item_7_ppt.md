@@ -15,7 +15,7 @@ description: 다 쓴 객체 참조를 해제하라
 	* Garbage Collection
 	* 메모리 누수의 원인
 	* 메모리 모니터링
-	
+
 ## 참고 내용
 
 ![참고 내용](images/item7.002.png)

@@ -412,7 +412,7 @@ public enum Phase {
     SOLID,
     LIQUID,
     GAS,
-	PLASMA;
+    PLASMA;
 
     public enum Transition {
         MELT,
@@ -421,8 +421,8 @@ public enum Phase {
         CONDENSE,
         SUBLIME,
         DEPOSIT,
-	    IONIZE,
-	    DEIONIZE;
+        IONIZE,
+        DEIONIZE;
 
         private static final Transition[][] TRANSITIONS = {
                 {null, MELT, SUBLIME, null}, // SOLID
@@ -477,7 +477,7 @@ public enum Phase {
 - enum 두 개를 사용하여 데이터를 조합하여 사용하는 경우 2차원 배열을 사용하는 것보다 EnumMap을 사용하는 것이 좋다.
 	- Collectors.groupingBy와 EnumMap의 조합으로 조회가 편리해지고, 성능 면에서도 이점이 있다.
 	- 실제 내부에서는 Map의 Map이 배열의 배열로 구현되어 낭비되는 공간과 시간도 거의 없이 명확하고 안전하고 유지보수에 좋다.
-	
+
 ## 정리
 
 - enum에 null을 사용하는 경우 NullPointerException 을 발생시켜 문제가 발생한다.

@@ -4,7 +4,6 @@ description: ordinal 인덱싱 대신 EnumMap을 사용하라
 
 # Item 37 발표 내용
 
-
 ![Intro](images/item37.001.png)
 
 ## Intro

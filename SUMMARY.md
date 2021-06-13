@@ -32,7 +32,9 @@
 	* [State Pattern](design/behavioral/_state.md)
 	* [Strategy Pattern](/design/behavioral/_strategy.md)
 	* [Template Method Pattern](/design/behavioral/_template_method.md)
-	
+	* [**`Visitor Pattern`**](/design/behavioral/_visitor.md)
+
+
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)
@@ -61,7 +63,6 @@
 	* [Item 35 - ordinal 메서드 대신 인스턴스 필드를 사용하라](java/effactive/item_35.md)
 	* [Item 37 - ordinal 인덱싱 대신 EnumMap을 사용하라](java/effactive/item_37.md)
 	* [Item 37 발표 내용](java/effactive/item37/item_37_ppt.md)
-	
 
 ## Spring
 
@@ -75,7 +76,7 @@
 
 * [Spring Security](spring-security/README.md)
 	* [Intro](spring-security/contents/_1.md)
-	
+
 * [Spring Batch](batch-study/README.md)
 	- [배치용 디비 설치](/batch-study/contents/_1.md)
 
