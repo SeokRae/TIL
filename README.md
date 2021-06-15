@@ -64,6 +64,8 @@ description: Today I Learned
 	* [Item 37 - ordinal 인덱싱 대신 EnumMap을 사용하라](java/effactive/item_37.md)
 	* [Item 37 발표 내용](java/effactive/item37/item_37_ppt.md)
 
+* 궁금증
+	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
 
 * [Spring Jpa](spring-jpa/)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
