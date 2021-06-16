@@ -2,7 +2,7 @@
 description: 자바 궁금증
 ---
 
-# 자바 제네릭스에 대한 정리
+# 자바 제네릭의 타입 소거와 기존 라이브러리와의 호환
 
 - 참고
 	- [자바의 정석](https://codechobo.tistory.com/)
