@@ -66,6 +66,7 @@ description: Today I Learned
 
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
+	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](/java/interview/generics.md)
 
 * [Spring Jpa](spring-jpa/)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
