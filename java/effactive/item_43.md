@@ -4,6 +4,8 @@ description: 람다보다는 메서드 참조를 사용하라
 
 # Item 43
 
+- [Presentation](/java/effactive/item43/item43.pdf)
+
 ## Intro
 
 - **람다**가 **익명 클래스**보다 나은 점 중에서 가장 큰 특징은 **간결함**이다.
