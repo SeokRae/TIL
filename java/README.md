@@ -101,7 +101,11 @@ description: 자바 기반 공부하기
 	* [Item 30 - 이왕이면 제네릭 메서드로 만들라](effactive/item_30.md)
 	* [Item 31 - 한정적 와일드 카드를 사용해 API 유연성을 높이라](effactive/item_31.md)
 	* [Item 35 - ordinal 메서드 대신 인스턴스 필드를 사용하라](effactive/item_35.md)
-
+	* [Item 37 - ordinal 인덱싱 대신 EnumMap을 사용하라](effactive/item_37.md)
+	* [Item 37 발표 내용](effactive/item37/item_37_ppt.md)
+	* [Item 43 - 람다보다는 메서드 참조를 사용하라](effactive/item_43.md)
+	* [Item 43 발표 내용](effactive/item43/item43_ppt.md)
+	
 ## 궁금한 부분
 
 * Java
