@@ -37,13 +37,13 @@ description: 람다보다는 메서드 참조를 사용하라
 
 ## Intro
 
-![Intro](/java/effactive/item43/images/item43.001.jpeg)
+![Intro](/java/effective/item43/images/item43.001.jpeg)
 
-![Reference](/java/effactive/item43/images/item43.002.jpeg)
+![Reference](/java/effective/item43/images/item43.002.jpeg)
 
 ## Simple
 
-![Simple](/java/effactive/item43/images/item43.003.jpeg)
+![Simple](/java/effective/item43/images/item43.003.jpeg)
 
 ## Method Reference Type
 
@@ -54,28 +54,28 @@ description: 람다보다는 메서드 참조를 사용하라
   - **클래스 생성자**를 가리키는 메서드 레퍼런스
   - **배열 생성자**를 가리키는 메서드 레퍼런스
 
-![Method Reference Type](/java/effactive/item43/images/item43.004.jpeg)
+![Method Reference Type](/java/effective/item43/images/item43.004.jpeg)
 
 ## Reference to a static method
 
-![Static Method Reference 1](/java/effactive/item43/images/item43.005.jpeg)
+![Static Method Reference 1](/java/effective/item43/images/item43.005.jpeg)
 
-![Static Method Reference 2](/java/effactive/item43/images/item43.006.jpeg)
+![Static Method Reference 2](/java/effective/item43/images/item43.006.jpeg)
 
 ## Reference to an instance method of a particular object
 
-![Reference to an instance method of a particular object](/java/effactive/item43/images/item43.007.jpeg)
+![Reference to an instance method of a particular object](/java/effective/item43/images/item43.007.jpeg)
 
 ## Reference to an instance method of an arbitrary object of a particular type
 
-![Reference to an instance method of an arbitrary object of a particular type](/java/effactive/item43/images/item43.008.jpeg)
+![Reference to an instance method of an arbitrary object of a particular type](/java/effective/item43/images/item43.008.jpeg)
 
 ## Reference to a constructor
 
-![Reference to a class constructor](/java/effactive/item43/images/item43.009.jpeg)
+![Reference to a class constructor](/java/effective/item43/images/item43.009.jpeg)
 
-![Reference to a array constructor](/java/effactive/item43/images/item43.010.jpeg)
+![Reference to a array constructor](/java/effective/item43/images/item43.010.jpeg)
 
 ## 정리
 
-![Reference to a array constructor](/java/effactive/item43/images/item43.011.jpeg)
+![Reference to a array constructor](/java/effective/item43/images/item43.011.jpeg)

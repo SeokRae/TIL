@@ -20,3 +20,5 @@ description: 이펙티브 자바 아이템 줍줍
 * [Item 37 - ordinal 인덱싱 대신 EnumMap을 사용하라](item_37.md)
 * [Item 37 발표 내용](item37/item_37_ppt.md)
 * [Item 43 - 람다보다는 메서드 참조를 사용하라](item_43.md)
+* [Item 56 - 공개된 API 요소에는 항상 문서화 주석을 작성하라](item_56.md)
+* [Item 56 발표 내용](item56/item_56_ppt.md)

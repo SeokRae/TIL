@@ -4,7 +4,7 @@ description: 람다보다는 메서드 참조를 사용하라
 
 # Item 43
 
-- [Presentation](/java/effactive/item43/item43.pdf)
+- [Presentation](/java/effective/item43/item43.pdf)
 
 ## Intro
 
