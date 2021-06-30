@@ -22,6 +22,8 @@
 
 ![erd](../.gitbook/assets/springbatch_schema_erd.png)
 
+- [batch-schema](/batch-study/batch-schema.md)
+
 ## 추가적 진행
 
 * [x] txt 파일 reader 기능 추가 \(csv, txt, excel\)
