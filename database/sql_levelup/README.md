@@ -14,9 +14,9 @@ description: 월요일 스터디
 
 ### 1장 DBMS 아키텍처
 
-- [1강 DBMS 아키텍처 개요](/database/sql_levelup/_1.md)
+- [1강 DBMS 아키텍처 개요](_1.md)
 
-- [2강 DBMS와 버퍼](/database/sql_levelup/_2.md)
+- [2강 DBMS와 버퍼](_2.md)
 
 - 3강 DBMS와 실행 계획
 
