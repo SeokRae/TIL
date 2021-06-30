@@ -82,6 +82,8 @@
 
 * [Database](database/README.md)
 	* [SQL 레벨업](database/sql_levelup/README.md)
+		* [1강 DBMS 아키텍처 개요](database/sql_levelup/_1.md)
+		* [2강 DBMS와 버퍼](database/sql_levelup/_2.md)
 
 ## Spring
 

@@ -75,7 +75,10 @@ description: Today I Learned
 	
 * [Database](database/README.md)
 	* [SQL 레벨업](database/sql_levelup/README.md)
+		* [1강 DBMS 아키텍처 개요](database/sql_levelup/_1.md)
+		* [2강 DBMS와 버퍼](database/sql_levelup/_2.md)
 	
+
 * [Spring Jpa](spring-jpa/)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
 	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
