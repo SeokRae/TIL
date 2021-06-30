@@ -100,7 +100,7 @@ description: Today I Learned
 | 알고리즘 | 완료 | SR 외 7인 | [Link](https://github.com/SeokRae/java_sample/tree/master/programmers) | 2020/10/13 ~ 2021/01/13 | - 프로그래머스 코딩테스트 고득점 Kit <br/> - 알고리즘 학습하는 방법을 배우는 스터디 <br/> - 해시, 스택/큐, 힙, 정렬, 완전탐색, 탐욕법 까지 진행하고 마무리 |
 | 코딩 인터뷰 완전 분석 | 완료 | SR 외 7인 | [Link](https://github.com/SeokRae/java-in-action/tree/master/java-in-interview) | 2021/01/19 ~ 2021/04/12 | - 자료구조 학습 <br/> - 알고리즘에서 사용할 수 있는, 자바에서 제공하는 자료구조를 구현하기 <br/>  - leetCode를 참조 |
 | 디자인 패턴 | 완료 | SR 외 7인 | [Link](https://seokrae.gitbook.io/sr/design) | 2021/04/19 ~ 2021/06/07 | - 디자인 패턴 <br/> - 창조 패턴 <br/> - 구조 패턴 <br/> - 행동 패턴 |
-| 데이터베이스 | 준비중 | SR 외 4인 | [Link]() | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 |
+| 데이터베이스 | 준비중 | SR 외 4인 | [Link](https://seokrae.gitbook.io/sr/database/database/sql_levelup) | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 |
 
 * 토요일
 

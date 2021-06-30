@@ -8,7 +8,7 @@ description: 월요일 스터디
 
 | 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 데이터베이스 | 준비중 | SR 외 4인 | [Link]() | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 |
+| 데이터베이스 | 준비중 | SR 외 4인 | [Link](https://seokrae.gitbook.io/sr/database/database/sql_levelup) | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 |
 
 ## 목차
 
