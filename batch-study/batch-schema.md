@@ -2,7 +2,7 @@
 
 ## Intro
 
-![JobRepository Schema](/batch-study/img/BATCH_JOB_EXECUTION.png)
+![JobRepository Schema](img/BATCH_JOB_EXECUTION.png)
 
 - 스키마의 시작점 BATCH_JOB_INSTANCE으로 잡을 식별하는 고유 정보가 포함된 잡 파라미터로 
   잡을 처음 실행하면 단일 JobInstance 레코드가 테이블에 등록된다.
