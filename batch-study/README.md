@@ -5,6 +5,7 @@
 ## 심플 배치 작성기
 
 - [배치용 디비 설치](/batch-study/contents/_1.md)
+- [배치 데이터 분석하기](/batch-study/contents/_2.md)
 
 ## 스터디 진행 방식
 

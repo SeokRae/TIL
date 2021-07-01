@@ -100,6 +100,7 @@
 
 * [Spring Batch](batch-study/README.md)
 	- [배치용 디비 설치](/batch-study/contents/_1.md)
+	- [배치 데이터 분석하기](/batch-study/contents/_2.md)
 
 ## Tistory
 
