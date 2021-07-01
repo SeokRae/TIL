@@ -6,6 +6,7 @@
 
 - [배치용 디비 설치](/batch-study/contents/_1.md)
 - [배치 데이터 분석하기](/batch-study/contents/_2.md)
+- [배치 프로세스 구상하기 및 성능 차이 확인하기](/batch-study/contents/_3.md)
 
 ## 스터디 진행 방식
 
