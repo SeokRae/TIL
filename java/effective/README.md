@@ -22,3 +22,5 @@ description: 이펙티브 자바 아이템 줍줍
 * [Item 43 - 람다보다는 메서드 참조를 사용하라](item_43.md)
 * [Item 56 - 공개된 API 요소에는 항상 문서화 주석을 작성하라](item_56.md)
 * [Item 56 발표 내용](item56/item_56_ppt.md)
+* [Item 62 - 다른 타입이 적절하다면 문자열 사용을 피하라](item_62.md)
+* [Item 62 발표 내용](item62/item_62_ppt.md)

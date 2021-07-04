@@ -67,6 +67,8 @@ description: Today I Learned
 	* [Item 43 발표 정리](java/effective/item43/item43_ppt.md)
 	* [Item 56 - 공개된 API 요소에는 항상 문서화 주석을 작성하라](java/effective/item_56.md)
 	* [Item 56 발표 정리](java/effective/item56/item_56_ppt.md)
+	* [Item 62 - 다른 타입이 적절하다면 문자열 사용을 피하라](java/effective/item_62.md)
+	* [Item 62 발표 정리](java/effective/item62/item_62_ppt.md)
 	
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
