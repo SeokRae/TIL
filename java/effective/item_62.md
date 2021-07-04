@@ -4,6 +4,8 @@ description: 다른 타입이 적절하다면 문자열 사용을 피하라
 
 # Item 62
 
+- [Presentation](/java/effective/item62/item_62_ppt.md)
+
 ## Intro
 
 - 다양한 데이터 타입을 문자열로 표현 할 수 있다.
