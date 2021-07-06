@@ -87,6 +87,8 @@
 	* [SQL 레벨업](database/sql_levelup/README.md)
 		* [1강 DBMS 아키텍처 개요](database/sql_levelup/_1.md)
 		* [2강 DBMS와 버퍼](database/sql_levelup/_2.md)
+		* [3강 DBMS와 실행 계획](database/sql_levelup/_3.md)
+		* [4강 실행 계획이 SQL 구문의 성능을 결정](database/sql_levelup/_4.md)
 
 ## Spring
 
