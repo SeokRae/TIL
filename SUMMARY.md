@@ -89,7 +89,8 @@
 		* [2강 DBMS와 버퍼](database/sql_levelup/_2.md)
 		* [3강 DBMS와 실행 계획](database/sql_levelup/_3.md)
 		* [4강 실행 계획이 SQL 구문의 성능을 결정](database/sql_levelup/_4.md)
-
+		* [5강 실행 계획의 중요성](database/sql_levelup/_5.md)
+	
 ## Spring
 
 ---
