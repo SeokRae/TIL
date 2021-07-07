@@ -47,6 +47,8 @@ description: Today I Learned
 		* [로또](java/tdd/lotto.md)
 		* [사다리 타기](java/tdd/ladder.md)
 		* [볼링 게임 점수판](java/tdd/bowling.md)
+	
+
 * [Effective Java](java/effective/)
 	* [Item 7 - 다 쓴 객체 참조를 해제하라](java/effective/item_7.md)
 	* [Item 7 발표 내용](java/effective/item7/item_7_ppt.md)
@@ -69,7 +71,6 @@ description: Today I Learned
 	* [Item 56 발표 정리](java/effective/item56/item_56_ppt.md)
 	* [Item 62 - 다른 타입이 적절하다면 문자열 사용을 피하라](java/effective/item_62.md)
 	* [Item 62 발표 정리](java/effective/item62/item_62_ppt.md)
-	
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
 	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](/java/interview/generics.md)
