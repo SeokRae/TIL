@@ -90,7 +90,11 @@
 		* [3강 DBMS와 실행 계획](database/sql_levelup/_3.md)
 		* [4강 실행 계획이 SQL 구문의 성능을 결정](database/sql_levelup/_4.md)
 		* [5강 실행 계획의 중요성](database/sql_levelup/_5.md)
+		* [SQL 쿼리 실습을 위한 DB 서버 구축](database/sql_levelup/_6.md)
+		* [6강 SELECT 구문](database/sql_levelup/_7.md)
+		* [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](database/sql_levelup/_8.md)
 	
+
 ## Spring
 
 ---
