@@ -22,3 +22,7 @@ description: 일반적으로 통용되는 명명 규칙을 따르라
 	
 - 필드 이름에 관한 문법 규칙은 덜 명확하고 덜 중요하다.
 	- API를 잘 설계 했다면 필드가 노출될 일이 거의 없기 때문이다.
+
+> 생각해보기
+
+- [Oracle Java Convention](https://www.oracle.com/technetwork/java/codeconventions-150003.pdf)
