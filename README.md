@@ -88,6 +88,9 @@ description: Today I Learned
 		* [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](database/sql_levelup/_7.md)
 		* [SQL 튜닝의 기본](database/sql_levelup/_7_1.md)
 		* [인덱스 스캔 튜닝](database/sql_levelup/_7_2.md)
+		* [인덱스 패스트 풀 스캔 튜닝](database/sql_levelup/_7_3.md)
+		* [테이블 풀 스캔 튜닝](database/sql_levelup/_7_4.md)
+
 	* [개발자를 위한 SQL 튜닝](database/tune/README.md)
 
 * [Spring Jpa](spring-jpa/)
