@@ -95,11 +95,12 @@
 
 	* [개발자를 위한 SQL 튜닝](database/tune/README.md)
 	    * [SQL 쿼리 실습을 위한 DB 서버 구축](database/tune/_1.md)
+	    * [**인덱스 튜닝**](database/tune/_1_1.md)
 		* [인덱스 스캔 튜닝](database/tune/_2.md)
 		* [인덱스 스캔 튜닝 실습](database/tune/_3.md)
 		* [인덱스 패스트 풀 스캔](database/tune/_4.md)
 		* [테이블 풀 스캔 튜닝](database/tune/_5.md)
-		* [조인 튜닝](database/tune/_6.md)
+		* [**조인 튜닝**](database/tune/_6.md)
 		* [중첩 루프 조인 튜닝](database/tune/_7.md)
 		* [중첩 루프 조인 튜닝 실습](database/tune/_8.md)
 
