@@ -2,9 +2,41 @@
 description: Today I Learned
 ---
 
-# Contents
+# 대표 내용
 
-정리해서 남주기
+- 정리해서 남주기
+
+## Schedule
+
+* 월요일
+
+| 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 스프링 부트 웹 기본 | 완료 | SR 외 7인 | [Link](https://github.com/spring-org/springboot_board) | 2020/06/08 ~ 2020/08/20 | - SpringBoot 기반 웹 프로젝트 개발 시 필요한 내용이 무엇인지 파악하게 된 스터디 <br/> - SpringBoot, JPA, Swagger를 이용한 backend API Server 개발 <br/> - Spring JPA, Security, Batch |
+| 스프링 부트 시큐리티 | 완료 | SR 외 7인 | [Link](https://github.com/spring-org/spring-security) | 2020/09/18 ~ 2020/12/16 | - Spring Security 학습 스터디 <br/> - 현업에서 커스텀되어 개발된 프로젝트에서 시큐리티 부분이 어떤 부분인지 알게된 스터디 <br/> - 스프링 시큐리티 기본 API & Filter <br/> - Security 주요 아키텍처 이해 <br/> - Authentication 프로세스 구현 \(Form인증, Ajax 인증\) <br/> - Authorization 프로세스 구현 \(DB 연동\) |
+| 알고리즘 | 완료 | SR 외 7인 | [Link](https://github.com/SeokRae/java_sample/tree/master/programmers) | 2020/10/13 ~ 2021/01/13 | - 프로그래머스 코딩테스트 고득점 Kit <br/> - 알고리즘 학습하는 방법을 배우는 스터디 <br/> - 해시, 스택/큐, 힙, 정렬, 완전탐색, 탐욕법 까지 진행하고 마무리 |
+| 코딩 인터뷰 완전 분석 | 완료 | SR 외 7인 | [Link](https://github.com/SeokRae/java-in-action/tree/master/java-in-interview) | 2021/01/19 ~ 2021/04/12 | - 자료구조 학습 <br/> - 알고리즘에서 사용할 수 있는, 자바에서 제공하는 자료구조를 구현하기 <br/>  - leetCode를 참조 |
+| 디자인 패턴 | 완료 | SR 외 7인 | [Link](https://seokrae.gitbook.io/sr/design) | 2021/04/19 ~ 2021/06/21 | - 디자인 패턴 <br/> - 창조 패턴 <br/> - 구조 패턴 <br/> - 행동 패턴 |
+| 데이터베이스 | 진행중 | SR 외 4인 | [Link](https://seokrae.gitbook.io/sr/database/database/sql_levelup) | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 <br/> - Real MySQL |
+
+* 화요일
+
+| 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 이펙티브 자바 | 진행중 | Meet-Coder | [Link](https://seokrae.gitbook.io/sr/java-1/effective) | 2021/05 ~ 2020/07 | - Effective Java 3/E 발표 및 정리 스터디 |
+
+
+* 토요일
+
+| 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 스프링 배치 | 완료 | SR 외 4인 | [Link](https://github.com/spring-org/springbatch_summary) | 2020/08/20 ~ 2020/12/12 | - Spring Batch 기본 개념 학습 <br/> - 기본 프로세스 학습할 수 있는 구조 설계\(File, DB\) <br/> - 메타 스키마 분석, 스케쥴링 방식 <br/> - 기본 프로세스에서 최적화 방식 학습 |
+| 엘라스틱 서치 | 완료 | SR 외 4인 | - | 2020/12/10 ~ 2021/02/02 | - ElasticSearch 기본 개념과 사용하는 방식을 공부하기 위한 스터디 <br/> - Single Cluster 구축, 인덱스 구축 방식, client 기반 crud 코드 작성 <br/> - 6.x, 7.x 버전 RestHighLevelClient 기반 API 코드 테스트 |
+| 기술 스택 정리 | 완료 | SR 외 1인 | - | 2021/02/25 ~ 2021/03/31 | - ORM\(JPA\) - RDB\(MySQL\) <br/> - 오브젝트 <br/> - Spring MVC1 ~ 2 |
+| 블로그 포스팅 5기 | 진행중 | Meet-Coder | [Github](https://github.com/Meet-Coder-Study/posting-review) | 2021/07/10 ~ 2021/09/25 | - 블로그 포스팅 <br/> 주제 자유 |
+
+
+## Table Of Contents
 
 * [Network](network.md)
 * [Design Pattern](design/)
@@ -110,22 +142,4 @@ description: Today I Learned
 	- [배치 데이터 분석하기](/batch-study/contents/_2.md)
 	- [배치 프로세스 구상하기 및 성능 차이 확인하기](/batch-study/contents/_3.md)
 
-
-* 월요일
-
-| 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 스프링 부트 웹 기본 | 완료 | SR 외 7인 | [Link](https://github.com/spring-org/springboot_board) | 2020/06/08 ~ 2020/08/20 | - SpringBoot 기반 웹 프로젝트 개발 시 필요한 내용이 무엇인지 파악하게 된 스터디 <br/> - SpringBoot, JPA, Swagger를 이용한 backend API Server 개발 <br/> - Spring JPA, Security, Batch |
-| 스프링 부트 시큐리티 | 완료 | SR 외 7인 | [Link](https://github.com/spring-org/spring-security) | 2020/09/18 ~ 2020/12/16 | - Spring Security 학습 스터디 <br/> - 현업에서 커스텀되어 개발된 프로젝트에서 시큐리티 부분이 어떤 부분인지 알게된 스터디 <br/> - 스프링 시큐리티 기본 API & Filter <br/> - Security 주요 아키텍처 이해 <br/> - Authentication 프로세스 구현 \(Form인증, Ajax 인증\) <br/> - Authorization 프로세스 구현 \(DB 연동\) |
-| 알고리즘 | 완료 | SR 외 7인 | [Link](https://github.com/SeokRae/java_sample/tree/master/programmers) | 2020/10/13 ~ 2021/01/13 | - 프로그래머스 코딩테스트 고득점 Kit <br/> - 알고리즘 학습하는 방법을 배우는 스터디 <br/> - 해시, 스택/큐, 힙, 정렬, 완전탐색, 탐욕법 까지 진행하고 마무리 |
-| 코딩 인터뷰 완전 분석 | 완료 | SR 외 7인 | [Link](https://github.com/SeokRae/java-in-action/tree/master/java-in-interview) | 2021/01/19 ~ 2021/04/12 | - 자료구조 학습 <br/> - 알고리즘에서 사용할 수 있는, 자바에서 제공하는 자료구조를 구현하기 <br/>  - leetCode를 참조 |
-| 디자인 패턴 | 완료 | SR 외 7인 | [Link](https://seokrae.gitbook.io/sr/design) | 2021/04/19 ~ 2021/06/21 | - 디자인 패턴 <br/> - 창조 패턴 <br/> - 구조 패턴 <br/> - 행동 패턴 |
-| 데이터베이스 | 진행중 | SR 외 4인 | [Link](https://seokrae.gitbook.io/sr/database/database/sql_levelup) | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 <br/> - Real MySQL |
-
-* 토요일
-
-| 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 스프링 배치 | 완료 | SR 외 4인 | [Link](https://github.com/spring-org/springbatch_summary) | 2020/08/20 ~ 2020/12/12 | - Spring Batch 기본 개념 학습 <br/> - 기본 프로세스 학습할 수 있는 구조 설계\(File, DB\) <br/> - 메타 스키마 분석, 스케쥴링 방식 <br/> - 기본 프로세스에서 최적화 방식 학습 |
-| 엘라스틱 서치 | 완료 | SR 외 4인 | - | 2020/12/10 ~ 2021/02/02 | - ElasticSearch 기본 개념과 사용하는 방식을 공부하기 위한 스터디 <br/> - Single Cluster 구축, 인덱스 구축 방식, client 기반 crud 코드 작성 <br/> - 6.x, 7.x 버전 RestHighLevelClient 기반 API 코드 테스트 |
-| 기술 스택 정리 | 완료 | SR 외 1인 | - | 2021/02/25 ~ 2021/03/31 | - ORM\(JPA\) - RDB\(MySQL\) <br/> - 오브젝트 <br/> - Spring MVC1 ~ 2 |
+---
