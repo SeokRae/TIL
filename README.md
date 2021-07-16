@@ -103,6 +103,7 @@ description: Today I Learned
 	* [Item 56 발표 정리](java/effective/item56/item_56_ppt.md)
 	* [Item 62 - 다른 타입이 적절하다면 문자열 사용을 피하라](java/effective/item_62.md)
 	* [Item 62 발표 정리](java/effective/item62/item_62_ppt.md)
+	* [Item 73 - 추상화 수준에 맞는 예외를 던지라](java/effective/item_73.md)
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
 	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](/java/interview/generics.md)
