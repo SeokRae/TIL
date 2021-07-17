@@ -77,6 +77,11 @@ class ChildClass {
 	- 이러한 경우 java.util.logging 같은 적절한 로깅 기능을 활용하여 기록하는 것이 좋다.
 	- 클라이언트 코드와 사용자에게 문제를 전파하지 않으면서 프로그래머가 로그를 분석해 추가 조치를 취할 수 있도록 해주기 때문이다.
 	
+> Java Exceptions Hierarchy
+
+![Java Exceptions Hierarchy](https://content.cdntwrk.com/files/aHViPTExODQ3OCZjbWQ9aXRlbWVkaXRvcmltYWdlJmZpbGVuYW1lPWl0ZW1lZGl0b3JpbWFnZV82MGE1MGM4NDE2MTU2LnBuZyZ2ZXJzaW9uPTAwMDAmc2lnPTUyN2ViNGI4YWY5NWE2OGI3ZDgxNmU2MGZmMTkwMTZk "https://rollbar.com/blog/blog/java-exceptions-hierarchy-explained")
+
+
 ## 정리
 
 - 아래 계층의 예외를 예방하거나 스스로 처리할 수 없고, 그 예외를 상위 계층을 그대로 노출하기 곤란하다면 예외 번역을 사용하라
