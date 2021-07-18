@@ -105,6 +105,8 @@
 		* [중첩 루프 조인 튜닝 실습](database/tune/_8.md)
 		* [**해시 조인 튜닝**](database/tune/_9.md)
 		* [해시 조인 튜닝 실습](database/tune/_9_1.md)
+		* [**세미 조인 튜닝**](database/tune/_10.md)
+		* [세미 조인 튜닝 실습](database/tune/_10_1.md)
 
 
 ## Infra
