@@ -129,6 +129,8 @@ description: Today I Learned
 		* [**조인 튜닝**](database/tune/_6.md)
 		* [중첩 루프 조인 튜닝](database/tune/_7.md)
 		* [중첩 루프 조인 튜닝 실습](database/tune/_8.md)
+		* [**해시 조인 튜닝**](database/tune/_9.md)
+		* [해시 조인 튜닝 실습](database/tune/_9_1.md)
 
 * [Docker]()
 	* [Oracle with Docker](/docker/database/oracle_container.md)
