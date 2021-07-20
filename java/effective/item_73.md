@@ -6,15 +6,15 @@ description: 추상화 수준에 맞는 예외를 던지라
 
 ## Intro
 
-- 메서드가 저수준 예외를 처리하지 않고 바깥으로 전파하는 경우에 대한 문제
-	- 수행하려는 일과 관련없는 예외가 발생할 수 있다.
+- 메서드가 저수준 예외를 처리하지 않고 바깥으로 **전파(throws)** 하는 경우에 대한 문제점
+	- 수행하려는 일과 **관련없는 예외**가 발생할 수 있다.
 	- 구현 방식을 바꾸면 또 다른 예외를 발생시켜 기존 클라이언트 프로그램을 깨뜨릴 수 있다.
 	
 ## 예외 번역
 
 - 위 문제의 **해결책**
-	- 상위 계층에서는 저수준 예외를 잡아 자신의 추상화 수준에 맞는 예외로 바꿔 던져야 한다.
-	- 이를 예외 번역(Exception Translation)이라 한다.
+	- 상위 계층에서는 **저수준 예외**를 잡아 자신의 **추상화 수준에 맞는 예외**로 바꿔 던져야 한다.
+	- 이를 **예외 번역(Exception Translation)** 이라 한다.
 
 ```java
 public abstract class AbstractSequentialList<E> extends AbstractList<E> {
@@ -38,13 +38,13 @@ public abstract class AbstractSequentialList<E> extends AbstractList<E> {
 }
 ```
 
-- 예외 번역시 저수준 예외가 디버깅에 도움이 된다면 **예외 연쇄(exception chaining)**를 사용하는 게 좋다.
+- **예외 번역**시 저수준 예외가 디버깅에 도움이 된다면 **예외 연쇄(exception chaining)** 를 사용하는 게 좋다.
   
 ## 예외 연쇄
 
 - **예외 연쇄란?**
-	- 문제의 근본 원인(cause)인 저수준 예외를 고수준 예외에 실어 보내는 방식이다.
-	- 이를 통해 별도의 접근자 메서드(Throwable의 getCause 메서드)를 통해 필요하면 언제든 저수준 예외를 꺼내 볼 수 있다.
+	- 문제의 **근본 원인(cause)** 인 **저수준 예외**를 **고수준 예외**에 실어 보내는 방식이다.
+	- 이를 통해 별도의 **접근자 메서드(Throwable의 getCause 메서드)** 를 통해 필요하면 언제든 **저수준 예외**를 꺼내 볼 수 있다.
 
 ```java
 class HigherLevelException extends Exception {
@@ -74,7 +74,7 @@ class ChildClass {
 
 - 차선책
 	- 아래 계층에서의 예외를 피할 수 없다면, 상위 계층에서 그 예외를 조용히 처리하여 문제를 API 호출자에까지 전파하지 않는 방법이 있다.
-	- 이러한 경우 java.util.logging 같은 적절한 로깅 기능을 활용하여 기록하는 것이 좋다.
+	- 이러한 경우 java.util.logging 같은 적절한 **로깅 기능**을 활용하여 기록하는 것이 좋다.
 	- 클라이언트 코드와 사용자에게 문제를 전파하지 않으면서 프로그래머가 로그를 분석해 추가 조치를 취할 수 있도록 해주기 때문이다.
 	
 > Java Exceptions Hierarchy
