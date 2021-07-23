@@ -107,6 +107,10 @@
 		* [해시 조인 튜닝 실습](database/tune/_9_1.md)
 		* [**세미 조인 튜닝**](database/tune/_10.md)
 		* [세미 조인 튜닝 실습](database/tune/_10_1.md)
+	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
+		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
+			* [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
+		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
 
 
 ## Infra
