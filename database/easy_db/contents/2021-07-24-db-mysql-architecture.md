@@ -6,7 +6,7 @@
 
 ## MySQL Architecture
 
-![Architecture](https://github.com/SeokRae/TIL/blob/master/database/images/mysql/mysql_dbms.002.jpeg)
+![Architecture](../../images/mysql/mysql_dbms.002.jpeg)
 
 - MySQL의 쿼리를 작성하고 튜닝할 때 필요한 기본적인 MySQL의 구조를 훑어보기
 
@@ -25,7 +25,6 @@
 	- **MyISAM**의 **키 캐시**
 	- **InnoDB**의 **버퍼 풀**
 
-
 > **스토리지 엔진**
 
 - 실제 데이터를 디스크 스토리지에 저장하거나 디스크 스토리지로부터 데이터를 읽어오는 부분을 처리
@@ -38,7 +37,7 @@
 
 ## MySQL Memory
 
-![Memory](https://github.com/SeokRae/TIL/blob/master/database/images/mysql/mysql_dbms.003.jpeg)
+![Memory](../../images/mysql/mysql_dbms.003.jpeg)
 
 - 글로벌 메모리 영역의 모든 메모리 공간은 MySQL 서버가 시작되면서 무조건 운영체제로부터 할당된다.
 	- 운영체제에 따라 100% 할당해 줄 수도 있고, 그 공간 만큼 예약해두고 필요할 때 조금씩 할당해주는 경우도 있다.
@@ -60,7 +59,7 @@
 
 ## MySQL Engine & Storage Engine
 
-![MySQL & Storage Process Area](https://github.com/SeokRae/TIL/blob/master/database/images/mysql/mysql_dbms.004.jpeg)
+![MySQL & Storage Process Area](../../images/mysql/mysql_dbms.004.jpeg)
 
 - 하나의 쿼리 작업은 여러 하위 작업으로 나뉘는데, 각 하위 작업이 MySQL 엔진 영역에서 처리되는지 아니면 스토리지 엔진 영역에서 처리 되는지 구분하기
   
