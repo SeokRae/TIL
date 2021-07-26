@@ -72,6 +72,7 @@
 	* [Item 62 발표 정리](java/effective/item62/item_62_ppt.md)
 	* [Item 73 - 추상화 수준에 맞는 예외를 던지라](java/effective/item_73.md)
 	* [Item 83 - 지연 초기화는 신중히 사용하라](java/effective/item_83.md)
+	* [Item 83 발표 내용](java/effective/item83/item_83_ppt.md)
 	
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)

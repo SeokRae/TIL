@@ -35,3 +35,4 @@ description: 이펙티브 자바 아이템 줍줍
 * [Item 72 - 표준 예외를 사용하라](item_72.md)
 * [Item 73 - 추상화 수준에 맞는 예외를 던지라](item_73.md)
 * [Item 83 - 지연 초기화는 신중히 사용하라](item_83.md)
+* [Item 83 발표 내용](item83/item_83_ppt.md)

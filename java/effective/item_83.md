@@ -109,18 +109,18 @@ class Example {
 ```java
 class Example {
     private volatile FieldType field;
-    
+
     private FieldType getField() {
         FieldType result = field; // 초기화 시 한 번만 읽도록 하기 위함
-	    if(result != null) {
-	        return result;
+        if (result != null) {
+            return result;
         }
-	    
-	    synchronized (this) {
-	        if(field == null) { // 두 번째 검사 (락 사용)
-	            field = computeFieldValue();
+
+        synchronized (this) {
+            if (field == null) { // 두 번째 검사 (락 사용)
+                field = computeFieldValue();
             }
-	        return field;
+            return field;
         }
     }
 }
@@ -146,8 +146,10 @@ class Example {
 ```java
 class Example {
     private volatile FieldType field;
+    
     private FieldType getField() {
         FieldType result = field;
+        
         if(result == null) {
             field = result = computeFieldValue();
         }

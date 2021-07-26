@@ -107,7 +107,12 @@ description: 자바 기반 공부하기
 	* [Item 43 발표 내용](effective/item43/item43_ppt.md)
 	* [Item 56 - 공개된 API 요소에는 항상 문서화 주석을 작성하라](effective/item_56.md)
 	* [Item 56 발표 내용](effective/item56/item_56_ppt.md)
-	
+	* [Item 62 - 다른 타입이 적절하다면 문자열 사용을 피하라](java/effective/item_62.md)
+	* [Item 62 발표 내용](effective/item62/item_62_ppt.md)
+	* [Item 73 - 추상화 수준에 맞는 예외를 던지라](effective/item_73.md)
+	* [Item 83 - 지연 초기화는 신중히 사용하라](effective/item_83.md)
+	* [Item 83 발표 내용](effective/item83/item_83_ppt.md)
+
 ## 궁금한 부분
 
 * Java
