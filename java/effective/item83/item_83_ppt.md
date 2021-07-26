@@ -1,8 +1,8 @@
 ---
-description: 다른 타입이 적절하다면 문자열 사용을 피하라
+description: 지연 초기화는 신중히 사용하라
 ---
 
-# Item 62
+# Item 83
 
 ## Intro
 
