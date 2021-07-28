@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Contents](README.md)
-* [Network](network.md)
 
 ## Java <a id="java-1"></a>
 
@@ -114,6 +113,13 @@
 			* [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
 		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
 
+## Network
+
+---
+
+* [Network]()
+	* [Web Security](network/contents/web_security.md)
+	
 
 ## Infra
 
