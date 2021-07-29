@@ -19,7 +19,7 @@ description: 표준 예외를 사용하라
 |**UnsupportedOperationException**|호출한 메서드를 지원하지 않을 때|
 
 - 재사용 **지양** 예외클래스
-    - 여러 성격의 예외들을 포괄하는 클래스이므로 안정적으로 테스트할 수 없다.
+	- 여러 성격의 예외들을 포괄하는 클래스이므로 안정적으로 테스트할 수 없다.
 	- Exception
 	- RuntimeException
 	- Throwable

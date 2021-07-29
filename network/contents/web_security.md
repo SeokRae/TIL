@@ -6,11 +6,10 @@
 	- **XSS**
 	- **CSRF**
 	- **Denial-of-Service Attack**
-  
-- **HTTPS 기본**
-  
-- **Json Web Token**
 
+- **HTTPS 기본**
+
+- **Json Web Token**
 
 ## Cross-site Scripting Attack(XSS)
 

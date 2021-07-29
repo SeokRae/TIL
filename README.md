@@ -25,7 +25,6 @@ description: Today I Learned
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 이펙티브 자바 | 진행중 | Meet-Coder | [Link](https://seokrae.gitbook.io/sr/java-1/effective) | 2021/05 ~ 2020/07 | - Effective Java 3/E 발표 및 정리 스터디 |
 
-
 * 토요일
 
 | 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
@@ -34,7 +33,6 @@ description: Today I Learned
 | 엘라스틱 서치 | 완료 | SR 외 4인 | - | 2020/12/10 ~ 2021/02/02 | - ElasticSearch 기본 개념과 사용하는 방식을 공부하기 위한 스터디 <br/> - Single Cluster 구축, 인덱스 구축 방식, client 기반 crud 코드 작성 <br/> - 6.x, 7.x 버전 RestHighLevelClient 기반 API 코드 테스트 |
 | 기술 스택 정리 | 완료 | SR 외 1인 | - | 2021/02/25 ~ 2021/03/31 | - ORM\(JPA\) - RDB\(MySQL\) <br/> - 오브젝트 <br/> - Spring MVC1 ~ 2 |
 | 블로그 포스팅 5기 | 진행중 | Meet-Coder | [Github](https://github.com/Meet-Coder-Study/posting-review) | 2021/07/10 ~ 2021/09/25 | - 블로그 포스팅 <br/> 주제 자유 |
-
 
 ## Table Of Contents
 
@@ -79,7 +77,7 @@ description: Today I Learned
 		* [로또](java/tdd/lotto.md)
 		* [사다리 타기](java/tdd/ladder.md)
 		* [볼링 게임 점수판](java/tdd/bowling.md)
-	
+
 
 * [Effective Java](java/effective/)
 	* [Item 7 - 다 쓴 객체 참조를 해제하라](java/effective/item_7.md)
@@ -106,13 +104,13 @@ description: Today I Learned
 	* [Item 73 - 추상화 수준에 맞는 예외를 던지라](java/effective/item_73.md)
 	* [Item 83 - 지연 초기화는 신중히 사용하라](java/effective/item_83.md)
 	* [Item 83 발표 내용](java/effective/item83/item_83_ppt.md)
-	
+
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
 	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](/java/interview/generics.md)
 	* [스프링 MVC 기본 구조](/java/interview/dispatcher_servlet.md)
 	* [마샬링과 직렬화](/java/interview/marshalling_n_serialization.md)
-	
+
 
 * [Database](database/README.md)
 	* [SQL 레벨업](database/sql_levelup/README.md)
@@ -123,7 +121,8 @@ description: Today I Learned
 		* [5강 실행 계획의 중요성](database/sql_levelup/_5.md)
 		* [6강 SELECT 구문](database/sql_levelup/_6.md)
 		* [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](database/sql_levelup/_7.md)
-		
+		* [8강 UNION을 사용한 쓸데없이 긴 표현](database/sql_levelup/_8.md)
+
 	* [개발자를 위한 SQL 튜닝](database/tune/README.md)
 		* [SQL 쿼리 실습을 위한 DB 서버 구축](database/tune/_1.md)
 		* [**인덱스 튜닝**](database/tune/_1_1.md)
@@ -140,7 +139,7 @@ description: Today I Learned
 		* [세미 조인 튜닝 실습](database/tune/_10_1.md)
 	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
 		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
-		    * [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
+			* [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
 		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
 
 * [Network]()
@@ -149,7 +148,7 @@ description: Today I Learned
 * [Docker]()
 	* [Oracle with Docker](/docker/database/oracle_container.md)
 	* [MySQL with Docker](/docker/database/mysql_container.md)
-	
+
 
 * [Spring Jpa](spring-jpa/)
 	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)

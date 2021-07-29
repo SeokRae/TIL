@@ -40,7 +40,6 @@ description: 람다보다는 메서드 참조를 사용하라
 
 ![열거 타입](images/item56.010.jpeg)
 
-
 ## 어노테이션 타입에 Javadoc 작성 시 주의사항
 
 ![어노테이션 타입](images/item56.011.jpeg)

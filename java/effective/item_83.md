@@ -18,17 +18,16 @@ description: 지연 초기화는 신중히 사용하라
 	- 정적 필드
 	- 인스턴스 필드
 
-## 지연 초기화 
+## 지연 초기화
 
 - `클래스` 혹은 `인스턴스 생성` 시의 **초기화 비용**은 줄지만, 지연 초기화하는 **필드에 접근하는 비용**은 커진다.
 
 - `지연 초기화하려는 필드`들 중 결국 **초기화가 이뤄지는 비율**에 따라, **실제 초기화에 드는 비용**에 따라,
   **초기화된 각 필드를 얼마나 빈번히 호출**하느냐에 따라 `지연 초기화`가 실제로는 **성능을 느려지게 할 수도 있다.**
-  
+
 ## 지연 초기화가 필요한 경우
 
-- 해당 클래스의 인스턴스 중 **그 필드를 사용하는 인스턴스의 비율이 낮은 반면**, 
-  그 **필드를 초기화하는 비용이 크다면** `지연 초기화`가 제 역할을 할 것이다.
+- 해당 클래스의 인스턴스 중 **그 필드를 사용하는 인스턴스의 비율이 낮은 반면**, 그 **필드를 초기화하는 비용이 크다면** `지연 초기화`가 제 역할을 할 것이다.
 - 하지만 위 효과를 확인하기 위해서는 `지연 초기화 작용 전후의 성능을 측정`해보는 것이다.
 
 ## 멀티 스레드 환경의 지연 초기화
@@ -56,7 +55,7 @@ class Example {
 ```java
 class Example {
     private final FieldType field;
-    
+
     private synchronized FieldType getField() {
         if (field == null) {
             field = computeFieldValue();
@@ -80,7 +79,9 @@ class Example {
         static final FieldType field = computeFieldValue();
     }
 
-    private static FieldType getField() { return FieldHolder.field; }
+    private static FieldType getField() {
+        return FieldHolder.field;
+    }
 }
 ```
 
@@ -91,7 +92,6 @@ class Example {
 
 - 일반적인 VM은 오직 클래스를 초기화할 때만 필드 접근을 동기화할 것이다.
 - 클래스 초기화가 끝난 후에는 VM이 동기화 코드를 제거하여, 그 다음부터는 아무런 검사나 동기화 없이 필드에 접근하게 된다.
-
 
 > **관용구 4: 성능적인 측면에서의 인스턴스 필드 지연 초기화를 위한 이중검사(double-check)**
 
@@ -129,15 +129,15 @@ class Example {
 - **코드 분석**
 	- result라는 지역변수의 용도는 필드가 이미 초기화된 상황(일반적인 상황에서)에서는 그 필드를 딱 한번만 읽도록 보장하는 역할을 한다.
 	- 반드시 필요하지는 않지만 성능을 높여주고, 저수준 동시성 프로그래밍에 표준적으로 적용되는 더 우아한 방법이다.
-	
+
 - **정적 필드**에 대한 **이중검사 관용구** 적용 가능성
 	- **정적 필드**를 `지연 초기화`하기 위해서는 **이중검사**보다 **지연 초기화 홀더 클래스** 방식이 더 낫다.
-	
+
 ## 이중 검사의 특이 유형 2가지
 
 - 상황
 	- `반복해서 초기화해도 상관없는` **인스턴스 필드를 지연초기화**해야 하는 경우, `이중검사`에서 **두 번째 검사를 생략**할 수 있다.
-	
+
 > **이중 검사의 특이 유형 1: 단일 검사(single-check)**
 
 - 필드는 **volatile** 로 선언
@@ -146,11 +146,11 @@ class Example {
 ```java
 class Example {
     private volatile FieldType field;
-    
+
     private FieldType getField() {
         FieldType result = field;
-        
-        if(result == null) {
+
+        if (result == null) {
             field = result = computeFieldValue();
         }
         return result;
@@ -158,7 +158,7 @@ class Example {
 }
 ```
 
-> **이중 검사의 특이 유형 2: 짜릿한 단일검사(racy single-check)** 
+> **이중 검사의 특이 유형 2: 짜릿한 단일검사(racy single-check)**
 
 - **사용 조건**
 	- 모든 스레드가 필드의 값을 다시 계산해도 되고, 필드의 타입이 long과 double을 제외한 다른 기본 타입이라면, 단일검사의 필드 선언에서 volatile 한정자를 없애도 된다.
@@ -167,7 +167,6 @@ class Example {
 	- 어떤 환경에서는 필드 접근 속도를 높여주지만, 초기화가 스레드당 최대 한 번 더 이루어질 수 있다.
 
 - 아주 이례적인 기법으로, 보통은 쓰이지 않는다.
-
 
 ## 정리
 

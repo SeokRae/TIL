@@ -14,7 +14,6 @@ seok@SRMac ~ % docker search mysql
 docker pull mysql
 ```
 
-
 ### MySQL 컨테이너 생성 및 확인
 
 ```shell
@@ -44,7 +43,6 @@ mysql> GRANT ALL PRIVILEGES ON *.* TO 'seok'@'%' WITH GRANT OPTION;
 
 mysql> FLUSH PRIVILEGES;
 ```
-
 
 ### 데이터베이스 생성
 

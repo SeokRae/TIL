@@ -17,9 +17,9 @@ description: 다른 타입이 적절하다면 문자열 사용을 피하라
 - 입력받을 데이터가 진짜 문자열일 때만 사용하는 것이 좋다.
 
 - 입력 받은 데이터의 타입
-    - 수치형인 경우 int, float, BigInteger 등 적당한 수치 타입으로 변환해야 한다.
+	- 수치형인 경우 int, float, BigInteger 등 적당한 수치 타입으로 변환해야 한다.
 	- 예 / 아니오 질문의 답인 경우 열거 타입이나 boolean 타입으로 변환해야 한다.
-	
+
 > 기본 타입이든, 참조 타입이든 적절한 값 타입이 있는 경우 그것을 사용하고, 없다면 새로 하나 작성해야 한다.
 
 ## 문자열은 열거 타입을 대신하기에 적합하지 않다.
@@ -30,14 +30,14 @@ description: 다른 타입이 적절하다면 문자열 사용을 피하라
 
 - 여러 요소가 혼합된 데이터를 하나의 문자열로 표현하는 것은 좋지 않다.
 
-- 데이터베이스에서 `복합 속성`과 같은 사례	  
+- 데이터베이스에서 `복합 속성`과 같은 사례
 - ex) 전화번호
 	- `지역번호-국번호-가입자개별번호`
-	
+
 - 두 요소를 구분해주기 위한 구분자(delimiter or separator)가 요소 안에서 사용되는 경우 혼란스러운 결과를 초래한다.
 	- 이를 해결 하기 위해서 각 요소에 접근하여 문자열을 확인해야 하는 부가적인 기능이 생긴다.
 	- 결국에는 데이터 타입을 관리하기 위한 클래스가 생기는 문제점이 생긴다.
-	
+
 ## 문자열은 권한을 표현하기에 적합하지 않다.
 
 - 권한(capacity)을 문자열로 표현하는 경우 보안이 취약해지며 의도적으로 같은 키를 사용하여 값을 탈취하는 문제점이 생길 수 있다.
@@ -46,11 +46,12 @@ description: 다른 타입이 적절하다면 문자열 사용을 피하라
 
 ```java
 public class ThreadLocal {
-    private ThreadLocal() { }
-	
-	// 현 스레드의 값을 키로 구분해 저장한다.
-	public static void set(String key, Object value);
-    
+    private ThreadLocal() {
+    }
+
+    // 현 스레드의 값을 키로 구분해 저장한다.
+    public static void set(String key, Object value);
+
     // (키가 가리키는) 현 스레드의 값을 반환한다.
     public static Object get(String key);
 }
@@ -67,15 +68,18 @@ public class ThreadLocal {
 public class ThreadLocal {
     private ThreadLocal() {
     }
-    
+
     public static class Key { // (권한)
-        Key() { }
+        Key() {
+        }
     }
+
     public staatic getKey() {
         return Key;
     }
-    
+
     public static void set(Key key, Object value);
+
     public static Object get(Key key);
 }
 ```
@@ -89,8 +93,11 @@ public class ThreadLocal {
 ```java
 // Key -> ThreadLocal
 public final class ThreadLocal {
-    public ThreadLocal() { }
-	public void set(Object value);
+    public ThreadLocal() {
+    }
+
+    public void set(Object value);
+
     public Object get();
 }
 ```
@@ -102,7 +109,9 @@ public final class ThreadLocal {
 ```java
 public final class ThreadLocal<T> {
     public ThreadLocal();
+
     public void set(T value);
+
     public T get();
 }
 ```

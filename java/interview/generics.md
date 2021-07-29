@@ -7,7 +7,7 @@ description: 자바 궁금증
 - 참고
 	- [자바의 정석](https://codechobo.tistory.com/)
 
-## Intro 
+## Intro
 
 - JDK 1.5에 처음 도입된 제네릭은 기존 라이브러리와 어떻게 호환되는 걸까?
 
@@ -28,33 +28,33 @@ description: 자바 궁금증
 ### 제네릭 타입 제거과정
 
 1. 제네릭 타입의 경계(bound)를 제거한다.
-    - 제네릭 타입이 <T extends Fruit> 라면 Fruit로 치환된다.
+	- 제네릭 타입이 <T extends Fruit> 라면 Fruit로 치환된다.
 	- <T>인 경우 T는 Object로 치환된다.
 	- 그리고 클래스 옆에 타입 선언은 제거된다.
-	
+
 2. 제네릭 타입을 제거한 후에 타입이 일치하지 않으면, 형변환을 추가한다.
 	- List의 get()은 Object 타입을 반환하므로 형변환이 필요하다.
 	- 와일드 카드가 포함되어 있는 경우, 적절한 타입으로 형변환이 추가된다.
-	```java
- 	// 컴파일 전
-	class Example {
- 		static Juice makeJuice(FruitBox<? extends Fruit> box) {
- 			String tmp = "";
- 			for(Fruit f : box.getList()) {
- 				tmp += f + " ";
-			}
- 			return new Juice(tmp);
-    	}
-	}
-	// 컴파일 후
-	class Example {
-		static Juice makeJuice(FruitBox box) {
+   ```java
+	// 컴파일 전
+   class Example {
+		static Juice makeJuice(FruitBox<? extends Fruit> box) {
 			String tmp = "";
- 			Iterator it = box.getList().iterator();
- 			while(it.hasNext()) {
- 				tmp += (Fruit) it.next() + " "; 			
-			}
- 			return new Juice(tmp);
-		}
-	}
-	```
+			for(Fruit f : box.getList()) {
+				tmp += f + " ";
+		   }
+			return new Juice(tmp);
+	   }
+   }
+   // 컴파일 후
+   class Example {
+	   static Juice makeJuice(FruitBox box) {
+		   String tmp = "";
+			Iterator it = box.getList().iterator();
+			while(it.hasNext()) {
+				tmp += (Fruit) it.next() + " "; 			
+		   }
+			return new Juice(tmp);
+	   }
+   }
+   ```

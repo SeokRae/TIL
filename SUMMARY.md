@@ -32,7 +32,7 @@
 	* [Strategy Pattern](/design/behavioral/_strategy.md)
 	* [Template Method Pattern](/design/behavioral/_template_method.md)
 	* [**`Visitor Pattern`**](/design/behavioral/_visitor.md)
-	
+
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
 	* [책임 중심 설계](object/_2.md)
@@ -72,13 +72,12 @@
 	* [Item 73 - 추상화 수준에 맞는 예외를 던지라](java/effective/item_73.md)
 	* [Item 83 - 지연 초기화는 신중히 사용하라](java/effective/item_83.md)
 	* [Item 83 발표 내용](java/effective/item83/item_83_ppt.md)
-	
+
 * 궁금증
 	* [자바 8 버전의 인터페이스와 추상클래스](/java/interview/interface_vs_abstract.md)
 	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](/java/interview/generics.md)
 	* [스프링 MVC 기본 구조](/java/interview/dispatcher_servlet.md)
 	* [마샬링과 직렬화](/java/interview/marshalling_n_serialization.md)
-
 
 ## Database
 
@@ -93,10 +92,11 @@
 		* [5강 실행 계획의 중요성](database/sql_levelup/_5.md)
 		* [6강 SELECT 구문](database/sql_levelup/_6.md)
 		* [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](database/sql_levelup/_7.md)
+		* [8강 UNION을 사용한 쓸데없이 긴 표현](database/sql_levelup/_8.md)
 
 	* [개발자를 위한 SQL 튜닝](database/tune/README.md)
-	    * [SQL 쿼리 실습을 위한 DB 서버 구축](database/tune/_1.md)
-	    * [**인덱스 튜닝**](database/tune/_1_1.md)
+		* [SQL 쿼리 실습을 위한 DB 서버 구축](database/tune/_1.md)
+		* [**인덱스 튜닝**](database/tune/_1_1.md)
 		* [인덱스 스캔 튜닝](database/tune/_2.md)
 		* [인덱스 스캔 튜닝 실습](database/tune/_3.md)
 		* [인덱스 패스트 풀 스캔](database/tune/_4.md)
@@ -119,7 +119,6 @@
 
 * [Network]()
 	* [Web Security](network/contents/web_security.md)
-	
 
 ## Infra
 
@@ -128,7 +127,7 @@
 * [Docker]()
 	* [Oracle with Docker](/docker/database/oracle_container.md)
 	* [MySQL with Docker](/docker/database/mysql_container.md)
-	
+
 ## Spring
 
 ---

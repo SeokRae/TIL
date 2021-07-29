@@ -4,9 +4,8 @@
 
 ![JobRepository Schema](img/BATCH_JOB_EXECUTION.png)
 
-- 스키마의 시작점 BATCH_JOB_INSTANCE으로 잡을 식별하는 고유 정보가 포함된 잡 파라미터로 
-  잡을 처음 실행하면 단일 JobInstance 레코드가 테이블에 등록된다.
-  
+- 스키마의 시작점 BATCH_JOB_INSTANCE으로 잡을 식별하는 고유 정보가 포함된 잡 파라미터로 잡을 처음 실행하면 단일 JobInstance 레코드가 테이블에 등록된다.
+
 ## Batch_JOB_INSTANCE
 
 |필드|설명|
@@ -68,7 +67,7 @@
 
 ### BATCH_STEP_EXECUTION
 
-- BATCH_STEP_EXECUTION 테이블에는 스텝의 시작, 완료, 상태에 대한 메타데이터를저장한다. 
+- BATCH_STEP_EXECUTION 테이블에는 스텝의 시작, 완료, 상태에 대한 메타데이터를저장한다.
 - 스텝 분석이 가능하도록 다양한 횟수 값을 추가로 저장한다.
 - 읽기(read)횟수, 처리(process)횟수, 쓰기(write)횟수, 건너뛰기(skip)횟수 등과 같은 모든 데이터가 저장 된다.
 

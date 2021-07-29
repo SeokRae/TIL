@@ -14,20 +14,19 @@ description: 람다보다는 메서드 참조를 사용하라
 ## Map.merge()로 보는 람다와 메서드 레퍼런스 차이
 
 - **"임의의 키와 Integer 값의 매핑을 관리하는 프로그램"** 을 작성하는 경우
-    - 이때 값이 키의 인스턴스 개수로 해석된다면, 이러한 프로그램을 멀티셋(multiset)을 구현한 방식이라 할 수 있다.
+	- 이때 값이 키의 인스턴스 개수로 해석된다면, 이러한 프로그램을 멀티셋(multiset)을 구현한 방식이라 할 수 있다.
 	- 키가 맵 안에 없다면 키와 숫자 1을 매핑하고, 이미 있다면 기존 매핑 값을 증가시킨다.
 
 ![merge 메서드](item43/map_merge.png)
-
 
 ```java
 class Example {
     public static void main(String[] args) {
         // 람다를 사용한 예시
-	    map.merge(key, 1, (count, incr) -> count + incr);
-	    
-	    // 메서드 레퍼런스를 사용한 예시
-	    map.merge(key, 1, Integer::sum);
+        map.merge(key, 1, (count, incr) -> count + incr);
+
+        // 메서드 레퍼런스를 사용한 예시
+        map.merge(key, 1, Integer::sum);
     }
 }
 ```
@@ -36,7 +35,6 @@ class Example {
 	- **매개 변수**가 늘어날수록 메서드 참조로 **생략**할 수 있는 코드 양도 늘어난다.
 	- 매개변수 이름 자체가 프로그래머에게 좋은 가이드가 되기도 하기 때문에 필요한 경우 람다를 사용한다.
 	- 메서드 참조에는 기능을 잘 드러내는 이름을 지어줄 수 있어 친절한 설명을 문서로 남길 수 있다.
-	
 
 > 람다로 할 수 없는 일이라면 메서드 레퍼런스로도 할 수 없다. **물론 예외도 존재한다.**
 
@@ -49,10 +47,10 @@ class Example {
 class Example {
     public static void main(String[] args) {
         // 메서드 레퍼런스를 사용하는 경우
-	    service.execute(GoshThisClassNameIsHumongous::action);
-	    
-	    // 람다를 사용하는 경우
-	    service.execute(() -> action());
+        service.execute(GoshThisClassNameIsHumongous::action);
+
+        // 람다를 사용하는 경우
+        service.execute(() -> action());
     }
 }
 ```
@@ -73,11 +71,11 @@ class Example {
 
 - **한정적 참조**는 근본적으로 정적 참조와 비슷하다.
 	- 즉, 함수 객체가 받는 인수와 참조되는 메서드가 받는 인수가 똑같다.
-	
+
 - **비한정적 참조**에서는 함수 객체를 적용하는 시점에 수신 객체를 알려준다.
 	- 이를 위해 수신 객체 전달용 매개변수가 매개변수 목록의 첫 번째로 추가되며, 그 뒤로는 참조되는 메서드 선언에 정의된 매개변수들이 뒤따른다.
 	- 비한정적 참조는 주로 스트림 파이프라인에서의 매핑과 필터 함수에 쓰인다.[아이템 45]()
-	
+
 - **생성자 참조**는 팩터리 객체로 사용된다.
 
 ## 람다로 불가능하고 메서드 레퍼런스로만 구현 가능한 제네릭 함수 타입(generic function type)

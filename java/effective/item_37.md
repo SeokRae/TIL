@@ -236,9 +236,9 @@ class ClientTest {
     void testCase4() {
         EnumMap<Plant.LifeCycle, Set<Plant>> garden = this.garden.stream()
                 .collect(groupingBy(
-                        p -> p.lifeCycle, // Function<? super T, ? extends K> classifier
-                        () -> new EnumMap<>(Plant.LifeCycle.class), // Supplier<M> mapFactory,
-                        toSet() // Collector<? super T, A, D> downstream
+                                p -> p.lifeCycle, // Function<? super T, ? extends K> classifier
+                                () -> new EnumMap<>(Plant.LifeCycle.class), // Supplier<M> mapFactory,
+                                toSet() // Collector<? super T, A, D> downstream
                         )
                 );
 
