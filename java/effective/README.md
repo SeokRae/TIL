@@ -37,3 +37,4 @@ description: 이펙티브 자바 아이템 줍줍
 * [Item 83 - 지연 초기화는 신중히 사용하라](item_83.md)
 * [Item 83 발표 내용](item83/item_83_ppt.md)
 * [Item 89 - 인스턴스 수를 통제해야 한다면 readResolve보다는 열거 타입을 사용하라](item_89.md)
+* [Item 89 발표 내용](item89/item_89_ppt.md)

@@ -51,7 +51,7 @@ description: 인스턴스 수를 통제해야 한다면 readResolve보다는 열
 - 그런 다음 이 메서드는 도둑이 숨긴 transient가 아닌 필드의 원래 타입에 맞는 값을 반환한다.
 - 이 과정을 생략하면 직렬화 시스템이 도둑의 참조를 이 필드에 저장하려 할 때 VM이 ClassCastException을 던진다.
 
-## 잘못된 싱글턴 예시
+### 잘못된 싱글턴 예시
 
 > **`transient`가 아닌 참조 필드를 가지고 있는 경우**
 
@@ -72,7 +72,7 @@ public class Elvis implements Serializable {
 }
 ```
 
-## non-transient 참조 필드를 훔쳐오는 도둑(stealer) 클래스
+### non-transient 참조 필드를 훔쳐오는 도둑(stealer) 클래스
 
 ```java
 public class ElvisStealer implements Serializable {
