@@ -52,6 +52,6 @@ description: 자바 궁금증
 
 ### 참고
 
-- [Marshalling](https://en.wikipedia.org/wiki/Marshalling_(computer_science) "마샬링")
+- [Marshalling](https://en.wikipedia.org/wiki/Marshalling_(computer_science)\)
 - [자바 직렬화, 그것이 알고 싶다. 훑어보기편](https://techblog.woowahan.com/2550/)
 - [자바 직렬화, 그것이 알고싶다. 실무편](https://techblog.woowahan.com/2551/)
