@@ -114,6 +114,7 @@
 		* [**세미 조인 튜닝**](database/tune/_10.md)
 		* [세미 조인 튜닝 실습](database/tune/_10_1.md)
 		* [아우터 조인](database/tune/_11.md)
+		* [함수 튜닝](database/tune/_12.md)
 
 	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
 		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
