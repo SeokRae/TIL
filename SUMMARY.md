@@ -116,9 +116,10 @@
 		* [아우터 조인](database/tune/_11.md)
 
 	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
-		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
-			* [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
-		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
+        * [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
+            * [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
+        * [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
+        * [JOIN](database/easy_db/contents/2021-08-07-db-join.md)
 
 ## Network
 
