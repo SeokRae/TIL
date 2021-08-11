@@ -58,7 +58,9 @@ description: 인스턴스 수를 통제해야 한다면 readResolve보다는 열
 ```java
 public class Elvis implements Serializable {
     public static final Elvis INSTANCE = newElvis();
-    private Elvis() { }
+
+    private Elvis() {
+    }
 
     private String[] favoriteSongs = {"Hound Dog", "Heartbreak Hotel"};
 
@@ -80,9 +82,9 @@ public class ElvisStealer implements Serializable {
     private Elvis payload;
 
     private Object readResolve() {
-		// resolve되기 전의 Elvis 인스턴스의 참조를 저장한다. 
+        // resolve되기 전의 Elvis 인스턴스의 참조를 저장한다. 
         impersonator = payload;
-		// favoriteSongs 필드에 맞는 타입의 객체를 반환한다. 
+        // favoriteSongs 필드에 맞는 타입의 객체를 반환한다. 
         return new String[]{"A Fool Such as I"};
     }
 
@@ -93,20 +95,21 @@ public class ElvisStealer implements Serializable {
 ```java
 public class ElvisImpersonator {
     // 진짜 Elvis 인스턴스로는 만들어질 수 없는 바이트 스트림
-	private static final byte[] serializedForm = {
+    private static final byte[] serializedForm = {
             -84, -19, 0, 5, 115, 114, 0, 20, 107, 114, 46, 115,
             101, 111, 107, 46, 105, 116, 101, 109, 56, 57, 46, 69,
-            108, 118, 105, 115, 98, -14, -118, -33, -113, -3, -32, 
-		    70, 2, 0, 1, 91, 0, 13, 102, 97, 118, 111, 114, 105, 116, 
-		    101, 83, 111, 110, 103, 115, 116, 0, 19, 91, 76, 106, 97, 
-		    118, 97, 47, 108, 97, 110, 103, 47, 83, 116, 114, 105, 110, 
-		    103, 59, 120, 112, 117, 114, 0, 19, 91, 76, 106, 97, 118, 
-		    97, 46, 108, 97, 110, 103, 46, 83, 116, 114, 105, 110, 103, 
-		    59, -83, -46, 86, -25, -23, 29, 123, 71, 2, 0, 0, 120, 112, 
-		    0, 0, 0, 2, 116, 0, 9, 72, 111, 117, 110, 100, 32, 68, 111, 
-		    103, 116, 0, 16, 72, 101, 97, 114, 116, 98, 114, 101, 97, 107, 
-		    32, 72, 111, 116, 101, 108
+            108, 118, 105, 115, 98, -14, -118, -33, -113, -3, -32,
+            70, 2, 0, 1, 91, 0, 13, 102, 97, 118, 111, 114, 105, 116,
+            101, 83, 111, 110, 103, 115, 116, 0, 19, 91, 76, 106, 97,
+            118, 97, 47, 108, 97, 110, 103, 47, 83, 116, 114, 105, 110,
+            103, 59, 120, 112, 117, 114, 0, 19, 91, 76, 106, 97, 118,
+            97, 46, 108, 97, 110, 103, 46, 83, 116, 114, 105, 110, 103,
+            59, -83, -46, 86, -25, -23, 29, 123, 71, 2, 0, 0, 120, 112,
+            0, 0, 0, 2, 116, 0, 9, 72, 111, 117, 110, 100, 32, 68, 111,
+            103, 116, 0, 16, 72, 101, 97, 114, 116, 98, 114, 101, 97, 107,
+            32, 72, 111, 116, 101, 108
     };
+
     public static void main(String[] args) {
         // ElvisStealer.impersonator를 초기화한 다음,
         // 진짜 Elvis(즉 Elvis.INSTANCE)를 반환한다.
@@ -160,7 +163,6 @@ public enum Elvis {
 	- `package-private`으로 선언하면 같은 패키지에 속한 하위 클래스에서만 사용할 수 있다.
 	- `protected`나 `public`으로 선언하면 이를 재정의하지 않은 모든 하위 클래스에서 사용할 수 있다.
 	- `protected`나 `public`이면서 하위 클래스에서 재정의 하지않았다면, 하위 클래스의 인스턴스를 역직렬화하면 상위 클래스의 인스턴스를 생성하여 ClassCastException을 일으킬 수 있다.
-
 
 ## 핵심 정리
 

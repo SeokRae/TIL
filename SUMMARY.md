@@ -115,6 +115,7 @@
 		* [세미 조인 튜닝 실습](database/tune/_10_1.md)
 		* [아우터 조인](database/tune/_11.md)
 		* [함수 튜닝](database/tune/_12.md)
+		* [**부분 범위 처리 튜닝**](database/tune/_13.md)
 
 	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
 		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
@@ -135,12 +136,12 @@
 ---
 
 * [Docker]()
-    * [Oracle with Docker](/docker/database/oracle_container.md)
-    * [MySQL with Docker](/docker/database/mysql_container.md)
-    
+	* [Oracle with Docker](/docker/database/oracle_container.md)
+	* [MySQL with Docker](/docker/database/mysql_container.md)
+
 * [AWS]()
-    * [AWS 자격증 시험 공부하기](infra/aws/_0.md)
-    * [IAM](infra/aws/_1.md)
+	* [AWS 자격증 시험 공부하기](infra/aws/_0.md)
+	* [IAM](infra/aws/_1.md)
 
 ## Spring
 
