@@ -254,7 +254,7 @@
 	* 데이터베이스 커넥션 직접 사용 등등...
 	* Querydsl 사용
 * 실무에서는 주로 QueryDSL이나 SpringJdbcTemplate을 함께 사용할 때 사용자 정의 리포지토리 기능을 사용한다.
-* [MemberQueryRepository](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-data/src/main/java/kr/seok/data/repository/datajpa/MemberQueryRepository.java)
+* [MemberQueryRepository](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-data/src/main/java/kr/seok/data/repository/datajpa/MemberQueryRepository.java)
 
   를 인터페이스가 아닌 클래스로 만들고 스프링 빈으로 등록하여 직접 사용해도 된다. \(이때 스프링 데이터 JPA와는 관계 없이 별도로 동작한다.\)
 
@@ -283,25 +283,17 @@
 		* `@PrePersist`, `@PostPersist`
 		* `@PreUpdate`, `@PostUpdate`
 	* 스프링 데이터 JPA 기반 관리 방법
-		* `@EnableJpaAuditing` [스프링 부트 설정 클래스](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-data/src/test/java/kr/seok/JpaApplicationTest.java)에
-
-		  적용
-
-		* `@EntityListeners(AuditingEntityListener.class)` [엔티티](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-data/src/main/java/kr/seok/data/domain/base/JpaBaseEntity.java)에
-
-		  적용
-
-		* `@CreatedDate` 엔티티 최초 등록일
-		* `@LastModifiedDate` 엔티티 최종 수정일
-		* `@CreatedBy` 엔티티 최초 등록자
-		* `@LastModifiedBy` 엔티티 최종 수정자
+        * `@EnableJpaAuditing` [스프링 부트 설정 클래스](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-data/src/main/java/kr/seok/JpaApplication.java) 에 적용
+        * `@EntityListeners(AuditingEntityListener.class)` [엔티티](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-data/src/main/java/kr/seok/data/domain/base/JpaBaseEntity.java) 에 적용
+        * `@CreatedDate` 엔티티 최초 등록일
+        * `@LastModifiedDate` 엔티티 최종 수정일
+        * `@CreatedBy` 엔티티 최초 등록자
+        * `@LastModifiedBy` 엔티티 최종 수정자
 * 실무에서 사용하는 방법
 	* 기본적으로 Entity의 이력 정보를 확인하기 위해서는 무조건 필요한 필드
 	* 다만 등록일, 수정일은 어떤 엔티티든 필수인데 등록자, 수정자의 경우 필요하지 않은 경우가 존재하기 때문에 분리하여 사용
-	* [`BaseEntity`](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-data/src/main/java/kr/seok/data/domain/base/BaseEntity.java)
-
-	  , [`BaseTimeEntity`](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-data/src/main/java/kr/seok/data/domain/base/BaseTimeEntity.java)
-
+	* [`BaseEntity`](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-data/src/main/java/kr/seok/data/domain/base/BaseEntity.java)
+	  , [`BaseTimeEntity`](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-data/src/main/java/kr/seok/data/domain/base/BaseTimeEntity.java)
 	  클래스로 구분하여 필요한 엔티티에서 사용
 
 	* JPA의 이벤트를 스프링 데이터가 제공해주기 때문에 도메인 코드를 줄일 수 있다.
@@ -330,77 +322,80 @@
 
 * HTTP 파라미터로 넘어온 엔티티의 아이디로 엔티티 객체를 찾아서 바인딩
 * Http 기본 동작
-	* view에서 controller로 넘어온 파라미터 값을 통해 repository에 파라미터 값을 넘겨 데이터를 조회
+    * view에서 controller로 넘어온 파라미터 값을 통해 repository에 파라미터 값을 넘겨 데이터를 조회
 * 도메인 클래스 컨버트를 사용하는 경우 동작
-	* 파라미터로 엔티티를 받되 PathVariable로 설정된 파라미터를 해당 엔티티에서 가져와 엔티티의 Repository를 통해 데이터를 조회
-	* Repository 로직을 skip할 수 있으나 트랜잭션이 없는 범위에서 엔티티를 조회 하므로 엔티티를 변경했을 때 DB에 반영이 되지 않는다.
+    * 파라미터로 엔티티를 받되 PathVariable로 설정된 파라미터를 해당 엔티티에서 가져와 엔티티의 Repository를 통해 데이터를 조회
+    * Repository 로직을 skip할 수 있으나 트랜잭션이 없는 범위에서 엔티티를 조회 하므로 엔티티를 변경했을 때 DB에 반영이 되지 않는다.
 * 두 방식의 차이점
-	* HTTP 요청은 회원 id를 받지만 도메인 클래스 컨버터가 중간에 동작해서 회원 엔티티 객체를 반환
-	* 도메인 클래스 컨버터도 리파지토리를 사용해서 엔티티를 찾음
+    * HTTP 요청은 회원 id를 받지만 도메인 클래스 컨버터가 중간에 동작해서 회원 엔티티 객체를 반환
+    * 도메인 클래스 컨버터도 리파지토리를 사용해서 엔티티를 찾음
 * 주의사항
-	* 도메인 클래스 컨버터로 엔티티를 파라미터로 받으면, 이 엔티티는 단순 조회용으로만 사용해야 한다.
-	* \(트랜잭션이 없는 범위에서 엔티티를 조회했으므로, 엔티티를 변경해도 DB에 반영되지 않는다.\)
+    * 도메인 클래스 컨버터로 엔티티를 파라미터로 받으면, 이 엔티티는 단순 조회용으로만 사용해야 한다.
+    
+     (트랜잭션이 없는 범위에서 엔티티를 조회했으므로, 엔티티를 변경해도 DB에 반영되지 않는다.)
 
 > Web 확장 - 페이징과 정렬
 
 * 페이징관련 인터페이스 & 클래스
-	* `Pageable` 인터페이스
-	* `PageRequest` 실제 사용 객체
-* 페이징 사용법 \`\`\`http request /members?page=0&size=3&sort=id,desc&sort=username,desc
+    * `Pageable` 인터페이스
+    * `PageRequest` 실제 사용 객체
 
-  \`\`\`
+* **페이징 사용법** 
 
-	* page: 현재 페이지, `0`부터 시작한다.
-	* size: 한 페이지에 노출할 데이터 건수
-	* sort: 정렬 조건을 정의한다.
-		* 예\) 정렬 속성, 정렬 속성...\(ASC \| DESC\), 정렬 방향을 변경하고 싶으면 sort 파라미터 추가 \( asc 생략 가능\)
+    ```http request 
+    /members?page=0&size=3&sort=id,desc&sort=username,desc
+    ```
 
-* 페이징 설정
-	* 글로벌 설정
+    * page: 현재 페이지, `0`부터 시작한다.
+    * size: 한 페이지에 노출할 데이터 건수
+    * sort: 정렬 조건을 정의한다.
+        * 예\) 정렬 속성, 정렬 속성...\(ASC \| DESC\), 정렬 방향을 변경하고 싶으면 sort 파라미터 추가 \( asc 생략 가능\)
 
-	  ```text
-	  spring.data.web.pageable.default-page-size=20 /# 기본 페이지 사이즈/ 
-	  spring.data.web.pageable.max-page-size=2000 /# 최대 페이지 사이즈/
-	  ```
+* **페이징 설정**
+    * 글로벌 설정
 
-	* 개별 설정
-		* `@PageableDefault` 어노테이션을 사용
+      ```text
+      spring.data.web.pageable.default-page-size=20 /# 기본 페이지 사이즈/ 
+      spring.data.web.pageable.max-page-size=2000 /# 최대 페이지 사이즈/
+      ```
 
-		  ```java
-			@PageableDefault(size = 12, sort = “username”, direction = Sort.Direction.DESC) Pageable pageable
-		  ```
-	* 페이징 정보가 둘 이상인 경우 설정 방법
-		* 페이징 정보가 둘 이상이면 접두사로 구분
-		* `@Qualifier` 에 접두사명 추가 "{접두사명}\_xxx”
-		* 요청 쿼리스트링
+    * 개별 설정
+        * `@PageableDefault` 어노테이션을 사용
 
-		  \`\`\`http request
+          ```java
+            @PageableDefault(size = 12, sort = “username”, direction = Sort.Direction.DESC) Pageable pageable
+          ```
+    
+    * 페이징 정보가 둘 이상인 경우 설정 방법
+        * 페이징 정보가 둘 이상이면 접두사로 구분
+        * `@Qualifier` 에 접두사명 추가 "{접두사명}\_xxx”
+        * 요청 쿼리스트링
 
-		  /members?member\_page=0&order\_page=1
+          ```http request
+          /members?member\_page=0&order\_page=1
+          ```
+    
+        * 컨트롤러 파라미터 설정
 
-		  \`\`\`
-
-		* 컨트롤러 파라미터 설정
-
-		  ```java
-		  class MemberController {
-			  public String list(
-					  @Qualifier("member") Pageable memberPageable,
-					  @Qualifier("order") Pageable orderPageable, ...) {
-					  // ...
-			  }
-		  }
-		  ```
-	* Paging 커스텀
-		* Page의 기본 값이 0인 것을 1부터 시작하는 방법
-			* `Pageable`, `Page`를 파리미터와 응답 값으로 사용히자 않고, 직접 클래스를 만들어서 처리
-			* spring.data.web.pageable.one-indexed-parameters 를 true 로 설정
-				* 이 방법은 web에서 page 파라미터를 -1 처리 할 뿐, 응답 값 `Page`에는 0으로 되어 있음
-				* 반환하는 pageable 객체의 응답값이 의도한 값으로 반환되지 않음
+          ```java
+          class MemberController {
+              public String list(
+                      @Qualifier("member") Pageable memberPageable,
+                      @Qualifier("order") Pageable orderPageable, ...) {
+                      // ...
+              }
+          }
+          ```
+    * Paging 커스텀
+        * Page의 기본 값이 0인 것을 1부터 시작하는 방법
+            * `Pageable`, `Page`를 파리미터와 응답 값으로 사용히자 않고, 직접 클래스를 만들어서 처리
+            * spring.data.web.pageable.one-indexed-parameters 를 true 로 설정
+                * 이 방법은 web에서 page 파라미터를 -1 처리 할 뿐, 응답 값 `Page`에는 0으로 되어 있음
+                * 반환하는 pageable 객체의 응답값이 의도한 값으로 반환되지 않음
 * 페이징 결과값 반환
-	* 엔티티를 API로 노출하면 다양한 문제가 발생
-	* 엔티티를 꼭 DTO로 변환해서 반환해야 한다.
-	* Page는 map\(\) 을 지원해서 내부 데이터를 다른 것으로 변경할 수 있다.
+    * 엔티티를 API로 노출하면 다양한 문제가 발생
+    * 엔티티를 꼭 DTO로 변환해서 반환해야 한다.
+    * Page는 map() 을 지원해서 내부 데이터를 다른 것으로 변경할 수 있다.
 
 ## 스프링 데이터 JPA 분석
 
@@ -414,7 +409,7 @@
 		* 서비스 계층에서 트랜잭션을 시작하면 리파지토리는 해당 트랜잭션을 전파 받아서 사용
 		* 그래서 스프링 데이터 JPA를 사용할 때 트랜잭션이 없어도 데이터 등록, 변경이 가능했음
 
-		  \(사실은 트랜 잭션이 리포지토리 계층에 걸려있는 것임\)
+		  (사실은 트랜 잭션이 리포지토리 계층에 걸려있는 것임)
 	* `@Transactional(readOnly = true)`
 		* 데이터를 단순히 조회만하고 변경하지 않는 트랜잭션에서 readOnly = true 옵션을 사용하면 플러 시를 생략해서 약간의 성능 향상을 얻을 수 있음
 * **JPA를 사용하여 데이터를 저장할 때 주의할 점**
@@ -425,19 +420,19 @@
 	* 임의로 식별자를 채번하여 임의로 생성해야 하는 경우 -&gt; `Persistable` 인터페이스를 사용하여 엔티티가 신규인지 여부를 판단
 	* 실무에서는 사용하는 방법
 		* 생성일자\(createDate\)가 존재하는 경우를 기준으로 신규 데이터인지 여부를 판단
-* **`Persistable`**
+* **Persistable**
 	* JPA 식별자 생성 전략이 @GenerateValue 면 save\(\) 호출 시점에 식별자가 없으므로 새로운 엔티 티로 인식해서 정상 동작
 	* JPA 식별자 생성 전략이 @Id 만 사용해서 직접 할당이면 이미 식별자 값이 있는 상태로 save\(\) 를 호출
 	* 이 경우 `merge()` 가 호출된다. `merge()`는 우선 DB를 호 출해서 값을 확인하고, DB에 값이 없으면 새로운 엔티티로 인지하므로 매우 비효율적임
 	* `Persistable` 를 사용해서 새로운 엔티티 확인 여부를 직접 구현하게는 효과적이다.
 	* 참고
-		* 등록시간\(`@CreatedDate`\)을 조합해서 사용하면 이 필드로 새로운 엔티티 여부를 편리하게 확인할 수 있다.
+		* 등록시간(`@CreatedDate`)을 조합해서 사용하면 이 필드로 새로운 엔티티 여부를 편리하게 확인할 수 있다.
 
-		  \(`@CreatedDate`에 값이 없으면 새로운 엔티티로 판단\)
+		  (`@CreatedDate`에 값이 없으면 새로운 엔티티로 판단)
 
 ## 나머지 기능들
 
-> Specifications \(명세\) - 유지보수가 힘든 코드
+> **Specifications (명세)** - 유지보수가 힘든 코드
 
 * 실무에서는 JPA Criteria를 거의 안쓴다! 대신에 QueryDSL을 사용하자.
 * 스프링 데이터 JPA는 JPA Criteria를 활용하여 해당 개념을 사용할 수 있도록 `Specification`클래스를 지원
@@ -452,7 +447,7 @@
 	* 조회 쿼리 메서드에 `Specification` 파라미터로 받아 검색 조건으로 사용
 	* 검색 조건에 대한 Spec을 미리 정의 해두어야 함
 
-> [QueryBy](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#query-by-example)
+> [**QueryBy**](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#query-by-example)
 
 * 사용 방식
 	* Probe: 필드에 데이터가 있는 실제 도메인 객체
@@ -470,7 +465,7 @@
 * 정리
 	* 좋은 기술처럼 보이지만 쿼리의 중요한 기능 들을 제공하지 않아 사용을 해야하는 선택을 해야할지에 대해서 생각해야 한다.
 
-> [Projections](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#projections)
+> [**Projections**](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#projections)
 
 * 복잡한 쿼리를 해결하기에는 한계가 있다. 실무에서는 단순할 때만 사용하고, 조금만 복잡해지면 QueryDSL을 사용하자
 * 사용 용도
@@ -486,20 +481,20 @@
 	* 프로젝션 대상이 ROOT 엔티티를 넘어가면 JPQL SELECT 최적화기 되지 않는다.
 	* 실무의 복잡한 쿼리를 해결하기에 한계가 있다.
 
-> Native Query
->
-> * 최후의 수단으로 사용하는 수단중 하나
+> **Native Query**
+
+* 최후의 수단으로 사용하는 수단중 하나
 
 * Native Query 또는 Projections 이라고는 하나 QueryDSL로 못할 수가 없다.
 
-> * 한번에 못가져올거면 차라리 두 세번에 걸쳐서 가져올것..
+* 한번에 못가져올거면 차라리 두 세번에 걸쳐서 가져올것..
 
 * 스프링 데이터 JPA Native Query
 	* 페이징 지원
 	* 반환 타입
-		* Object\[\]
+		* Object[]
 		* Tuple
-		* DTO \(스프링 데이터 인터페이스 Projections 지원\)
+		* DTO (스프링 데이터 인터페이스 Projections 지원)
 	* 제약 사항
 		* sort 파라미터를 통한 정렬이 정상 동작하지 않을 수도 있다.
 		* JPQL처럼 애플리케이션 로딩 시점에 문법 확인 불가
