@@ -18,7 +18,7 @@
 
 ## 기본 문법
 
-> [JPQL vs Querydsl](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/JpaVsQuerydsl1문법Test.java)
+> [**JPQL vs Querydsl**](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/JpaVsQuerydsl1%EB%AC%B8%EB%B2%95Test.java)
 
 * JPA 코드 기반 조회쿼리 작성
 * Querydsl 기반 조회쿼리 작성
@@ -33,7 +33,7 @@
   | 오류체크시점 | 실행 시점 오류 | 컴파일 시점 오류 |
   | 파라미터 바인딩 방식 | 파라미터 바인딩 | 파라미터 바인딩 자동 처리 |
 
-> 기본 Q-Type 활용
+> **기본 Q-Type 활용**
 
 * Q 클래스 인스턴스를 사용하는 2가지 방법
 	* alias 직접 설정
@@ -45,7 +45,7 @@
   spring.jpa.properties.hibernate.use_sql_comments: true
   ```
 
-> [검색 조건 쿼리](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl2검색Test.java)
+> [**검색 조건 쿼리**](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl2%EA%B2%80%EC%83%89Test.java)
 
 * `queryFactory`의 `where`메서드에 검색 조건 `.and()`, `.or()`을 사용할 수 있다.
 * `.select()`, `.from()` -&gt; `selectFrom()` 으로 축약 가능
@@ -68,13 +68,13 @@
 * 주의사항
 	* `fetchResults()` 메서드가 페이징 정보까지 포함하지만, 페이징 쿼리에 부하가 걸리는 경우 `fetchCount()`를 따로 날리는 것이 효율적
 
-> [정렬](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl4정렬Test.java)
+> [정렬](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl4%EC%A0%95%EB%A0%ACTest.java)
 
 * `orderBy()`
 	* `desc()`, `asc()`: 일반정렬
 	* `nullsLast()`, `nullsFirst()`: null 데이터 순서 부여
 
-> [페이징](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl5페이징Test.java)
+> [페이징](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl5%ED%8E%98%EC%9D%B4%EC%A7%95Test.java)
 
 * `offset()`, `limit()`
 	* `offset()`: 기본 0부터 시작
@@ -85,7 +85,7 @@
 	* 자동화된 count 쿼리는 원본 쿼리와 같이 모두 조인하기 때문에 성능이 안나올 수 있다.
 	* count 쿼리에 조인이 필요없는 성능 최적화가 필요한 경우 count 전용 쿼리를 별도로 작성할 필요성이 있다.
 
-> [집합](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl6집합Test.java)
+> [집합](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl6%EC%A7%91%ED%95%A9Test.java)
 
 * aggregation
 	* sum, avg, max, min과 같은 집계성 쿼리
@@ -97,7 +97,7 @@
 * `groupBy()`, `having()`
 	* 데이터 셋에 따른 테스트를 많이 해봐야 할 듯
 
-> [조인 - 기본 조인](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl7조인Test.java)
+> [조인 - 기본 조인](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl7%EC%A1%B0%EC%9D%B8Test.java)
 
 * 첫 번쨰 파라미터에 조인 대상을 지정, 두 번째 파라미터에 별칭으로 사용할 Q 타입을 지정
 * 조인의 종류
@@ -142,7 +142,7 @@
 	* 활용2편의 내용을 참고
 	* 자주 사용되는 내용
 
-> [서브쿼리](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl8서브쿼리Test.java)
+> [서브쿼리](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl8%EC%84%9C%EB%B8%8C%EC%BF%BC%EB%A6%ACTest.java)
 
 * `com.querydsl.jpa.JPAExpressions` 사용
 	* 서브 쿼리 eq
@@ -166,7 +166,7 @@
 	* 데이터에 집중하면 인라인 뷰를 많이 줄일 수 있다.
 	* 한번에 조회되는 쿼리가 정말 중요한지? 생각해보기
 
-> [Case 문](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl9조건문Test.java)
+> [Case 문](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl9%EC%A1%B0%EA%B1%B4%EB%AC%B8Test.java)
 
 * select, 조건절\(where\), order by에서 사용 가능
 	* 단순한 조건
@@ -176,7 +176,7 @@
 * 정리
 	* case 같은건 application에서 처리하는게 좋지 않을까 생각하기
 
-> [상수, 문자 더하기](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl10상수및문자더하기Test.java)
+> [상수, 문자 더하기](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl10%EC%83%81%EC%88%98%EB%B0%8F%EB%AC%B8%EC%9E%90%EB%8D%94%ED%95%98%EA%B8%B0Test.java)
 
 * 상수 더하기
 	* `Expressions.constant(xxx)`
@@ -188,7 +188,7 @@
 
 ## 중급 문법
 
-> [프로젝션과 결과 반환](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl11프로젝션기본Test.java)
+> [프로젝션과 결과 반환](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl11%ED%94%84%EB%A1%9C%EC%A0%9D%EC%85%98%EA%B8%B0%EB%B3%B8Test.java)
 
 * **기본**
 	* select 대상 지정: **프로젝션 대상이 하나**
@@ -236,7 +236,7 @@
 		* DTO를 순수하게 사용하려는경우 `Projection.constructor()` 를 사용
 	* `Projection.bean()`, `Projection.fields()`를 사용하기도 함
 
-> [동적쿼리](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl12동적쿼리Test.java)
+> [동적쿼리](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl12%EB%8F%99%EC%A0%81%EC%BF%BC%EB%A6%ACTest.java)
 
 * 동적 쿼리를 해결하는 두 가지 방법
 * BooleanBuilder 사용
@@ -251,7 +251,7 @@
 * 참고
 	* `Predicate` vs `BooleanExpression` 차이 알아보기
 
-> [수정, 삭제 벌크 연산](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl13벌크연산Test.java)
+> [수정, 삭제 벌크 연산](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl13%EB%B2%8C%ED%81%AC%EC%97%B0%EC%82%B0Test.java)
 
 * `execute()` 메서드 사용 시 bulk 쿼리 호출
 * **주의사항**
@@ -259,7 +259,7 @@
 
 	  배치 쿼리를 실행하고 나면 영속성 컨텍스트를 초기화 하는 것이 안전하다.
 
-> [SQL function 호출](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl14SQLFunctionTest.java)
+> [SQL function 호출](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl14SQLFunctionTest.java)
 
 * SQL function은 JPA와 같이 Dialect에 등록된 내용만 호출할 수 있다.
 	* `Expressions.stringTemplate()` 사용 함수
@@ -272,7 +272,7 @@
 
 ## 실무 활용 - 순수 JPA와 Querydsl
 
-> 순수 JPA 리포지토리와 Querydsl
+> **순수 JPA 리포지토리와 Querydsl**
 
 * JPAQueryFactory 스프링 빈 등록
 	* JPAQueryFactory 를 스프링 빈으로 등록해서 주입받아 사용가능
@@ -284,7 +284,7 @@
 * 정리
 	* JPAQueryFactory를 빈으로 생성해서 쓸 수도 있지만 취향차이 일듯..
 
-> [동적 쿼리와 성능 최적화 조회](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl17QuerydslOptimizeTest.java)
+> [동적 쿼리와 성능 최적화 조회](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl17QuerydslOptimizeTest.java)
 
 * Builder 사용
 	* `@QueryProjection`을 추가, QMemberTeamDto 를 생성
@@ -305,21 +305,17 @@
 > 조회 API 컨트롤러 개발
 
 * API 호출 시 데이터 테스트를 위해 일반 폴더와 테스트 폴더의 프로파일 설정 분리
-* 샘플 데이터 추가를
-
-  위한 [InitMember](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/main/java/kr/seok/querydsl/InitMember.java)
-
-  클래스 작성
+* 샘플 데이터 추가를 위한 [InitMember](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/main/java/kr/seok/querydsl/InitMember.java) 클래스 작성
 
 * Postman을 사용하여 Controller를 REST API 로 호출 테스트
 
 ## 실무 활용 - 스프링 데이터 JPA와 Querydsl
 
-> 스프링 데이터 JPA 리포지토리로 변경
+> **스프링 데이터 JPA 리포지토리로 변경**
 
 * 스프링 데이터 JPA에서 제공하는 정적 쿼리를 사용할 수 있으나 Querydsl에서 제공하는 동적쿼리를 사용할 순 없다.
 
-> [사용자 정의 리포지토리](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl20사용자정의리포지토리Test.java)
+> [사용자 정의 리포지토리](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl20%EC%82%AC%EC%9A%A9%EC%9E%90%EC%A0%95%EC%9D%98%EB%A6%AC%ED%8F%AC%EC%A7%80%ED%86%A0%EB%A6%ACTest.java)
 
 * 스프링 데이터 JPA에서 제공하는 것 이상의 쿼리를 사용하기 위해 Querydsl 라이브러리를 추가
 * 해당 라이브러리를 추가하여 동적 쿼리를 작성하고 사용하기 위해서는 사용자 정의 인터페이스를 작성하여 상속 받아야 한다.
@@ -334,38 +330,35 @@
 
 > 스프링 데이터 페이징 활용
 
-* [Querydsl 페이징 연동](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl21스프링데이터페이징Test.java)
-	* 스프링 데이터의 `Page`, `Pageable`을 활용
-	* 방법1: `전체 카운트 및 데이터를 한번에 조회`하는 단순한 방법
-		* `fetchResults()`내용과 전체 카운트를 한번에 조회
-		* 카운트 쿼리 실행시 필요없는 order by 는 제거
-	* 방법2: `데이터 내용`과 `전체 카운트`를 별도로 조회하는 방법
-		* 전체 카운트를 조회 하는 방법을 최적화 할 수 있을 때 분리
-* [CountQuery `최적화`](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl22스프링데이터페이징최적화Test.java)
-	* 스프링 데이터 라이브러리에서 제공하는 `PageableExecutionUtils.getPage()`를 활용
-	* count 쿼리가 생략 가능한 경우 생략해서 처리
-		* 페이지 시작이면서 컨텐츠 사이즈가 페이지 사이즈보다 작을 때
-		* 마지막 페이지 일 때 \(offset + 컨텐츠 사이즈를 더해서 전체 사이즈 구함\)
-* [정렬\(Sort\)](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl23스프링데이터최적화정렬Test.java)
-	* 스프링 데이터 JPA는 자신의 `Sort`를 Querydsl의 `OrderSpecifier`로 편리하게 변경하는 기능을 제공
-	* 정렬\( Sort \)은 조건이 조금만 복잡해져도 Pageable 의 Sort 기능을 사용하기 어렵다.
-	* 루트 `엔티티 범위를 넘어가는 동적 정렬 기능`이 필요하면 스프링 데이터 페이징이 제공하는 Sort 를 사용하기 보다는 `파라미터를 받아서 직접 처리하는 것을 권장`
+* [Querydsl 페이징 연동](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl21%EC%8A%A4%ED%94%84%EB%A7%81%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8E%98%EC%9D%B4%EC%A7%95Test.java)
+    * 스프링 데이터의 `Page`, `Pageable`을 활용
+    * 방법1: `전체 카운트 및 데이터를 한번에 조회`하는 단순한 방법
+        * `fetchResults()`내용과 전체 카운트를 한번에 조회
+        * 카운트 쿼리 실행시 필요없는 order by 는 제거
+    * 방법2: `데이터 내용`과 `전체 카운트`를 별도로 조회하는 방법
+        * 전체 카운트를 조회 하는 방법을 최적화 할 수 있을 때 분리
+* [CountQuery `최적화`](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl22%EC%8A%A4%ED%94%84%EB%A7%81%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8E%98%EC%9D%B4%EC%A7%95%EC%B5%9C%EC%A0%81%ED%99%94Test.java)
+    * 스프링 데이터 라이브러리에서 제공하는 `PageableExecutionUtils.getPage()`를 활용
+    * count 쿼리가 생략 가능한 경우 생략해서 처리
+        * 페이지 시작이면서 컨텐츠 사이즈가 페이지 사이즈보다 작을 때
+        * 마지막 페이지 일 때 \(offset + 컨텐츠 사이즈를 더해서 전체 사이즈 구함\)
+* [정렬\(Sort\)](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl23%EC%8A%A4%ED%94%84%EB%A7%81%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%B5%9C%EC%A0%81%ED%99%94%EC%A0%95%EB%A0%ACTest.java)
+    * 스프링 데이터 JPA는 자신의 `Sort`를 Querydsl의 `OrderSpecifier`로 편리하게 변경하는 기능을 제공
+    * 정렬\( Sort \)은 조건이 조금만 복잡해져도 Pageable 의 Sort 기능을 사용하기 어렵다.
+    * 루트 `엔티티 범위를 넘어가는 동적 정렬 기능`이 필요하면 스프링 데이터 페이징이 제공하는 Sort 를 사용하기 보다는 `파라미터를 받아서 직접 처리하는 것을 권장`
 * 뒤에서 정렬에 대해서 다시 정리 해줄거임
+	* **team id 순으로 정렬 뒤 member id 순으로 정렬 테스트**
 	* 일단 만들어서 테스트
 
-	  \`\`\`http request
-
-	  **team id 순으로 정렬 뒤 member id 순으로 정렬 테스트**
-
-	  [http://localhost:8080/v5/members?page=0&size=105&sort=team.id,desc&sort=id,desc](http://localhost:8080/v5/members?page=0&size=105&sort=team.id,desc&sort=id,desc)
-
-	  \`\`\`
+	  ```http request	  
+	  http://localhost:8080/v5/members?page=0&size=105&sort=team.id,desc&sort=id,desc
+	  ```
 
 ## 스프링 데이터 JPA가 제공하는 Querydsl 기능
 
 * 여기서부터 설명하는 내용은 부족함이 많은 기능들.. 결국 커스텀 필요
 
-> 인터페이스 지원
+> **인터페이스 지원**
 
 * QuerydslPredicateExecutor
 	* 문제점
@@ -402,7 +395,7 @@
 		* QueryFactory 를 제공하지 않음
 		* 스프링 데이터 `Sort 기능`이 `정상 동작하지 않음`
 
-> [Querydsl 지원 클래스 직접 만들기](https://github.com/SeokRae/spring/tree/047b5512ff2fa980ecb8a103fa5d4035b2b444ae/spring-jpa/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl25사용자정의SupportTest.java)
+> [Querydsl 지원 클래스 직접 만들기](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl25%EC%82%AC%EC%9A%A9%EC%9E%90%EC%A0%95%EC%9D%98SupportTest.java)
 
 * QuerydslRepositorySupport의 한계점을 지원하는 클래스 작성
 	* 스프링 데이터가 제공하는 페이징을 편리하게 변환
