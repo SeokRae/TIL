@@ -115,9 +115,10 @@ description: 자바 기반 공부하기
 
 ## 궁금한 부분
 
-* Java
+* Java 
     * [자바8 이상에서 인터페이스와 추상클래스의 차이](interview/interface_vs_abstract.md)
     * [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](interview/generics.md)
     * [스프링 MVC 기본 구조](interview/dispatcher_servlet.md)
     * [마샬링과 직렬화](interview/marshalling_n_serialization.md)
     * [데이터 캐싱](interview/data_cache.md)
+    * [인터뷰 질문 모음](interview/java_interview_summary.md)
