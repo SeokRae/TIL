@@ -164,6 +164,13 @@
 	- [배치 데이터 분석하기](/batch-study/contents/_2.md)
 	- [배치 프로세스 구상하기 및 성능 차이 확인하기](/batch-study/contents/_3.md)
 
+## Issue
+
+---
+
+* [Issue]
+  * [Git Push Error](issue/issue-git-push.md)
+
 ## Tistory
 
 ---
