@@ -152,6 +152,7 @@ description: Today I Learned
 		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
 		* [Join(Nested Loop, Hash)](database/easy_db/contents/2021-08-07-db-join.md)
 		* [Join(Semi, Outer)](database/easy_db/contents/2021-08-07-db-join2.md)
+		* [Partial Range Processing](database/easy_db/contents/2021-08-21-db-partial.md)
 
 * [Network]()
 	* [Web Security](network/contents/web_security.md)
