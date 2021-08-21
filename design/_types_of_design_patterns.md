@@ -12,9 +12,7 @@
 
 ## **Creational**
 
-- Creational Design Patterns은 클래스에서 객체를 구성하는 방법과 관련되어있다.
-- 객체 인스턴스 생성이 의도하지 않은 방식으로 생성되어서는 안된다.
-- **Creational Design Patterns** 은 프로그램에서 **객체 생성 프로세스**를 **캡슐화**할 수 있는 방법을 제공한다.
+**Creational Design Patterns** 은 프로그램에서 **객체 생성 프로세스**를 **캡슐화**할 수 있는 방법을 제공한다.
 
 * [Builder Pattern](creational/_builder.md)
 * [Prototype Pattern](creational/_prototype.md)
