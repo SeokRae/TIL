@@ -79,12 +79,13 @@
 	* [Item 89 발표 내용](java/effective/item89/item_89_ppt.md)
 
 * 궁금증
-    * [자바 8 버전의 인터페이스와 추상클래스](java/interview/interface_vs_abstract.md)
-    * [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](java/interview/generics.md)
-    * [스프링 MVC 기본 구조](java/interview/dispatcher_servlet.md)
-    * [마샬링과 직렬화](java/interview/marshalling_n_serialization.md)
-    * [데이터 캐싱](java/interview/data_cache.md)
-    * [인터뷰 질문 모음](java/interview/java_interview_summary.md)
+	* [자바 8 버전의 인터페이스와 추상클래스](java/interview/interface_vs_abstract.md)
+	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](java/interview/generics.md)
+	* [스프링 MVC 기본 구조](java/interview/dispatcher_servlet.md)
+	* [마샬링과 직렬화](java/interview/marshalling_n_serialization.md)
+	* [데이터 캐싱](java/interview/data_cache.md)
+	* [인터뷰 질문 모음](java/interview/java_interview_summary.md)
+	* [메시지 대기열](java/interview/social_alarm_service.md)
 
 ## Database
 
@@ -120,12 +121,12 @@
 		* [**부분 범위 처리 튜닝**](database/tune/_13.md)
 
 	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
-        * [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
-            * [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
-        * [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
-        * [Join(Nested Loop, Hash)](database/easy_db/contents/2021-08-07-db-join.md)
-        * [Join(Semi, Outer)](database/easy_db/contents/2021-08-07-db-join2.md)
-        * [Partial Range Processing](database/easy_db/contents/2021-08-21-db-partial.md)
+		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
+			* [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
+		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
+		* [Join(Nested Loop, Hash)](database/easy_db/contents/2021-08-07-db-join.md)
+		* [Join(Semi, Outer)](database/easy_db/contents/2021-08-07-db-join2.md)
+		* [Partial Range Processing](database/easy_db/contents/2021-08-21-db-partial.md)
 
 ## Network
 
@@ -169,7 +170,7 @@
 ---
 
 * [Issue]
-  * [Git Push Error](issue/issue-git-push.md)
+	* [Git Push Error](issue/issue-git-push.md)
 
 ## Tistory
 
