@@ -9,12 +9,12 @@ version: '3'
 services:
 
   redis-master:
-    image: redis:5.0-alpine   	# image 옵션으로 redis공식이미지를 기반으로 생성합니다.
+    image: redis:5.0-alpine    # image 옵션으로 redis공식이미지를 기반으로 생성합니다.
     build:
-      context: ..             	# build file에 대한 context를 지정
-      dockerfile: Dockerfile  	# dockerfile명을 지정합니다. (Default는 "Dockerfile" 파일명을 가진 파일을 실행합니다.)
-    network_mode: "host"      	# Image가 Container가 되었을때 network모드를 host모드로 설정합니다 (docker0 인터페이스를 사용하지 않고 Host OS의 eth0 인터페이스 사용)
-    environment: 				# Container 내부에서 사용 할 환경변수를 설정합니다.
+      context: ..                # build file에 대한 context를 지정
+      dockerfile: Dockerfile    # dockerfile명을 지정합니다. (Default는 "Dockerfile" 파일명을 가진 파일을 실행합니다.)
+    network_mode: "host"        # Image가 Container가 되었을때 network모드를 host모드로 설정합니다 (docker0 인터페이스를 사용하지 않고 Host OS의 eth0 인터페이스 사용)
+    environment: # Container 내부에서 사용 할 환경변수를 설정합니다.
       - REQUIREPASS=password1234
       - CLIENTPORT=6379
       - CLIENTHOST=127.0.0.1
@@ -57,7 +57,6 @@ services:
     restart: always
 ```
 
-
 ```dockerfile
 # redis 이미지를 기반으로 빌드됨을 의미합니다.
 FROM redis:5.0-alpine 
@@ -89,7 +88,6 @@ CMD [ "redis-server","/usr/local/bin/redis.conf" ]
 ```
 
 ## Redis Cluster 설정
-
 
 ```shell
 #!/bin/sh
@@ -129,7 +127,6 @@ fi
  
 exec "$@"
 ```
-
 
 ## Redis Cluster Tutorial
 

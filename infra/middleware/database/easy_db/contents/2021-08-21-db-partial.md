@@ -6,7 +6,7 @@
 
 ![키워드 그래프](../../images/oracle/partial_range_process/partial_range_process.002.jpeg)
 
-## 부분 범위 처리(Partial Range Processing) 
+## 부분 범위 처리(Partial Range Processing)
 
 ---
 
@@ -92,7 +92,7 @@ WHERE ROWNUM <= 3;
 
 > **페이징 처리**
 
-- 일반적인 데이터 조회 시, 모든 데이터를 조회하는 경우는 흔치 않다. 
+- 일반적인 데이터 조회 시, 모든 데이터를 조회하는 경우는 흔치 않다.
 - 모든 데이터를 보여줄 화면도 없을 뿐더러 그래야 하는 경우가 많지 않기 때문이다.
 
 > **페이징 처리 튜닝**
@@ -116,13 +116,12 @@ WHERE ROWNUM <= 3;
 	- 30건 중 10건의 데이터만 가져오는데도 불구하고 적절한 인덱스가 존재하지 않아서 테이블 전체를 테이블 풀스캔하고 정렬 작업까지 수행한 후에야 그 중에서 10건만을 가져오게 된다.
 	- 즉, 전체 범위 처리를 하고 페이징 처리한 매우 비효율적인 SQL이다.
 	- 이러한 SQL문이 OLTP 환경에서 빈번하게 수행되는 경우 DBMS 전체 성능에 매우 큰 지장을 주게 된다.
-	
+
 ### 페이징 처리 튜닝 후 쿼리
 
 > **페이징 처리 튜닝 후 쿼리**
 
 ![인덱스 생성과 튜닝 후 쿼리](../../images/oracle/partial_range_process/partial_range_process.009.jpeg)
-
 
 ![인덱스를 통한 부분 범위 처리](../../images/oracle/partial_range_process/partial_range_process.012.jpeg)
 

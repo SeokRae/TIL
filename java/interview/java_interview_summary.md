@@ -42,13 +42,11 @@
 
 > HashMap 과 ConcurrentHashMap 차이 (synchronized)
 
-
 ## Object-oriented programming
 
 > 추상화란?
 
 > 상속 대신 합성을 해야 하는 이유?
-
 
 ## Spring Framework
 

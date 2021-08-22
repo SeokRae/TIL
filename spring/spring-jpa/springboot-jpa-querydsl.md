@@ -28,7 +28,7 @@
 * JPA vs Querydsl 차이
 
   | 방식 | JPQL | Querydsl |
-                | :--- | :--- | :--- |
+                  | :--- | :--- | :--- |
   | 작성방식 | 문자 | 코드 |
   | 오류체크시점 | 실행 시점 오류 | 컴파일 시점 오류 |
   | 파라미터 바인딩 방식 | 파라미터 바인딩 | 파라미터 바인딩 자동 처리 |
@@ -58,7 +58,7 @@
 * 결과 조회 메서드
 
   | 메서드명 | 설명 | 예외 |
-                | :---: | :--- | :--- |
+                  | :---: | :--- | :--- |
   | `fetch()` | 리스트 조회 | 데이터가 없는 경우 빈 리스트 반환 |
   | `fetchOne()` | 단 건 조회 | 결과가 없는경우: `null`, 결과가 둘 이상인 경우: `com.querydsl.core.NonUniqueResultException` 예외 |
   | `fetchFirst()` | 가장 상위 데이터를 조회, `limit(1).fetchOne()` 과 동일 |  |
@@ -305,7 +305,9 @@
 > 조회 API 컨트롤러 개발
 
 * API 호출 시 데이터 테스트를 위해 일반 폴더와 테스트 폴더의 프로파일 설정 분리
-* 샘플 데이터 추가를 위한 [InitMember](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/main/java/kr/seok/querydsl/InitMember.java) 클래스 작성
+* 샘플 데이터 추가를
+  위한 [InitMember](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/main/java/kr/seok/querydsl/InitMember.java)
+  클래스 작성
 
 * Postman을 사용하여 Controller를 REST API 로 호출 테스트
 
@@ -331,21 +333,21 @@
 > 스프링 데이터 페이징 활용
 
 * [Querydsl 페이징 연동](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl21%EC%8A%A4%ED%94%84%EB%A7%81%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8E%98%EC%9D%B4%EC%A7%95Test.java)
-    * 스프링 데이터의 `Page`, `Pageable`을 활용
-    * 방법1: `전체 카운트 및 데이터를 한번에 조회`하는 단순한 방법
-        * `fetchResults()`내용과 전체 카운트를 한번에 조회
-        * 카운트 쿼리 실행시 필요없는 order by 는 제거
-    * 방법2: `데이터 내용`과 `전체 카운트`를 별도로 조회하는 방법
-        * 전체 카운트를 조회 하는 방법을 최적화 할 수 있을 때 분리
+	* 스프링 데이터의 `Page`, `Pageable`을 활용
+	* 방법1: `전체 카운트 및 데이터를 한번에 조회`하는 단순한 방법
+		* `fetchResults()`내용과 전체 카운트를 한번에 조회
+		* 카운트 쿼리 실행시 필요없는 order by 는 제거
+	* 방법2: `데이터 내용`과 `전체 카운트`를 별도로 조회하는 방법
+		* 전체 카운트를 조회 하는 방법을 최적화 할 수 있을 때 분리
 * [CountQuery `최적화`](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl22%EC%8A%A4%ED%94%84%EB%A7%81%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%8E%98%EC%9D%B4%EC%A7%95%EC%B5%9C%EC%A0%81%ED%99%94Test.java)
-    * 스프링 데이터 라이브러리에서 제공하는 `PageableExecutionUtils.getPage()`를 활용
-    * count 쿼리가 생략 가능한 경우 생략해서 처리
-        * 페이지 시작이면서 컨텐츠 사이즈가 페이지 사이즈보다 작을 때
-        * 마지막 페이지 일 때 \(offset + 컨텐츠 사이즈를 더해서 전체 사이즈 구함\)
+	* 스프링 데이터 라이브러리에서 제공하는 `PageableExecutionUtils.getPage()`를 활용
+	* count 쿼리가 생략 가능한 경우 생략해서 처리
+		* 페이지 시작이면서 컨텐츠 사이즈가 페이지 사이즈보다 작을 때
+		* 마지막 페이지 일 때 \(offset + 컨텐츠 사이즈를 더해서 전체 사이즈 구함\)
 * [정렬\(Sort\)](https://github.com/spring-org/springboot-jpa-in-action/blob/master/springboot-jpa-querydsl/src/test/java/kr/seok/querydsl/domain/Querydsl23%EC%8A%A4%ED%94%84%EB%A7%81%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%B5%9C%EC%A0%81%ED%99%94%EC%A0%95%EB%A0%ACTest.java)
-    * 스프링 데이터 JPA는 자신의 `Sort`를 Querydsl의 `OrderSpecifier`로 편리하게 변경하는 기능을 제공
-    * 정렬\( Sort \)은 조건이 조금만 복잡해져도 Pageable 의 Sort 기능을 사용하기 어렵다.
-    * 루트 `엔티티 범위를 넘어가는 동적 정렬 기능`이 필요하면 스프링 데이터 페이징이 제공하는 Sort 를 사용하기 보다는 `파라미터를 받아서 직접 처리하는 것을 권장`
+	* 스프링 데이터 JPA는 자신의 `Sort`를 Querydsl의 `OrderSpecifier`로 편리하게 변경하는 기능을 제공
+	* 정렬\( Sort \)은 조건이 조금만 복잡해져도 Pageable 의 Sort 기능을 사용하기 어렵다.
+	* 루트 `엔티티 범위를 넘어가는 동적 정렬 기능`이 필요하면 스프링 데이터 페이징이 제공하는 Sort 를 사용하기 보다는 `파라미터를 받아서 직접 처리하는 것을 권장`
 * 뒤에서 정렬에 대해서 다시 정리 해줄거임
 	* **team id 순으로 정렬 뒤 member id 순으로 정렬 테스트**
 	* 일단 만들어서 테스트
