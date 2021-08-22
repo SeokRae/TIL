@@ -9,13 +9,13 @@
 * [Design Pattern](design/README.md)
 	* [Intro](design/_intro.md)
 	* [Types of Design Patterns](design/_types_of_design_patterns.md)
-	* Creational
+	* **Creational**
 		* [Builder Pattern](design/creational/_builder.md)
 		* [Singleton Pattern](design/creational/_singleton.md)
 		* [Prototype Pattern](design/creational/_prototype.md)
 		* [Factory Pattern](design/creational/_factory.md)
 		* [Abstract Factory Pattern](design/creational/_abstract_factory.md)
-	* Structural
+	* **Structural**
 		* [Adapter Pattern](design/structural/_adapter.md)
 		* [Bridge Pattern](design/structural/_bridge.md)
 		* [Composite Pattern](design/structural/_composite.md)
@@ -23,7 +23,7 @@
 		* [Facade Pattern](design/structural/_facade.md)
 		* [Flyweight Pattern](design/structural/_flyweight.md)
 		* [Proxy Pattern](design/structural/_proxy.md)
-	* Behavioural
+	* **Behavioural**
 		* [Chain of Responsibility Pattern](design/behavioral/_chain_of_responsibility.md)
 		* [Command Pattern](design/behavioral/_command.md)
 		* [Interpreter Pattern](design/behavioral/_interpreter.md)
@@ -32,9 +32,9 @@
 		* [Memento Pattern](design/behavioral/_memento.md)
 		* [Observer Pattern](design/behavioral/_observer.md)
 		* [State Pattern](design/behavioral/_state.md)
-		* [Strategy Pattern](/design/behavioral/_strategy.md)
-		* [Template Method Pattern](/design/behavioral/_template_method.md)
-		* [**Visitor Pattern**](/design/behavioral/_visitor.md)
+		* [Strategy Pattern](design/behavioral/_strategy.md)
+		* [Template Method Pattern](design/behavioral/_template_method.md)
+		* [**Visitor Pattern**](design/behavioral/_visitor.md)
 
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
@@ -91,42 +91,42 @@
 
 ---
 
-* [Database](database/README.md)
-	* [SQL 레벨업](database/sql_levelup/README.md)
-		* [1강 DBMS 아키텍처 개요](database/sql_levelup/_1.md)
-		* [2강 DBMS와 버퍼](database/sql_levelup/_2.md)
-		* [3강 DBMS와 실행 계획](database/sql_levelup/_3.md)
-		* [4강 실행 계획이 SQL 구문의 성능을 결정](database/sql_levelup/_4.md)
-		* [5강 실행 계획의 중요성](database/sql_levelup/_5.md)
-		* [6강 SELECT 구문](database/sql_levelup/_6.md)
-		* [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](database/sql_levelup/_7.md)
-		* [8강 UNION을 사용한 쓸데없이 긴 표현](database/sql_levelup/_8.md)
+* [Database](infra/middleware/database/README.md)
+	* [SQL 레벨업](infra/middleware/database/sql_levelup/README.md)
+		* [1강 DBMS 아키텍처 개요](infra/middleware/database/sql_levelup/_1.md)
+		* [2강 DBMS와 버퍼](infra/middleware/database/sql_levelup/_2.md)
+		* [3강 DBMS와 실행 계획](infra/middleware/database/sql_levelup/_3.md)
+		* [4강 실행 계획이 SQL 구문의 성능을 결정](infra/middleware/database/sql_levelup/_4.md)
+		* [5강 실행 계획의 중요성](infra/middleware/database/sql_levelup/_5.md)
+		* [6강 SELECT 구문](infra/middleware/database/sql_levelup/_6.md)
+		* [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](infra/middleware/database/sql_levelup/_7.md)
+		* [8강 UNION을 사용한 쓸데없이 긴 표현](infra/middleware/database/sql_levelup/_8.md)
 
-	* [개발자를 위한 SQL 튜닝](database/tune/README.md)
-		* [SQL 쿼리 실습을 위한 DB 서버 구축](database/tune/_1.md)
-		* [**인덱스 튜닝**](database/tune/_1_1.md)
-		* [인덱스 스캔 튜닝](database/tune/_2.md)
-		* [인덱스 스캔 튜닝 실습](database/tune/_3.md)
-		* [인덱스 패스트 풀 스캔](database/tune/_4.md)
-		* [테이블 풀 스캔 튜닝](database/tune/_5.md)
-		* [**조인 튜닝**](database/tune/_6.md)
-		* [중첩 루프 조인 튜닝](database/tune/_7.md)
-		* [중첩 루프 조인 튜닝 실습](database/tune/_8.md)
-		* [**해시 조인 튜닝**](database/tune/_9.md)
-		* [해시 조인 튜닝 실습](database/tune/_9_1.md)
-		* [**세미 조인 튜닝**](database/tune/_10.md)
-		* [세미 조인 튜닝 실습](database/tune/_10_1.md)
-		* [아우터 조인](database/tune/_11.md)
-		* [함수 튜닝](database/tune/_12.md)
-		* [**부분 범위 처리 튜닝**](database/tune/_13.md)
+	* [개발자를 위한 SQL 튜닝](infra/middleware/database/tune/README.md)
+		* [SQL 쿼리 실습을 위한 DB 서버 구축](infra/middleware/database/tune/_1.md)
+		* [**인덱스 튜닝**](infra/middleware/database/tune/_1_1.md)
+		* [인덱스 스캔 튜닝](infra/middleware/database/tune/_2.md)
+		* [인덱스 스캔 튜닝 실습](infra/middleware/database/tune/_3.md)
+		* [인덱스 패스트 풀 스캔](infra/middleware/database/tune/_4.md)
+		* [테이블 풀 스캔 튜닝](infra/middleware/database/tune/_5.md)
+		* [**조인 튜닝**](infra/middleware/database/tune/_6.md)
+		* [중첩 루프 조인 튜닝](infra/middleware/database/tune/_7.md)
+		* [중첩 루프 조인 튜닝 실습](infra/middleware/database/tune/_8.md)
+		* [**해시 조인 튜닝**](infra/middleware/database/tune/_9.md)
+		* [해시 조인 튜닝 실습](infra/middleware/database/tune/_9_1.md)
+		* [**세미 조인 튜닝**](infra/middleware/database/tune/_10.md)
+		* [세미 조인 튜닝 실습](infra/middleware/database/tune/_10_1.md)
+		* [아우터 조인](infra/middleware/database/tune/_11.md)
+		* [함수 튜닝](infra/middleware/database/tune/_12.md)
+		* [**부분 범위 처리 튜닝**](infra/middleware/database/tune/_13.md)
 
-	* [DB 스터디](database/easy_db/2021-07-17-db-toc.md)
-		* [DBMS](database/easy_db/contents/2021-07-17-db-dbms.md)
-			* [MySQL](database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
-		* [INDEX](database/easy_db/contents/2021-07-23-db-index.md)
-		* [Join(Nested Loop, Hash)](database/easy_db/contents/2021-08-07-db-join.md)
-		* [Join(Semi, Outer)](database/easy_db/contents/2021-08-07-db-join2.md)
-		* [Partial Range Processing](database/easy_db/contents/2021-08-21-db-partial.md)
+	* [DB 스터디](infra/middleware/database/easy_db/2021-07-17-db-toc.md)
+		* [DBMS](infra/middleware/database/easy_db/contents/2021-07-17-db-dbms.md)
+			* [MySQL](infra/middleware/database/easy_db/contents/2021-07-24-db-mysql-architecture.md)
+		* [INDEX](infra/middleware/database/easy_db/contents/2021-07-23-db-index.md)
+		* [Join(Nested Loop, Hash)](infra/middleware/database/easy_db/contents/2021-08-07-db-join.md)
+		* [Join(Semi, Outer)](infra/middleware/database/easy_db/contents/2021-08-07-db-join2.md)
+		* [Partial Range Processing](infra/middleware/database/easy_db/contents/2021-08-21-db-partial.md)
 
 ## Network
 
@@ -147,8 +147,8 @@
 ---
 
 * [Docker]()
-	* [Oracle with Docker](/docker/database/oracle_container.md)
-	* [MySQL with Docker](/docker/database/mysql_container.md)
+	* [Oracle with Docker](infra/docker/database/oracle_container.md)
+	* [MySQL with Docker](infra/docker/database/mysql_container.md)
 
 * [AWS]()
 	* [AWS 자격증 시험 공부하기](infra/aws/_0.md)
@@ -158,19 +158,19 @@
 
 ---
 
-* [Spring JPA](spring-jpa/README.md)
-	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
-	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
-	* [3. Spring-Data-Jpa](spring-jpa/springboot-jpa-data.md)
-	* [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
+* [Spring JPA](spring/spring-jpa/README.md)
+	* [1. 데이터 모델링 및 연관관계 설정](spring/spring-jpa/springboot-jpa-shop.md)
+	* [2. 최적화 내용](spring/spring-jpa/springboot-jpa-shop-optimize.md)
+	* [3. Spring-Data-Jpa](spring/spring-jpa/springboot-jpa-data.md)
+	* [4. Query DSL](spring/spring-jpa/springboot-jpa-querydsl.md)
 
-* [Spring Security](spring-security/README.md)
-	* [Intro](spring-security/contents/_1.md)
+* [Spring Security](spring/spring-security/README.md)
+	* [Intro](spring/spring-security/contents/_1.md)
 
 * [Spring Batch](batch-study/README.md)
-	- [배치용 디비 설치](/batch-study/contents/_1.md)
-	- [배치 데이터 분석하기](/batch-study/contents/_2.md)
-	- [배치 프로세스 구상하기 및 성능 차이 확인하기](/batch-study/contents/_3.md)
+	- [배치용 디비 설치](batch-study/contents/_1.md)
+	- [배치 데이터 분석하기](batch-study/contents/_2.md)
+	- [배치 프로세스 구상하기 및 성능 차이 확인하기](batch-study/contents/_3.md)
 
 ## Issue
 
