@@ -132,3 +132,19 @@ WHERE ROWNUM <= 3;
 > **페이징 처리 튜닝 후 실행 계획**
 
 ![튜닝 후 쿼리 실행 계획](../../images/oracle/partial_range_process/partial_range_process.010.jpeg)
+
+## 페이징 처리 커버링 인덱스 튜닝
+
+> **페이징 처리 - 커버링 인덱스 생성**
+
+![페이징 처리 - 커버링 인덱스](../../images/oracle/partial_range_process/partial_range_process.013.jpeg)
+
+- 조회 쿼리에 포함된 컬럼이 모두 포함되어 있는 인덱스를 생성
+	- 인덱스의 순서와 컬럼의 정렬에 대한 설정도 중요
+
+> **페이징 처리 - 커버링 인덱스 실행 계획**
+
+![페이징 처리 - 커버링 인덱스 실행 계획](../../images/oracle/partial_range_process/partial_range_process.014.jpeg)
+
+- SELECT, WHERE, ORDER BY, GROUP BY 등등 쿼리에 속한 컬럼이 모두 포함된 인덱스로 쿼리를 조회하는 경우 실행계획에 테이블에 접근하는 내용이 사라진다.
+- 결국 데이터 파일에 접근하는 비용이 감소되어 효율적인 조회가 가능하다.
