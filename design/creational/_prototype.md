@@ -77,5 +77,12 @@
 
 ## 예시 코드
 
-* clone\(\) 구현 1. Abstract Class -&gt; Cloneable 구현 2. Concrete Class -&gt; @Override clone\(\)
-* Class 제공하는 방식 1. cache 2. prototype
+* clone\(\)을 사용해서 구현하는 방법 
+
+2. Abstract Class -&gt; Cloneable 구현 
+3. Concrete Class -&gt; @Override clone\(\)
+
+* Class 제공하는 방식 
+
+1. cache 
+2. prototype
