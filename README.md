@@ -50,7 +50,7 @@ description: Today I Learned
 		* [Adapter Pattern](design/structural/_adapter.md)
 		* [Bridge Pattern](design/structural/_bridge.md)
 		* [Composite Pattern](design/structural/_composite.md)
-		* [**`Decorator Pattern`**](design/structural/_decorator.md)
+		* [**Decorator Pattern**](design/structural/_decorator.md)
 		* [Facade Pattern](design/structural/_facade.md)
 		* [Flyweight Pattern](design/structural/_flyweight.md)
 		* [Proxy Pattern](design/structural/_proxy.md)
@@ -65,7 +65,7 @@ description: Today I Learned
 		* [State Pattern](design/behavioral/_state.md)
 		* [Strategy Pattern](/design/behavioral/_strategy.md)
 		* [Template Method Pattern](/design/behavioral/_template_method.md)
-		* [**`Visitor Pattern`**](/design/behavioral/_visitor.md)
+		* [**Visitor Pattern**](/design/behavioral/_visitor.md)
 
 
 * [오브젝트](object/)
@@ -164,22 +164,23 @@ description: Today I Learned
   * [MySQL with Docker](/docker/database/mysql_container.md)
 
 * [AWS]()
-	* [AWS 자격증 시험 공부하기](infra/aws/_0.md)
-	* [IAM](infra/aws/_1.md)
+    * [AWS 자격증 시험 공부하기](infra/aws/_0.md)
+    * [IAM](infra/aws/_1.md)
 
 * [Spring Jpa](spring-jpa/)
-	* [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
-	* [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
-	* [3. Spring-Data-Jpa](spring-jpa/springboot-jpa-data.md)
-	* [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
+    * [1. 데이터 모델링 및 연관관계 설정](spring-jpa/springboot-jpa-shop.md)
+    * [2. 최적화 내용](spring-jpa/springboot-jpa-shop-optimize.md)
+    * [3. Spring-Data-Jpa](spring-jpa/springboot-jpa-data.md)
+    * [4. Query DSL](spring-jpa/springboot-jpa-querydsl.md)
+
 * [Spring Security](spring-security/README.md)
-	* [Intro](spring-security/contents/_1.md)
+    * [Intro](spring-security/contents/_1.md)
 
 * [Spring Batch](batch-study/README.md)
-	- [배치용 디비 설치](/batch-study/contents/_1.md)
-	- [배치 데이터 분석하기](/batch-study/contents/_2.md)
-	- [배치 프로세스 구상하기 및 성능 차이 확인하기](/batch-study/contents/_3.md)
+    - [배치용 디비 설치](/batch-study/contents/_1.md)
+    - [배치 데이터 분석하기](/batch-study/contents/_2.md)
+    - [배치 프로세스 구상하기 및 성능 차이 확인하기](/batch-study/contents/_3.md)
 
 * [Issue]()
-	* [Git Push Error](issue/issue-git-push.md)
+    * [Git Push Error](issue/issue-git-push.md)
 ---

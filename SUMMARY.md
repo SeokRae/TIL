@@ -19,7 +19,7 @@
 		* [Adapter Pattern](design/structural/_adapter.md)
 		* [Bridge Pattern](design/structural/_bridge.md)
 		* [Composite Pattern](design/structural/_composite.md)
-		* [**`Decorator Pattern`**](design/structural/_decorator.md)
+		* [**Decorator Pattern**](design/structural/_decorator.md)
 		* [Facade Pattern](design/structural/_facade.md)
 		* [Flyweight Pattern](design/structural/_flyweight.md)
 		* [Proxy Pattern](design/structural/_proxy.md)
@@ -34,7 +34,7 @@
 		* [State Pattern](design/behavioral/_state.md)
 		* [Strategy Pattern](/design/behavioral/_strategy.md)
 		* [Template Method Pattern](/design/behavioral/_template_method.md)
-		* [**`Visitor Pattern`**](/design/behavioral/_visitor.md)
+		* [**Visitor Pattern**](/design/behavioral/_visitor.md)
 
 * [오브젝트](object/README.md)
 	* [데이터 중심 설계](object/_1.md)
@@ -169,7 +169,7 @@
 
 ---
 
-* [Issue]
+* [Issue]()
 	* [Git Push Error](issue/issue-git-push.md)
 
 ## Tistory
