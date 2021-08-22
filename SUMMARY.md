@@ -140,7 +140,7 @@
 ---
 
 * [Web Software Architecture]()
-	* [소프트웨어 아키텍처의 다양한 계층](../spring/architecture/web_application_architecture.md)
+	* [소프트웨어 아키텍처의 다양한 계층](architecture/web_application_architecture.md)
 
 ## Infra
 
