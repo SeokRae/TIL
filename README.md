@@ -158,8 +158,8 @@ description: Today I Learned
 * [Network]()
 	* [Web Security](network/contents/web_security.md)
 
-* [Architecture]()
-	* [웹 애플리케이션 및 소프트웨어 아키텍처](../spring/architecture/web_application_architecture.md)
+* [Web Software Architecture]()
+	* [소프트웨어 아키텍처의 다양한 계층](../spring/architecture/web_application_architecture.md)
 
 * [Docker]()
 	* [Oracle with Docker](/docker/database/oracle_container.md)
