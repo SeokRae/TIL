@@ -84,9 +84,8 @@
 	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](java/interview/generics.md)
 	* [스프링 MVC 기본 구조](java/interview/dispatcher_servlet.md)
 	* [마샬링과 직렬화](java/interview/marshalling_n_serialization.md)
-	* [데이터 캐싱](java/interview/data_cache.md)
 	* [인터뷰 질문 모음](java/interview/java_interview_summary.md)
-	* [메시지 대기열](java/interview/social_alarm_service.md)
+	* [메시지 대기열](architecture/10_social_alarm_service.md)
 
 ## Database
 
@@ -141,7 +140,8 @@
 ---
 
 * [Web Software Architecture]()
-	* [소프트웨어 아키텍처의 다양한 계층](architecture/web_application_architecture.md)
+    * [소프트웨어 아키텍처의 다양한 계층](architecture/1_web_application_architecture.md)
+    * [데이터 캐싱](architecture/9_data_cache.md)
 
 ## Infra
 

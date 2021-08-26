@@ -40,14 +40,14 @@ description: 메시지 큐 서비스에 대한 궁금증으로 시작된 Message
 - **Publish-Subscribe Model**은 다수의 소비자가 단일 또는 다수의 생산자로부터 전송된 동일한 메시지를 받는 모델이다.
 - 소비자는 서비스를 구독하고 서비스는 매일 여러 소비자에게 메시지를 전달한다.
 
-![publish-subscribe Model](images/message-queue/message-queue.002.jpeg)
+![publish-subscribe Model](../java/interview/images/message-queue/message-queue.002.jpeg)
 
 > **Exchange**
 
 - Message Queue에는 다양한 타입의 Exchange가 있으며 그 중 일부는 direct, topic, headers 및 fanout 등등이 있다.
 - 모든 메시지 대기열이 동일한 Exchange Type을 가질 이유는 없다.
 
-![Message Queue Exchange](images/message-queue/message-queue.003.jpeg)
+![Message Queue Exchange](../java/interview/images/message-queue/message-queue.003.jpeg)
 
 - **Message Queue Process**
 	- Queue에서 메시지를 브로드캐스트하기 위해 **fanout Exchange 타입**을 선택한다.
@@ -63,7 +63,7 @@ description: 메시지 큐 서비스에 대한 궁금증으로 시작된 Message
 - 진짜 단순한 통신 방식으로 **producer**의 메시지가 오직 하나의 **consumer**에게 소비되는 것이다.
 - pub-sub model이 일대다 관계와는 다르게 일대일 관계인 것이다.
 
-![Point-to-Point Model](images/message-queue/message-queue.004.jpeg)
+![Point-to-Point Model](../java/interview/images/message-queue/message-queue.004.jpeg)
 
 ## Messaging Protocol
 
@@ -95,7 +95,7 @@ description: 메시지 큐 서비스에 대한 궁금증으로 시작된 Message
 
 ### Pull-based Approach
 
-![Pull-based Approach](images/message-queue/message-queue.005.jpeg)
+![Pull-based Approach](../java/interview/images/message-queue/message-queue.005.jpeg)
 
 - Message Queue 없이 구현하는 방법 중 하나는 웹 사이트의 `모든 사용자`가 **정기적**으로 짧은 간격으로 새 업데이트가 있는 연결이 있는 경우 데이터베이스를 **폴링**하는 것이다.
 - 이 작업을 위해 모든 사용자의 연결을 찾고 사용자가 만든 새 게시물에 대해 모든 연결을 하나씩 확인해야 한다.
@@ -120,7 +120,7 @@ description: 메시지 큐 서비스에 대한 궁금증으로 시작된 Message
 
 > **Message Queue**를 도입하여 **Pull 기반 메커니즘**을 **Push 기반 메커니즘**으로 전환
 
-![Push-based Approach](images/message-queue/message-queue.006.jpeg)
+![Push-based Approach](../java/interview/images/message-queue/message-queue.006.jpeg)
 
 - **상황**
 	- 사용자가 새 게시물을 작성하면 분산 트랜잭션이 발생하게 된다.
@@ -135,7 +135,7 @@ description: 메시지 큐 서비스에 대한 궁금증으로 시작된 Message
 
 > **분산 트랜잭션을 처리하는 방식**
 
-![Push-based Distributed Transaction](images/message-queue/message-queue.007.jpeg)
+![Push-based Distributed Transaction](../java/interview/images/message-queue/message-queue.007.jpeg)
 
 - 트랜잭션은 분산되지만 단일 트랜잭션과 같이 작동할 수 있다.
 	- 데이터베이스의 지속성(Durability)이 실패하면 전체 트랜잭션을 롤백해야 하고, Message Queue에 대한 메시지 푸시도 없도록 해야한다.
