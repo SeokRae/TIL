@@ -52,7 +52,7 @@ description: 자바 궁금증
 		   String tmp = "";
 			Iterator it = box.getList().iterator();
 			while(it.hasNext()) {
-				tmp += (Fruit) it.next() + " "; 			
+				tmp += it.next() + " "; 			
 		   }
 			return new Juice(tmp);
 	   }

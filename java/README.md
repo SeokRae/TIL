@@ -112,12 +112,3 @@ description: 자바 기반 공부하기
 	* [Item 73 - 추상화 수준에 맞는 예외를 던지라](effective/item_73.md)
 	* [Item 83 - 지연 초기화는 신중히 사용하라](effective/item_83.md)
 	* [Item 83 발표 내용](effective/item83/item_83_ppt.md)
-
-## 궁금한 부분
-
-* [Java]()
-	* [자바8 이상에서 인터페이스와 추상클래스의 차이](interview/interface_vs_abstract.md)
-	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](interview/generics.md)
-	* [스프링 MVC 기본 구조](interview/dispatcher_servlet.md)
-	* [마샬링과 직렬화](interview/marshalling_n_serialization.md)
-	* [인터뷰 질문 모음](interview/java_interview_summary.md)

@@ -80,12 +80,11 @@
 	* [Item 89 발표 내용](java/effective/item89/item_89_ppt.md)
 
 * 궁금증
-	* [자바 8 버전의 인터페이스와 추상클래스](java/interview/interface_vs_abstract.md)
-	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](java/interview/generics.md)
-	* [스프링 MVC 기본 구조](java/interview/dispatcher_servlet.md)
-	* [마샬링과 직렬화](java/interview/marshalling_n_serialization.md)
-	* [인터뷰 질문 모음](java/interview/java_interview_summary.md)
-	* [메시지 대기열](architecture/10_social_alarm_service.md)
+	* [자바 8 버전의 인터페이스와 추상클래스](interview/interface_vs_abstract.md)
+	* [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](interview/generics.md)
+	* [스프링 MVC 기본 구조](interview/dispatcher_servlet.md)
+	* [마샬링과 직렬화](interview/marshalling_n_serialization.md)
+	* [인터뷰 질문 모음](interview/java_interview_summary.md)
 
 ## Database
 
