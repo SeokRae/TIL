@@ -145,8 +145,11 @@ description: Today I Learned
         * [**세미 조인 튜닝**](infra/middleware/database/tune/_10.md)
         * [세미 조인 튜닝 실습](infra/middleware/database/tune/_10_1.md)
         * [아우터 조인](infra/middleware/database/tune/_11.md)
-        * [함수 튜닝](infra/middleware/database/tune/_12.md)
+        * [함수 튜닝](infra/middleware/database/tune/_15.md)
         * [**부분 범위 처리 튜닝**](infra/middleware/database/tune/_13.md)
+        * [파티셔닝 튜닝](infra/middleware/database/tune/_16.md)
+        * [파티셔닝 프루닝](infra/middleware/database/tune/_16_1.md)
+        * [파티션 인덱스 튜닝](infra/middleware/database/tune/_16_1.md)
 
     * [DB 스터디](infra/middleware/database/easy_db/2021-07-17-db-toc.md)
         * [DBMS](infra/middleware/database/easy_db/contents/2021-07-17-db-dbms.md)
@@ -165,7 +168,7 @@ description: Today I Learned
     * [메시지 대기열](architecture/10_social_alarm_service.md)
 
 * [Docker]()
-    * [Oracle with Docker](infra/docker/database/oracle_container.md)
+    * [Oracle with Docker](infra/docker/database/oracle_xe_container.md)
     * [MySQL with Docker](infra/docker/database/mysql_container.md)
 
 * [AWS]()

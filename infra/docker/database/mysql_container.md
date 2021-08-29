@@ -17,7 +17,7 @@ docker pull mysql
 ### MySQL 컨테이너 생성 및 확인
 
 ```shell
-docker run -d -p 8081:8080 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=1234 --name sql_level_m mysql  
+docker run -d -p 8081:8080 -p 3307:3306 -e MYSQL_ROOT_PASSWORD=1234 --name sql_level_m mysql
 ```
 
 ```shell
