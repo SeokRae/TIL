@@ -150,6 +150,7 @@ description: Today I Learned
         * [파티셔닝 튜닝](infra/middleware/database/tune/_16.md)
         * [파티셔닝 프루닝](infra/middleware/database/tune/_16_1.md)
         * [파티션 인덱스 튜닝](infra/middleware/database/tune/_16_1.md)
+        * [병렬 처리 튜닝](infra/middleware/database/tune/_17.md)
 
     * [DB 스터디](infra/middleware/database/easy_db/2021-07-17-db-toc.md)
         * [DBMS](infra/middleware/database/easy_db/contents/2021-07-17-db-dbms.md)
