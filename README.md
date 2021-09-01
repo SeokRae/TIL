@@ -118,6 +118,7 @@ description: Today I Learned
     * [스프링 MVC 기본 구조](interview/dispatcher_servlet.md)
     * [마샬링과 직렬화](interview/marshalling_n_serialization.md)
     * [인터뷰 질문 모음](interview/java_interview_summary.md)
+    * [Code Coverage](spring/code_coverage.md)
 
 * [Database](infra/middleware/database/README.md)
     * [SQL 레벨업](infra/middleware/database/sql_levelup/README.md)
