@@ -231,7 +231,7 @@ jacocoTestCoverageVerification {
 
 - [JacocoLimit ‘value’](https://docs.gradle.org/current/javadoc/org/gradle/testing/jacoco/tasks/rules/JacocoLimit.html#getValue--)
 
-|counter|설명|
+|value|설명|
 |:---:|:---:|
 |TOTALCOUNT|전체 개수|
 |MISSEDCOUNT|커버되지 않은 개수|
