@@ -131,6 +131,9 @@
         * [Join(Nested Loop, Hash)](infra/middleware/database/easy_db/contents/2021-08-07-db-join.md)
         * [Join(Semi, Outer)](infra/middleware/database/easy_db/contents/2021-08-07-db-join2.md)
         * [Partial Range Processing](infra/middleware/database/easy_db/contents/2021-08-21-db-partial.md)
+        * [Function](infra/middleware/database/easy_db/contents/2021-09-04-db-function.md)
+        * [Partitioning](infra/middleware/database/easy_db/contents/2021-09-04-db-partitioning.md)
+        * [Parallel Processing](infra/middleware/database/easy_db/contents/2021-09-04-db-parallel.md)
 
 ## Network
 
