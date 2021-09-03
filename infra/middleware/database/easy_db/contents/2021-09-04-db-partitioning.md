@@ -4,9 +4,9 @@ description: Partitioning Tune
 
 # Partitioning
 
-![표지](../../images/oracle/partition/partitioning/partitioning.001.jpeg)
+![표지](../../images/oracle/partitioning/partitioning.001.jpeg)
 
-![Keyword Graph](../../images/oracle/partition/partitioning/partitioning.002.jpeg)
+![Keyword Graph](../../images/oracle/partitioning/partitioning.002.jpeg)
 
 ## Intro
 
