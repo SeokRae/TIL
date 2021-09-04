@@ -41,6 +41,21 @@ description: AWS Certified Solutions Architect Associate
 - **기술 정리**
     - [Gateway VPC endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-gateway.html)
 
+> **IAM**
+
+- 상황
+    - EC2 Launcher Type을 사용하는 EC2 컨테이너 인스턴스에서 실행 중인 애플리케이션에는 DynamoDB에 데이터를 쓰기 위한 사용 권한이 필요하다.
+    - 응용 프로그램을 실행하는 특정 ECS Task에만 이러한 권한을 할당하려면 어떻게 해야 할까?
+
+- 답변
+    - DynamoDB에 대한 사용권한이 있는 IAM 정책을 생성하고 taskRoleArn 매개 변수를 사용하여 Task에 할당한다.
+
+- 기술 설명
+    - Amazon ECS에서 특정 작업에 대한 사용 권한을 지정하려면 IAM Role for Tasks를 사용한다.
+    - 권한 정책은 작업 정의를 생성할 때 또는 AWS CLI 또는 SDK를 사용하여 IAM 작업 역할 재정의를 사용하여 작업에 적용할 수 있다.
+    - taskRoleArn 매개변수는 정책을 지정하는 데 사용된다.
+    - [Task IAM Roles](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html)
+
 ## 보안 애플리케이션 계층을 설계하는 방법
 
 > **IAM**

@@ -47,6 +47,25 @@ description: AWS Certified Solutions Architect Associate
     - [Elastic Load Balancing and Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html)
     - [Amazon RDS 다중 AZ 배포](https://aws.amazon.com/ko/rds/features/multi-az/)
 
+---
+
+- 상황
+    - 웹 애플리케이션은 공용 및 개인 서브넷에서 실행된다. 애플리케이션 아키텍처는 EC2 인스턴스에서 실행되는 웹 계층과 데이터베이스 계층으로 구성된다.
+    - 두 계층 모두 단일 AZ(Availability Zone)에서 실행된다.
+    - 이러한 아키텍처에 고가용성을 제공하기 위해 어떤 단계를 조합해야 할까?
+
+- 답변
+    - `여러 AZ에 걸쳐 있는 EC2 Auto Scaling Group 및 ALB를 생성한다.`
+    - `동일한 VPC에 각각 새 AZ에 새 공용 및 개인 서브넷을 만든다. 그리고 데이터베이스를 RDS 다중 AZ 배포로 마이그레이션한다.`
+    - 현재 아키텍처에 고가용성을 추가하기 위해서는 웹 및 데이터베이스 계층 모두 변경이 필요하다.
+    - 웹 계층의 경우 ALB가 있는 여러 AZ에 걸쳐 자동 확장 그룹은 항상 인스턴스가 실행 중이고, 트래픽이 해당 인스턴스에 배포되고 있음을 보장할 것이다.
+    - Multi-AZ 기능이 있는 관리되는 데이터베이스를 활용하려면 데이터베이스 계층을 EC2 인스턴스에서 Amazon RDS 마이그레이션해야 한다.
+    - 그리하면 주 데이터베이스에 대한 액세스를 금지하는 문제가 있는 경우 보조 데이터베이스가 대신할 수 있다.
+
+- 기술정리
+    - [AutoScaling Load Balancer](https://docs.aws.amazon.com/autoscaling/ec2/userguide/autoscaling-load-balancer.html)
+    - [Multi AZ](https://aws.amazon.com/rds/features/multi-az/)
+
 ## AWS 서비스를 이용한 디커플링 매커니즘 설계방법
 
 ## 탄력적인 스토리지를 선택하는 방법

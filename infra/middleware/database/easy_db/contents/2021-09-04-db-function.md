@@ -22,7 +22,7 @@ description: Function Tune
 
 > **집계 함수의 특징**
 
-- **집계 함수(Aggregate Function)**는 SQL 문에서 나온 결과 행들의 건수를 보장하지 않는다.
+- **집계 함수(Aggregate Function)** 는 SQL 문에서 나온 결과 행들의 건수를 보장하지 않는다.
 - [Aggregate Functions](https://docs.oracle.com/database/121/SQLRF/functions003.htm#SQLRF20035)
 
 > **분석 함수**
