@@ -8,31 +8,31 @@ description: 월요일 스터디
 
 | 주제 | Tags | 참여인원 | Github | 남은기간 | 요약 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 데이터베이스 | 준비중 | SR 외 4인 | [Link](https://seokrae.gitbook.io/sr/database/database/sql_levelup) | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 |
+| 데이터베이스 | 완료 | SR 외 4인 | [Link](https://seokrae.gitbook.io/sr/database/database/sql_levelup) | 2021/07/05 ~ 2021/08/23 | - SQL 레벨업 |
 
 ## 목차
 
 ### 1장 DBMS 아키텍처
 
-- [1강 DBMS 아키텍처 개요](_1.md)
+- 1강 DBMS 아키텍처 개요
 
-- [2강 DBMS와 버퍼](_2.md)
+- 2강 DBMS와 버퍼
 
-- [3강 DBMS와 실행 계획](_3.md)
+- 3강 DBMS와 실행 계획
 
-- [4강 실행 계획이 SQL 구문의 성능을 결정](_4.md)
+- 4강 실행 계획이 SQL 구문의 성능을 결정
 
-- [5강 실행 계획의 중요성](_5.md)
+- 5강 실행 계획의 중요성
 
 ### 2장 SQL 기초
 
-- [6강 SELECT 구문](_6.md)
+- 6강 SELECT 구문
 
-- [7강 조건 분기, 집합 연산, 윈도우 함수, 갱신](_7.md)
+- 7강 조건 분기, 집합 연산, 윈도우 함수, 갱신
 
 ### 3장 SQL의 조건 분기
 
-- [8강 UNION을 사용한 쓸데없이 긴 표현](_8.md)
+- 8강 UNION을 사용한 쓸데없이 긴 표현
 
 - 9강 집계와 조건 분기
 
