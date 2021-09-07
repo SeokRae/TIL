@@ -80,6 +80,23 @@ description: AWS Certified Solutions Architect Associate
         - 보통 업무 시간동안 실행되는 애플리케이션이나 주말에 실행되는 배치작업에 정기 인스턴스를 사용할 수 있다.
     - [Scheduled Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-scheduled-instances.html)
 
+---
+
+- 상황
+    - EC2 인스턴스는 월요일 ~ 금요일 오전 9시 ~ 오후 5시 사이에 실행된다.
+    - 프로덕션 인스턴스는 연중무휴로 실행된다.
+    - 이러한 요구사항이 주어졌을 때 어떤 모델을 사용해야 할까?
+
+- 답변
+    - 개발 환경을 위한 Scheduled reserved instances
+    - 프로덕션 환경을 위한 Reserved instances
+
+- 기술 정리
+    - 정기 인스턴스는 지속적으로 실행되지 않지만 정기적으로 실행되는 워크로드에 적합하며 개발 환경에 이상적이다.
+    - 예약 인스턴스는 지속적으로 실행되는 워크로드에 적합하며 프로덕션 환경에 적합하다.
+    - [Instance purchasing options](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/instance-purchasing-options.html)
+  
+
 > **DynamoDB**
 
 - 상황

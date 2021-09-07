@@ -6,11 +6,27 @@ description: AWS Certified Solutions Architect Associate
 
 ## 다중 계층 아키텍처 솔루션 설계방법
 
+> **AWS SQS**
+
+- 상황
+    - 새 애플리케이션은 여러 ECS 작업에서 실행된다.
+    - 프론트앤드 애플리케이션 로직은 데이터를 처리한 다음 해당 데이터를 백엔드 ECS 작업으로 전달하여 추가 처리를 수행하고 데이터 저장소에 데이터를 쓴다.
+    - 이러한 상황에서 장애가 다른 구성요소에 영향을 미치지 않도록 상호 의존성을 줄일 수 있는 방법은?
+
+- 답변
+    - SQS 대기열을 생성하고 메시지를 대기열에 추가하도록 프론트앤드를 구성하고 대기열에서 메시지를 폴링하도록 백엔드를 구성한다.
+
+- 기술 정리
+    - SQS는 메시지 버스를 통해 응용 프로그램을 분리하는데 사용하는 서비스이다.
+    - 프론트 앤드 애플리케이션은 큐에 메시지를 배치할 수 있으며, 백엔드는 새 메시지에 대한 큐를 폴링할 수 있다.
+    - SQS는 풀 기반이라는 점이 중요, SNS는 푸시 기반
+    - [Common use cases in Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/common_use_cases.html)
+
 ## 고가용성 및 내결함성에 대한 아키텍처 설계방법
 
 > **Elastic Load Balancing**
 
-- 상황
+- **상황**
     - AWS 서비스를 이용하여 멀티플레이어 게임을 호스팅
     - 애플리케이션은 단일 가용 영역에서 EC2 인스턴스를 사용하고 있다.
     - 클라이언트는 L4를 통해 연결하는 상황
@@ -72,7 +88,7 @@ description: AWS Certified Solutions Architect Associate
 
 ---
 
-> **Storage**
+> **S3**
 
 - 상황
     - 하나의 EC2 인스턴스는 데이터를 생성하고 저장하는 애플리케이션이 작동
@@ -95,7 +111,7 @@ description: AWS Certified Solutions Architect Associate
 
 ---
 
-- 상황
+- **상황**
     - 중요한 데이터를 S3 버킷에 저장하고 있는 상황에서 실수로 데이터를 삭제하는 경우 어떻게 복구할 수 있을까?
 
 - **답변**
@@ -109,13 +125,14 @@ description: AWS Certified Solutions Architect Associate
 
 ---
 
-- 상황
+- **상황**
     - 온프레미스 인프라에서 AWS 클라우드로 마이그레이션하려는 상황
     - 응용 프로그램 중 하나는 DFSR(분산 파일 시스템 복제)을 사용하여 데이터를 동기화 상태로 유지하는 Windows 파일 서버 팜에 파일을 저장하고 있다.
     - 위 상황에서 DFSR을 어떤 서비스로 변경하여야 할까?
 
 - **답변**
     - Amazon FSx
+
 - **기술 정리**
     - 윈도우 파일 서버용 FSx는 업계 표준 SMB 프로토콜을 통해 액세스 할 수 있는 매우 안정적인 관리형 파일 스토리지를 제공한다.
     - FSx는 윈도우 서버를 기반으로 하며 최종 사용자 파일 복원, 사용자 할당량 및 ACL을 포함하는 다양한 관리 기능을 제공한다.
@@ -157,8 +174,27 @@ description: AWS Certified Solutions Architect Associate
         - 다중 요소 인증 삭제는 삭제를 시도할 때 두 번째 인증을 요청함으로써 실수로 삭제되는 것을 방지할 수 있다.
         - [Deleting an object from an MFA delete-enabled bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingMFADelete.html)
 
-    
 ---
+
+- 상황
+    - 어플리케이션은 고객이 업로드한 이미지를 수신하여 S3에 저장한다.
+    - AWS Lambda 함수가 이미지를 처리하여 그래픽 요소를 추가한다.
+    - 처리된 이미지는 사용자가 30일 동안 다운로드할 수가 있어야 하며, 그 이후에는 삭제할 수 있다.
+    - 처리된 이미지는 원본 이미지에서 쉽게 다시 만들 수 있다.
+    - 원본 이미지는 30일 동안 즉시 사용할 수 있어야 하며 추가로 90일 동안 24시간 이내에 액세스 할 수 있다.
+    - 원본 이미지와 처리된 이미지를 가장 비용 효율적으로 사용할 수 있는 S3 스토리지 조합은 무엇인가?
+
+- 답변
+    - 원본 이미지를 STANDARD 에 30일 동안 저장, GLACIER로 90일 동안 전환한 다음 데이터를 만료한다.
+    - 처리된 이미지를 ONEZONE_IA에 저장하고 30일 후에 데이터를 만료한다.
+
+- 기술 정리
+    - 원본이미지에 대한 주요 요구 사항은 30일 동안 즉시 사용할 수 있어야 하고(STANDARD) 24시간 이내에 90일 동안 사용할 수 있어야 한다.(GLACIER)
+    - 그 이후에는 필요하지 않다.
+    - 처리된 이미지에 대한 주요 요구 사항은 30일 동안 즉시 사용할 수 있어야 하며(원본에서 다시 만들 수 있으므로 ONEZONE_IA), 그 이후에는 필요하지 않다.
+    - [Transitioning objects using Amazon S3 Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html)
+
+> **AWS DataSync**
 
 - 상황
     - 조직은 온프레미스 환경의 데이터 센터에 많은 양의 **데이터(파일)** 를 보유하고 있다.
@@ -172,3 +208,22 @@ description: AWS Certified Solutions Architect Associate
     - DataSync는 복사 작업 스크립팅, 예약, 전송 모니터링, 데이터 유효성 검사, 네트워크 활용 최적화를 포함하여 이러한 많은 작업을 제거하거나 자동으로 처리한다.
     - 소스 데이터 저장소는 SMB(서버 메시지 블록) 파일 서버일 수 있다.
     - [AWS DataSync FAQ](https://aws.amazon.com/ko/datasync/faqs/)
+
+> **AWS DMS(Database Migration Service)**
+
+- 상황
+    - 웹 애플리케이션의 데이터베이스 계층은 윈도우즈 서버에서 실행 중이다.
+    - 데이터베이스는 마이크로소프트 SQL 서버 데이터베이스를 사용하고 있다.
+    - 데이터베이스를 AWS RDS 인스턴스로 마이그레이션 한다고 할때 최소한의 관리 작업과 다운타임으로 마이그레이션을 실행하는 방법은?
+
+- 답변
+    - 데이터베이스를 RDS로 직접 마이그레이션하려면 AWS DMS(Database Migration Service)를 사용한다.
+
+- 기술 정리
+    - 마이크로소프트 SQL 서버 데이터베이스 엔진을 사용하여 마이크로소프트 SQL 서버를 사내 서버에서 RDS로 직접 마이그레이션할 수 있다.
+    - 기본 Microsoft SQL Server 도구를 사용하거나 AWS DMS를 사용하여 수행할 수 있다.
+    - [Migrate an on-premises Microsoft SQL Server database to Amazon RDS for SQL Server](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-microsoft-sql-server-database-to-amazon-rds-for-sql-server.html)
+    - [Sources for data migration](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.html)
+    - [Targets for data migration](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.html)
+    - [AWS Schema Conversion Tool](https://aws.amazon.com/ko/dms/schema-conversion-tool/)
+    
