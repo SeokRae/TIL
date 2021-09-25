@@ -206,4 +206,5 @@ description: Today I Learned
 
 * [Issue]()
     * [Git Push Error](issue/issue-git-push.md)
+    * [SonarLint Warning - assertThatExceptionOfType()](issue/junit_assert_exception.md)
     
