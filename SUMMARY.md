@@ -8,16 +8,14 @@
 
 * [도메인 주도 설계](book/domain_driven_design/README.md)
     * [1. 동작하는 도메인 모델 만들기](book/domain_driven_design/_1_동작하는_도메인_모델_만들기.md)
-
-
+    
 * [오브젝트](object/README.md)
     * [데이터 중심 설계](object/_1.md)
     * [책임 중심 설계](object/_2.md)
     * [책임 할당을 위한 GRASP 패턴](object/_3.md)
     * [메시지와 인터페이스](object/_4.md)
     * [객체 분해](object/_5.md)
-
-
+    
 * [Effective Java](java/effective/README.md)
     * [Item 7 - 다 쓴 객체 참조를 해제하라](java/effective/item_7.md)
     * [Item 7 발표 내용](java/effective/item7/item_7_ppt.md)
