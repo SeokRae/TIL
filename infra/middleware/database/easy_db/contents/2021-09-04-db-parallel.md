@@ -1,8 +1,8 @@
 ---
-description: Partial Range Processing Tune
+description: Parallel Processing Tune
 ---
 
-# Partial Range Processing
+# Parallel Processing
 
 ![표지](../../images/oracle/parallel_processing/parallel_processing.001.jpeg)
 
