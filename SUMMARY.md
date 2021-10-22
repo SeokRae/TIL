@@ -2,20 +2,21 @@
 
 * [Contents](README.md)
 
+
 ## Book
 
 ---
 
 * [도메인 주도 설계](book/domain_driven_design/README.md)
     * [1. 동작하는 도메인 모델 만들기](book/domain_driven_design/_1_동작하는_도메인_모델_만들기.md)
-    
+
 * [오브젝트](object/README.md)
     * [데이터 중심 설계](object/_1.md)
     * [책임 중심 설계](object/_2.md)
     * [책임 할당을 위한 GRASP 패턴](object/_3.md)
     * [메시지와 인터페이스](object/_4.md)
     * [객체 분해](object/_5.md)
-    
+
 * [Effective Java](java/effective/README.md)
     * [Item 7 - 다 쓴 객체 참조를 해제하라](java/effective/item_7.md)
     * [Item 7 발표 내용](java/effective/item7/item_7_ppt.md)
@@ -66,11 +67,11 @@
     * [파티션 인덱스 튜닝](infra/middleware/database/tune/_16_1.md)
     * [병렬 처리 튜닝](infra/middleware/database/tune/_17.md)
 
-## Java <a id="java-1"></a>
 
----
+## Concept
 
-* [Design Pattern](design/README.md)
+* [Network](network.md)
+* [Design Pattern](design/)
     * [Intro](design/_intro.md)
     * [Types of Design Patterns](design/_types_of_design_patterns.md)
     * **Creational**
@@ -100,16 +101,23 @@
         * [Template Method Pattern](design/behavioral/_template_method.md)
         * [**Visitor Pattern**](design/behavioral/_visitor.md)
 
+* [Network]()
+    * [Web Security](network/contents/web_security.md)
 
-* [Java](java/README.md)
-    * [Cracking the Coding Interview](java/cracking_the_coding_interview.md)
-    * [TDD, Clean Code with Java 11기](java/tdd/README.md)
-        * [자동차 레이싱](java/tdd/racing.md)
-        * [로또](java/tdd/lotto.md)
-        * [사다리 타기](java/tdd/ladder.md)
-        * [볼링 게임 점수판](java/tdd/bowling.md)
+* [Web Software Architecture]()
+    * [소프트웨어 아키텍처의 다양한 계층](architecture/1_web_application_architecture.md)
+    * [데이터 캐싱](architecture/9_data_cache.md)
+    * [메시지 대기열](architecture/10_social_alarm_service.md)
 
-* 궁금증
+* [AWS]()
+    * [AWS 자격증 시험 공부하기](infra/aws/_0.md)
+        * [Design Resilient Architectures](infra/aws/question/1_design_resilient_architectures.md)
+        * [Design High Performing Architectures](infra/aws/question/2_design_high_performing_architectures.md)
+        * [Design Secure Applications And Architectures](infra/aws/question/3_design_secure_applications_and_architectures.md)
+        * [Design Cost-Optimized Architectures](infra/aws/question/4_design_cost_optimized_architectures.md)
+    * [IAM](infra/aws/_1.md)
+
+* [궁금증]()
     * [자바 8 버전의 인터페이스와 추상클래스](interview/interface_vs_abstract.md)
     * [자바의 제네릭은 어떻게 이전 버전과 호환되는 걸까?](interview/generics.md)
     * [스프링 MVC 기본 구조](interview/dispatcher_servlet.md)
@@ -118,8 +126,6 @@
     * [Code Coverage](spring/code_coverage.md)
 
 ## Database
-
----
 
 * [Database](infra/middleware/database/README.md)
     * [SQL 레벨업](infra/middleware/database/sql_levelup/README.md)
@@ -135,42 +141,21 @@
         * [Partitioning](infra/middleware/database/easy_db/contents/2021-09-04-db-partitioning.md)
         * [Parallel Processing](infra/middleware/database/easy_db/contents/2021-09-04-db-parallel.md)
 
-## Network
+## Practice
 
----
-
-* [Network]()
-    * [Web Security](network/contents/web_security.md)
-
-## Architecture
-
----
-
-* [Web Software Architecture]()
-    * [소프트웨어 아키텍처의 다양한 계층](architecture/1_web_application_architecture.md)
-    * [데이터 캐싱](architecture/9_data_cache.md)
-
-## Infra
-
----
+* [Java](java/)
+    * [Cracking the Coding Interview](java/cracking_the_coding_interview.md)
+    * [TDD, Clean Code with Java 11기](java/tdd/)
+        * [자동차 레이싱](java/tdd/racing.md)
+        * [로또](java/tdd/lotto.md)
+        * [사다리 타기](java/tdd/ladder.md)
+        * [볼링 게임 점수판](java/tdd/bowling.md)
 
 * [Docker]()
     * [Oracle with Docker](infra/docker/database/oracle_xe_container.md)
     * [MySQL with Docker](infra/docker/database/mysql_container.md)
 
-* [AWS]()
-    * [AWS 자격증 시험 공부하기](infra/aws/_0.md)
-        * [Design Resilient Architectures](infra/aws/question/1_design_resilient_architectures.md)
-        * [Design High Performing Architectures](infra/aws/question/2_design_high_performing_architectures.md)
-        * [Design Secure Applications And Architectures](infra/aws/question/3_design_secure_applications_and_architectures.md)
-        * [Design Cost-Optimized Architectures](infra/aws/question/4_design_cost_optimized_architectures.md)
-    * [IAM](infra/aws/_1.md)
-
-## Spring
-
----
-
-* [Spring JPA](spring/spring-jpa/README.md)
+* [Spring Jpa](spring/spring-jpa/)
     * [1. 데이터 모델링 및 연관관계 설정](spring/spring-jpa/springboot-jpa-shop.md)
     * [2. 최적화 내용](spring/spring-jpa/springboot-jpa-shop-optimize.md)
     * [3. Spring-Data-Jpa](spring/spring-jpa/springboot-jpa-data.md)
@@ -183,10 +168,6 @@
     - [배치용 디비 설치](batch-study/contents/_1.md)
     - [배치 데이터 분석하기](batch-study/contents/_2.md)
     - [배치 프로세스 구상하기 및 성능 차이 확인하기](batch-study/contents/_3.md)
-
-## Issue
-
----
 
 * [Issue]()
     * [Git Push Error](issue/issue-git-push.md)
